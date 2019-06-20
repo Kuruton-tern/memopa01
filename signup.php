@@ -1,3 +1,32 @@
+<?php
+require('function.php');
+
+debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
+debug('「　アカウント作成画面　');
+debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
+
+
+//==============================
+//画面処理
+//==============================
+// 変数定義
+$email = $_POST['email'];
+$username = $_POST['username'];
+$pass = $_POST['pass'];
+$pass_re = $_POST['pass_re'];
+
+// 未入力チェック
+if(!empty ($_POST)){
+  varidRequired($email, 'email');
+  varidRequired($username, 'username');
+  varidRequired($pass, 'pass');
+  varidRequired($pass_re, 'pass_re');
+
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -33,23 +62,46 @@
           <h2 class="title">アカウント作成</h2>
 
           <div class="area-msg">
-            メールアドレスまたはパスワードが不正です。
+            
           </div>
           <!-- メールアドレス -->
           <label class="">メールアドレス</label>
-          <input type="text" name="email">
+          <input type="text" name="email" value="<?php if (!empty($_POST['email'])) echo $_POST['email']; ?>">
+          <div class="area-msg">
+           <?php 
+            if(!empty($err_msg['email'])) echo $err_msg['email'];
+            ?>
+          </div>
 
           <!-- ユーザー名 -->
           <label class="username">ユーザー名</label>
-          <input type="text" name="username" placeholder="日本語で入れてください。">
+          
+          <input type="text" name="username" placeholder="サイトで使う名前を入力してください" value="<?php if (!empty($_POST['username'])) echo $_POST['username']; ?>">
+<?php  ?>
+          <div class="area-msg">
+           <?php 
+            if(!empty($err_msg['username'])) echo $err_msg['username'];
+            ?>
+          </div>
 
           <!-- パスワード -->
           <label class="pass">パスワード</label>
-          <input type="password" name="pass" placeholder="６文字以上で入力してください。">
+          <input type="password" name="pass" placeholder="６文字以上で入力してください。" value="<?php if (!empty($_POST['pass'])) echo $_POST['pass']; ?>">
+          <div class="area-msg">
+           <?php 
+            if(!empty($err_msg['pass'])) echo $err_msg['pass'];
+            ?>
+          </div>
+
 
           <!-- パスワード（再入力） -->
           <label class="pass pass_re">パスワード（再入力）</label>
-          <input type="password" name="pass_re" placeholder="６文字以上で入力してください。">
+          <input type="password" name="pass_re" placeholder="６文字以上で入力してください。" value="<?php if (!empty($_POST['pass_re'])) echo $_POST['pass_re']; ?>">
+          <div class="area-msg">
+           <?php 
+            if(!empty($err_msg['pass_re'])) echo $err_msg['pass_re'];
+            ?>
+          </div>
 
 
           <div class="checkbox01">
