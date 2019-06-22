@@ -101,3 +101,897 @@
 [21-Jun-2019 02:53:02 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
 [21-Jun-2019 02:53:02 Asia/Tokyo] デバッグ：「　アカウント作成画面　
 [21-Jun-2019 02:53:02 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:19:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:19:45 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:19:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:19:45 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/signup.php on line 13
+[21-Jun-2019 22:19:45 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/signup.php on line 14
+[21-Jun-2019 22:19:45 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/memopa/signup.php on line 15
+[21-Jun-2019 22:19:45 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/memopa/signup.php on line 16
+[21-Jun-2019 22:20:02 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:20:02 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:20:02 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:20:02 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/signup.php on line 13
+[21-Jun-2019 22:20:02 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/signup.php on line 14
+[21-Jun-2019 22:20:02 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/memopa/signup.php on line 15
+[21-Jun-2019 22:20:02 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/memopa/signup.php on line 16
+[21-Jun-2019 22:20:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:20:12 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:20:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:20:12 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/signup.php on line 13
+[21-Jun-2019 22:20:12 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/signup.php on line 14
+[21-Jun-2019 22:20:12 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/memopa/signup.php on line 15
+[21-Jun-2019 22:20:12 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/memopa/signup.php on line 16
+[21-Jun-2019 22:21:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:21:18 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:21:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:21:18 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/signup.php on line 13
+[21-Jun-2019 22:21:18 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/signup.php on line 14
+[21-Jun-2019 22:21:18 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/memopa/signup.php on line 15
+[21-Jun-2019 22:21:18 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/memopa/signup.php on line 16
+[21-Jun-2019 22:21:21 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:21:21 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:21:21 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:21:21 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:21:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:21:36 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:21:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:21:36 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:22:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:22:55 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:22:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:22:55 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:24:33 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:24:33 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:24:33 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:24:33 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/signup.php on line 13
+[21-Jun-2019 22:24:33 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/signup.php on line 14
+[21-Jun-2019 22:24:33 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/memopa/signup.php on line 15
+[21-Jun-2019 22:24:33 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/memopa/signup.php on line 16
+[21-Jun-2019 22:24:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:24:43 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:24:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:24:43 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:24:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:24:51 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:24:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:24:51 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:25:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:25:08 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:25:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:25:08 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:26:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:26:45 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:26:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:26:45 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/signup.php on line 13
+[21-Jun-2019 22:26:45 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/signup.php on line 14
+[21-Jun-2019 22:26:45 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/memopa/signup.php on line 15
+[21-Jun-2019 22:26:45 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/memopa/signup.php on line 16
+[21-Jun-2019 22:27:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:27:04 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:27:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:27:04 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:27:04 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function validLennMax() in /Applications/MAMP/htdocs/memopa/signup.php:48
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/memopa/signup.php on line 48
+[21-Jun-2019 22:27:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:27:10 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:27:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:27:10 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/signup.php on line 13
+[21-Jun-2019 22:27:10 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/signup.php on line 14
+[21-Jun-2019 22:27:10 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/memopa/signup.php on line 15
+[21-Jun-2019 22:27:10 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/memopa/signup.php on line 16
+[21-Jun-2019 22:27:33 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:27:33 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:27:33 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:27:33 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/signup.php on line 13
+[21-Jun-2019 22:27:33 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/signup.php on line 14
+[21-Jun-2019 22:27:33 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/memopa/signup.php on line 15
+[21-Jun-2019 22:27:33 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/memopa/signup.php on line 16
+[21-Jun-2019 22:27:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:27:43 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:27:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:27:43 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:27:43 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function validLennMax() in /Applications/MAMP/htdocs/memopa/signup.php:48
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/memopa/signup.php on line 48
+[21-Jun-2019 22:27:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:27:54 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:27:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:27:54 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:27:54 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function validLennMax() in /Applications/MAMP/htdocs/memopa/signup.php:48
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/memopa/signup.php on line 48
+[21-Jun-2019 22:29:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:29:08 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:29:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:29:08 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:32:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:32:04 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:32:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:32:04 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:32:04 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[21-Jun-2019 22:32:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:32:54 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:32:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:32:54 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/signup.php on line 13
+[21-Jun-2019 22:32:54 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/signup.php on line 14
+[21-Jun-2019 22:32:54 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/memopa/signup.php on line 15
+[21-Jun-2019 22:32:54 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/memopa/signup.php on line 16
+[21-Jun-2019 22:33:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:33:06 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:33:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:33:06 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:33:06 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function validLenMatch() in /Applications/MAMP/htdocs/memopa/signup.php:48
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/memopa/signup.php on line 48
+[21-Jun-2019 22:33:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:33:23 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:33:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:33:23 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:33:23 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[21-Jun-2019 22:33:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:33:25 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:33:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:33:25 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/signup.php on line 13
+[21-Jun-2019 22:33:25 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/signup.php on line 14
+[21-Jun-2019 22:33:25 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/memopa/signup.php on line 15
+[21-Jun-2019 22:33:25 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/memopa/signup.php on line 16
+[21-Jun-2019 22:33:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:33:31 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:33:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:33:31 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:33:31 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[21-Jun-2019 22:33:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:33:32 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:33:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:33:32 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/signup.php on line 13
+[21-Jun-2019 22:33:32 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/signup.php on line 14
+[21-Jun-2019 22:33:32 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/memopa/signup.php on line 15
+[21-Jun-2019 22:33:32 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/memopa/signup.php on line 16
+[21-Jun-2019 22:37:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:37:48 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:37:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:37:48 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/signup.php on line 13
+[21-Jun-2019 22:37:48 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/signup.php on line 14
+[21-Jun-2019 22:37:48 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/memopa/signup.php on line 15
+[21-Jun-2019 22:37:48 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/memopa/signup.php on line 16
+[21-Jun-2019 22:38:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:38:00 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:38:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:38:00 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:38:00 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[21-Jun-2019 22:38:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:38:01 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:38:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:38:01 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/signup.php on line 13
+[21-Jun-2019 22:38:01 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/signup.php on line 14
+[21-Jun-2019 22:38:01 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/memopa/signup.php on line 15
+[21-Jun-2019 22:38:01 Asia/Tokyo] PHP Notice:  Undefine
+d index: pass_re in /Applications/MAMP/htdocs/memopa/signup.php on line 16
+
+
+
+
+[21-Jun-2019 22:39:05 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:39:05 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:39:05 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:39:05 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/signup.php on line 13
+[21-Jun-2019 22:39:05 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/signup.php on line 14
+[21-Jun-2019 22:39:05 Asia/Tokyo] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/memopa/signup.php on line 15
+[21-Jun-2019 22:39:05 Asia/Tokyo] PHP Notice:  Undefined index: pass_re in /Applications/MAMP/htdocs/memopa/signup.php on line 16
+[21-Jun-2019 22:39:19 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:39:19 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:39:19 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:39:19 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:39:19 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[21-Jun-2019 22:58:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:58:10 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:58:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:58:13 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:58:13 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:58:13 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:58:13 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:58:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:58:22 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 22:58:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 22:58:22 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 22:58:22 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+
+
+[21-Jun-2019 23:07:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:07:22 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:07:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:07:22 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:07:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:07:31 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:07:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:07:31 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:08:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:08:29 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:08:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:08:37 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:08:37 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:08:37 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:08:37 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:08:37 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[21-Jun-2019 23:08:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:08:39 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:08:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:11:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:11:12 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:11:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:11:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:11:20 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:11:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:11:20 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:11:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:11:25 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:11:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:11:25 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:11:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:11:29 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:11:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:11:29 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:11:29 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[21-Jun-2019 23:11:37 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:11:37 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:11:37 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:11:37 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:11:37 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[21-Jun-2019 23:15:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:15:10 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:15:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:15:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:15:15 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:15:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:15:15 Asia/Tokyo] デバッグ：未入力チェック完了
+
+
+[21-Jun-2019 23:15:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:15:35 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:15:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:15:35 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:15:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:15:35 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:15:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:15:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:15:47 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:15:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:15:47 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:15:47 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[21-Jun-2019 23:15:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:15:54 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:15:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:15:54 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:15:54 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[21-Jun-2019 23:20:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:20:00 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:20:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:20:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:20:08 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:20:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:20:08 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:20:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:20:08 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:20:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:21:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:21:16 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:21:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:21:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:21:28 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:21:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:21:28 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:21:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:21:32 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:21:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:21:32 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:21:32 Asia/Tokyo] デバッグ：ページ遷移しません
+[21-Jun-2019 23:21:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:21:32 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:21:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:21:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:21:48 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:21:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:21:48 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:21:48 Asia/Tokyo] デバッグ：ページ遷移しません
+[21-Jun-2019 23:21:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:21:48 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:21:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:30:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:30:28 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:30:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：その１
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：その２
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：その３
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：その４
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：その５
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：その６
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：その７
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：その８
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：その９
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：ページ遷移しません
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:30:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:31:19 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:31:19 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:31:19 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:31:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:31:27 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:31:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:31:27 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:31:27 Asia/Tokyo] デバッグ：その１
+[21-Jun-2019 23:31:27 Asia/Tokyo] デバッグ：その２
+[21-Jun-2019 23:31:27 Asia/Tokyo] デバッグ：その３
+[21-Jun-2019 23:31:27 Asia/Tokyo] デバッグ：その４
+[21-Jun-2019 23:31:27 Asia/Tokyo] デバッグ：その５
+[21-Jun-2019 23:31:27 Asia/Tokyo] デバッグ：その６
+[21-Jun-2019 23:31:27 Asia/Tokyo] デバッグ：その７
+[21-Jun-2019 23:31:27 Asia/Tokyo] デバッグ：ページ遷移しません
+[21-Jun-2019 23:31:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:31:27 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:31:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:32:37 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:32:37 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:32:37 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:32:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:32:45 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:32:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:32:45 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:32:45 Asia/Tokyo] デバッグ：その１
+[21-Jun-2019 23:32:45 Asia/Tokyo] デバッグ：その２
+[21-Jun-2019 23:32:45 Asia/Tokyo] デバッグ：その３
+[21-Jun-2019 23:32:45 Asia/Tokyo] デバッグ：その４
+[21-Jun-2019 23:32:45 Asia/Tokyo] デバッグ：その5
+[21-Jun-2019 23:32:45 Asia/Tokyo] デバッグ：その6
+[21-Jun-2019 23:32:45 Asia/Tokyo] デバッグ：その7
+[21-Jun-2019 23:32:45 Asia/Tokyo] デバッグ：ページ遷移しません
+[21-Jun-2019 23:32:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:32:45 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:32:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+
+[21-Jun-2019 23:35:05 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:35:05 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:35:05 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:35:05 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:35:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:35:36 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:35:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:35:36 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:35:36 Asia/Tokyo] デバッグ：その１
+[21-Jun-2019 23:35:36 Asia/Tokyo] デバッグ：その２
+[21-Jun-2019 23:35:36 Asia/Tokyo] デバッグ：その３
+[21-Jun-2019 23:35:36 Asia/Tokyo] デバッグ：その４
+[21-Jun-2019 23:35:36 Asia/Tokyo] デバッグ：その5
+[21-Jun-2019 23:35:36 Asia/Tokyo] デバッグ：その6
+[21-Jun-2019 23:35:36 Asia/Tokyo] デバッグ：その7
+[21-Jun-2019 23:35:36 Asia/Tokyo] デバッグ：ページ遷移しません
+[21-Jun-2019 23:35:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:35:36 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:35:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:35:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:35:44 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:35:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:35:44 Asia/Tokyo] デバッグ：未入力チェック完了
+[21-Jun-2019 23:35:44 Asia/Tokyo] デバッグ：その１
+[21-Jun-2019 23:35:44 Asia/Tokyo] デバッグ：その２
+[21-Jun-2019 23:35:44 Asia/Tokyo] デバッグ：その３
+[21-Jun-2019 23:35:44 Asia/Tokyo] デバッグ：その４
+[21-Jun-2019 23:35:44 Asia/Tokyo] デバッグ：その5
+[21-Jun-2019 23:35:44 Asia/Tokyo] デバッグ：その6
+[21-Jun-2019 23:35:44 Asia/Tokyo] デバッグ：その7
+[21-Jun-2019 23:35:44 Asia/Tokyo] デバッグ：ページ遷移しません
+[21-Jun-2019 23:35:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Jun-2019 23:35:44 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[21-Jun-2019 23:35:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:23:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:23:32 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:23:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:23:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:23:45 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:23:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:23:45 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:23:45 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:23:45 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[22-Jun-2019 00:27:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:27:07 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:27:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:27:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:27:20 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:27:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:27:20 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:27:20 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:27:20 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[22-Jun-2019 00:27:20 Asia/Tokyo] デバッグ：ページ遷移しません
+[22-Jun-2019 00:27:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:27:20 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:27:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:31:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:31:35 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:31:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:31:35 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:31:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:31:47 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:31:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:31:47 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:31:47 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:31:47 Asia/Tokyo] デバッグ：ページ遷移しません
+[22-Jun-2019 00:31:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:31:47 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:31:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:33:03 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:33:03 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:33:03 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:33:03 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:33:03 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:34:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:34:12 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:34:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:34:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:34:14 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:34:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:34:14 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:34:14 Asia/Tokyo] デバッグ：ページ遷移します
+[22-Jun-2019 00:34:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:34:16 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:34:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:34:19 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:34:19 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:34:19 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:34:19 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:34:19 Asia/Tokyo] デバッグ：ページ遷移します
+[22-Jun-2019 00:34:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:34:40 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:34:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:34:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:34:43 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:34:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:34:43 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:34:52 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:34:52 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:34:52 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:34:52 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:34:52 Asia/Tokyo] デバッグ：ページ遷移します
+[22-Jun-2019 00:36:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:36:23 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:36:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:36:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:36:38 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:36:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:36:38 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:36:38 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:36:38 Asia/Tokyo] デバッグ：ページ遷移します
+[22-Jun-2019 00:36:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:36:41 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:36:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:39:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:39:35 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:39:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:39:35 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:40:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:40:43 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:40:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:40:43 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:40:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:40:51 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:40:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:40:51 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:40:51 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:41:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:41:38 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:41:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:41:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:41:51 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:41:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:41:51 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:41:51 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:41:51 Asia/Tokyo] デバッグ：その２
+[22-Jun-2019 00:41:51 Asia/Tokyo] デバッグ：その３
+[22-Jun-2019 00:42:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:42:55 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:42:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:42:55 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:42:55 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:42:55 Asia/Tokyo] デバッグ：その２
+[22-Jun-2019 00:42:55 Asia/Tokyo] デバッグ：その３
+[22-Jun-2019 00:43:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:43:30 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:43:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:43:50 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:43:50 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:43:50 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:43:50 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:43:50 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:43:50 Asia/Tokyo] デバッグ：その２
+[22-Jun-2019 00:43:50 Asia/Tokyo] デバッグ：その３
+[22-Jun-2019 00:43:50 Asia/Tokyo] デバッグ：その４
+[22-Jun-2019 00:43:50 Asia/Tokyo] デバッグ：その5
+[22-Jun-2019 00:44:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:44:23 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:44:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:44:23 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:44:23 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:44:23 Asia/Tokyo] デバッグ：その２
+[22-Jun-2019 00:44:23 Asia/Tokyo] デバッグ：その３
+[22-Jun-2019 00:44:23 Asia/Tokyo] デバッグ：その４
+[22-Jun-2019 00:44:23 Asia/Tokyo] デバッグ：その5
+[22-Jun-2019 00:44:23 Asia/Tokyo] デバッグ：その6
+[22-Jun-2019 00:44:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:44:30 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:44:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:44:30 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:44:30 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:44:30 Asia/Tokyo] デバッグ：その２
+[22-Jun-2019 00:44:30 Asia/Tokyo] デバッグ：その３
+[22-Jun-2019 00:44:30 Asia/Tokyo] デバッグ：その４
+[22-Jun-2019 00:44:30 Asia/Tokyo] デバッグ：その5
+[22-Jun-2019 00:44:30 Asia/Tokyo] デバッグ：その6
+[22-Jun-2019 00:44:30 Asia/Tokyo] デバッグ：ページ遷移します
+[22-Jun-2019 00:45:21 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:45:21 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:45:21 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:45:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:45:30 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:45:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:45:30 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:45:30 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:45:30 Asia/Tokyo] デバッグ：その２
+[22-Jun-2019 00:45:30 Asia/Tokyo] デバッグ：その３
+[22-Jun-2019 00:45:30 Asia/Tokyo] デバッグ：その４
+[22-Jun-2019 00:45:30 Asia/Tokyo] デバッグ：その5
+[22-Jun-2019 00:45:30 Asia/Tokyo] デバッグ：その6
+[22-Jun-2019 00:45:30 Asia/Tokyo] デバッグ：その7
+[22-Jun-2019 00:45:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:45:35 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:45:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:45:35 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:45:35 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:45:35 Asia/Tokyo] デバッグ：その２
+[22-Jun-2019 00:45:35 Asia/Tokyo] デバッグ：その３
+[22-Jun-2019 00:45:35 Asia/Tokyo] デバッグ：その４
+[22-Jun-2019 00:45:35 Asia/Tokyo] デバッグ：その5
+[22-Jun-2019 00:45:35 Asia/Tokyo] デバッグ：その6
+[22-Jun-2019 00:45:35 Asia/Tokyo] デバッグ：その7
+[22-Jun-2019 00:45:52 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:45:52 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:45:52 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:45:52 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:45:52 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:45:52 Asia/Tokyo] デバッグ：その２
+[22-Jun-2019 00:45:52 Asia/Tokyo] デバッグ：その３
+[22-Jun-2019 00:45:52 Asia/Tokyo] デバッグ：その４
+[22-Jun-2019 00:45:52 Asia/Tokyo] デバッグ：その5
+[22-Jun-2019 00:45:52 Asia/Tokyo] デバッグ：その6
+[22-Jun-2019 00:45:52 Asia/Tokyo] デバッグ：その7
+[22-Jun-2019 00:46:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:46:46 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:46:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:46:46 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:46:46 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:46:46 Asia/Tokyo] デバッグ：その２
+[22-Jun-2019 00:46:46 Asia/Tokyo] デバッグ：その３
+[22-Jun-2019 00:46:46 Asia/Tokyo] デバッグ：その４
+[22-Jun-2019 00:46:46 Asia/Tokyo] デバッグ：その5
+[22-Jun-2019 00:46:46 Asia/Tokyo] デバッグ：その6
+[22-Jun-2019 00:46:46 Asia/Tokyo] デバッグ：その7
+[22-Jun-2019 00:50:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:50:41 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:50:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:50:52 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:50:52 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:50:52 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:50:52 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:50:52 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:50:52 Asia/Tokyo] デバッグ：その２
+[22-Jun-2019 00:50:52 Asia/Tokyo] デバッグ：その３
+[22-Jun-2019 00:50:52 Asia/Tokyo] デバッグ：その４
+[22-Jun-2019 00:50:52 Asia/Tokyo] デバッグ：その5
+[22-Jun-2019 00:50:52 Asia/Tokyo] デバッグ：その6
+[22-Jun-2019 00:50:52 Asia/Tokyo] デバッグ：その7
+[22-Jun-2019 00:50:52 Asia/Tokyo] デバッグ：ここまでエラーメッセージなし。次はパスワードチェック
+[22-Jun-2019 00:50:52 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[22-Jun-2019 00:51:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:51:04 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[22-Jun-2019 00:51:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[22-Jun-2019 00:51:04 Asia/Tokyo] デバッグ：未入力チェック完了
+[22-Jun-2019 00:51:04 Asia/Tokyo] デバッグ：その１
+[22-Jun-2019 00:51:04 Asia/Tokyo] デバッグ：その２
+[22-Jun-2019 00:51:04 Asia/Tokyo] デバッグ：その３
+[22-Jun-2019 00:51:04 Asia/Tokyo] デバッグ：その４
+[22-Jun-2019 00:51:04 Asia/Tokyo] デバッグ：その5
+[22-Jun-2019 00:51:04 Asia/Tokyo] デバッグ：その6
+[22-Jun-2019 00:51:04 Asia/Tokyo] デバッグ：その7
+[22-Jun-2019 00:51:04 Asia/Tokyo] デバッグ：ここまでエラーメッセージなし。次はパスワードチェック
+[22-Jun-2019 00:51:04 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[22-Jun-2019 00:51:04 Asia/Tokyo] デバッグ：ページ遷移します
+[23-Jun-2019 02:34:09 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:34:09 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[23-Jun-2019 02:34:09 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:34:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:34:11 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[23-Jun-2019 02:34:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:34:11 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 02:34:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:34:23 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[23-Jun-2019 02:34:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:34:23 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 02:34:23 Asia/Tokyo] デバッグ：その１
+[23-Jun-2019 02:34:23 Asia/Tokyo] デバッグ：その２
+[23-Jun-2019 02:34:23 Asia/Tokyo] デバッグ：その３
+[23-Jun-2019 02:34:23 Asia/Tokyo] デバッグ：その４
+[23-Jun-2019 02:34:23 Asia/Tokyo] デバッグ：その5
+[23-Jun-2019 02:34:23 Asia/Tokyo] デバッグ：その6
+[23-Jun-2019 02:34:23 Asia/Tokyo] デバッグ：その7
+[23-Jun-2019 02:34:23 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 02:34:23 Asia/Tokyo] PHP Warning:  Use of undefined constant root - assumed 'root' (this will throw an Error in a future version of PHP) in /Applications/MAMP/htdocs/memopa/function.php on line 123
+[23-Jun-2019 02:34:23 Asia/Tokyo] PHP Warning:  Use of undefined constant root - assumed 'root' (this will throw an Error in a future version of PHP) in /Applications/MAMP/htdocs/memopa/function.php on line 124
+[23-Jun-2019 02:34:23 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function getMessage() in /Applications/MAMP/htdocs/memopa/signup.php:77
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/memopa/signup.php on line 77
+[23-Jun-2019 02:36:17 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:36:17 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[23-Jun-2019 02:36:17 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:36:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:36:27 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[23-Jun-2019 02:36:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:36:27 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 02:36:27 Asia/Tokyo] デバッグ：その１
+[23-Jun-2019 02:36:27 Asia/Tokyo] デバッグ：その２
+[23-Jun-2019 02:36:27 Asia/Tokyo] デバッグ：その３
+[23-Jun-2019 02:36:27 Asia/Tokyo] デバッグ：その４
+[23-Jun-2019 02:36:27 Asia/Tokyo] デバッグ：その5
+[23-Jun-2019 02:36:27 Asia/Tokyo] デバッグ：その6
+[23-Jun-2019 02:36:27 Asia/Tokyo] デバッグ：その7
+[23-Jun-2019 02:36:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:36:32 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[23-Jun-2019 02:36:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:36:32 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 02:36:32 Asia/Tokyo] デバッグ：その１
+[23-Jun-2019 02:36:32 Asia/Tokyo] デバッグ：その２
+[23-Jun-2019 02:36:32 Asia/Tokyo] デバッグ：その３
+[23-Jun-2019 02:36:32 Asia/Tokyo] デバッグ：その４
+[23-Jun-2019 02:36:32 Asia/Tokyo] デバッグ：その5
+[23-Jun-2019 02:36:32 Asia/Tokyo] デバッグ：その6
+[23-Jun-2019 02:36:32 Asia/Tokyo] デバッグ：その7
+[23-Jun-2019 02:36:32 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 02:36:32 Asia/Tokyo] エラー発生：SQLSTATE[HY000]: General error: 1364 Field 'password' doesn't have a default value
+[23-Jun-2019 02:36:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:36:35 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[23-Jun-2019 02:36:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:36:35 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 02:36:35 Asia/Tokyo] デバッグ：その１
+[23-Jun-2019 02:36:35 Asia/Tokyo] デバッグ：その２
+[23-Jun-2019 02:36:35 Asia/Tokyo] デバッグ：その３
+[23-Jun-2019 02:36:35 Asia/Tokyo] デバッグ：その４
+[23-Jun-2019 02:36:35 Asia/Tokyo] デバッグ：その5
+[23-Jun-2019 02:36:35 Asia/Tokyo] デバッグ：その6
+[23-Jun-2019 02:36:35 Asia/Tokyo] デバッグ：その7
+[23-Jun-2019 02:36:35 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 02:36:35 Asia/Tokyo] エラー発生：SQLSTATE[HY000]: General error: 1364 Field 'password' doesn't have a default value
+[23-Jun-2019 02:39:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:39:00 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[23-Jun-2019 02:39:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:39:09 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:39:09 Asia/Tokyo] デバッグ：「　アカウント作成画面　
+[23-Jun-2019 02:39:09 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:39:09 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 02:39:09 Asia/Tokyo] デバッグ：その１
+[23-Jun-2019 02:39:09 Asia/Tokyo] デバッグ：その２
+[23-Jun-2019 02:39:09 Asia/Tokyo] デバッグ：その３
+[23-Jun-2019 02:39:09 Asia/Tokyo] デバッグ：その４
+[23-Jun-2019 02:39:09 Asia/Tokyo] デバッグ：その5
+[23-Jun-2019 02:39:09 Asia/Tokyo] デバッグ：その6
+[23-Jun-2019 02:39:09 Asia/Tokyo] デバッグ：その7
+[23-Jun-2019 02:39:09 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 02:39:09 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 02:39:09 Asia/Tokyo] デバッグ：ページ遷移します
+[23-Jun-2019 02:51:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:51:12 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 02:51:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:51:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:51:36 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 02:51:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:51:36 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 02:51:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:51:43 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 02:51:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:51:43 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 02:51:43 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 02:51:43 Asia/Tokyo] エラー発生：SQLSTATE[42S02]: Base table or view not found: 1146 Table 'memopa.users' doesn't exist
+[23-Jun-2019 02:51:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:51:44 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 02:51:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:51:44 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 02:51:44 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 02:51:44 Asia/Tokyo] エラー発生：SQLSTATE[42S02]: Base table or view not found: 1146 Table 'memopa.users' doesn't exist
+[23-Jun-2019 02:53:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:53:53 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 02:53:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:53:53 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 02:53:53 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 02:53:53 Asia/Tokyo] エラー発生：SQLSTATE[42S02]: Base table or view not found: 1146 Table 'memopa.users' doesn't exist
+[23-Jun-2019 02:53:53 Asia/Tokyo] デバッグ：SQL実行失敗
+[23-Jun-2019 02:55:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:55:10 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 02:55:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:55:10 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 02:55:10 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 02:55:10 Asia/Tokyo] エラー発生：SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[23-Jun-2019 02:55:10 Asia/Tokyo] デバッグ：SQL実行失敗
+[23-Jun-2019 02:55:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:55:11 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 02:55:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:55:11 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 02:55:11 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 02:55:11 Asia/Tokyo] エラー発生：SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[23-Jun-2019 02:55:11 Asia/Tokyo] デバッグ：SQL実行失敗
+[23-Jun-2019 02:57:17 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:57:17 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 02:57:17 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:57:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:57:29 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 02:57:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:57:29 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 02:57:29 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 02:57:29 Asia/Tokyo] エラー発生：SQLSTATE[42S02]: Base table or view not found: 1146 Table 'memopa.users' doesn't exist
+[23-Jun-2019 02:57:29 Asia/Tokyo] デバッグ：SQL実行失敗
+[23-Jun-2019 02:59:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:59:53 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 02:59:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 02:59:53 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 02:59:53 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 02:59:53 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 02:59:53 Asia/Tokyo] デバッグ：ページ遷移します
+[23-Jun-2019 03:36:20 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:36:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:36:20 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:36:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:36:33 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:36:33 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:36:33 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:36:33 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:36:33 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 03:36:33 Asia/Tokyo] PHP Notice:  Undefined variable: email in /Applications/MAMP/htdocs/memopa/function.php on line 83
+[23-Jun-2019 03:36:33 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:36:33 Asia/Tokyo] デバッグ：Email重複チェック  $resulyの中身：1
+[23-Jun-2019 03:36:33 Asia/Tokyo] PHP Warning:  array_shift() expects parameter 1 to be array, boolean given in /Applications/MAMP/htdocs/memopa/function.php on line 92
+[23-Jun-2019 03:36:33 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 03:36:33 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:36:33 Asia/Tokyo] デバッグ：ページ遷移します
+[23-Jun-2019 03:38:43 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:38:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:38:43 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:38:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:38:48 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:38:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:38:48 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:38:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:38:58 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:38:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:38:58 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:38:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:38:58 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 03:38:58 Asia/Tokyo] PHP Notice:  Undefined variable: email in /Applications/MAMP/htdocs/memopa/function.php on line 83
+[23-Jun-2019 03:38:58 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:38:58 Asia/Tokyo] デバッグ：Email重複チェック  $resulyの中身：1
+[23-Jun-2019 03:38:58 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 03:38:58 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:38:58 Asia/Tokyo] デバッグ：ページ遷移します
+[23-Jun-2019 03:38:59 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:38:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:38:59 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:38:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:41:16 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:41:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:41:16 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:41:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:41:25 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:41:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:41:25 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:41:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:41:25 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 03:41:25 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:41:25 Asia/Tokyo] デバッグ：Email重複チェック  $resulyの中身：1
+[23-Jun-2019 03:42:35 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:42:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:42:35 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:42:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:42:43 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:42:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:42:43 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:42:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:42:43 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 03:42:43 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:42:43 Asia/Tokyo] デバッグ：Email重複チェック  $resulyの中身：1
+[23-Jun-2019 03:43:00 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:43:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:43:00 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:43:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:43:00 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 03:43:00 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:43:00 Asia/Tokyo] デバッグ：Email重複チェック  $resulyの中身：1
+[23-Jun-2019 03:43:00 Asia/Tokyo] PHP Warning:  array_shift() expects parameter 1 to be array, boolean given in /Applications/MAMP/htdocs/memopa/function.php on line 93
+[23-Jun-2019 03:43:00 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 03:43:00 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:43:00 Asia/Tokyo] デバッグ：ページ遷移します
+[23-Jun-2019 03:45:49 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:45:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:45:49 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:45:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:46:06 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:46:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:46:06 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:46:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:46:06 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 03:46:06 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:46:06 Asia/Tokyo] デバッグ：Email重複チェック  $resultの中身：1
+[23-Jun-2019 03:46:13 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:46:13 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:46:13 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:46:13 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:46:13 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 03:46:13 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:46:13 Asia/Tokyo] デバッグ：Email重複チェック  $resultの中身：1
+[23-Jun-2019 03:46:13 Asia/Tokyo] PHP Warning:  array_shift() expects parameter 1 to be array, boolean given in /Applications/MAMP/htdocs/memopa/function.php on line 94
+[23-Jun-2019 03:46:13 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 03:46:15 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:46:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:46:15 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:46:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:46:15 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 03:46:15 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:46:15 Asia/Tokyo] デバッグ：Email重複チェック  $resultの中身：1
+[23-Jun-2019 03:46:15 Asia/Tokyo] PHP Warning:  array_shift() expects parameter 1 to be array, boolean given in /Applications/MAMP/htdocs/memopa/function.php on line 94
+[23-Jun-2019 03:46:15 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 03:46:20 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:46:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:46:20 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:46:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:46:20 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 03:46:20 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:46:20 Asia/Tokyo] デバッグ：Email重複チェック  $resultの中身：1
+[23-Jun-2019 03:46:20 Asia/Tokyo] PHP Warning:  array_shift() expects parameter 1 to be array, boolean given in /Applications/MAMP/htdocs/memopa/function.php on line 94
+[23-Jun-2019 03:46:20 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 03:46:27 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:46:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:46:27 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:46:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:46:27 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 03:46:27 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:46:27 Asia/Tokyo] デバッグ：Email重複チェック  $resultの中身：1
+[23-Jun-2019 03:46:27 Asia/Tokyo] PHP Warning:  array_shift() expects parameter 1 to be array, boolean given in /Applications/MAMP/htdocs/memopa/function.php on line 94
+[23-Jun-2019 03:46:27 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 03:46:27 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:46:27 Asia/Tokyo] デバッグ：ページ遷移します
+[23-Jun-2019 03:47:57 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:47:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:47:57 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:47:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:48:12 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:48:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:48:12 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:48:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:48:12 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 03:48:12 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:48:12 Asia/Tokyo] デバッグ：Email重複チェック  $resultの中身：1
+[23-Jun-2019 03:48:19 Asia/Tokyo] デバッグ：　　　　　　
+[23-Jun-2019 03:48:19 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:48:19 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[23-Jun-2019 03:48:19 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[23-Jun-2019 03:48:19 Asia/Tokyo] デバッグ：未入力チェック完了
+[23-Jun-2019 03:48:19 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:48:19 Asia/Tokyo] デバッグ：Email重複チェック  $resultの中身：1
+[23-Jun-2019 03:48:19 Asia/Tokyo] PHP Warning:  array_shift() expects parameter 1 to be array, boolean given in /Applications/MAMP/htdocs/memopa/function.php on line 94
+[23-Jun-2019 03:48:19 Asia/Tokyo] デバッグ：パスワード同値チェックまで完了
+[23-Jun-2019 03:48:19 Asia/Tokyo] デバッグ：クエリ成功。
+[23-Jun-2019 03:48:19 Asia/Tokyo] デバッグ：ページ遷移します
