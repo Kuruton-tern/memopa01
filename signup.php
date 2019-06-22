@@ -1,29 +1,89 @@
 <?php
 require('function.php');
 
+debug('　　　　　　');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
-debug('「　アカウント作成画面　');
+debug('「　アカウント作成画面　」');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 
 
 //==============================
 //画面処理
 //==============================
-// 変数定義
-$email = $_POST['email'];
-$username = $_POST['username'];
-$pass = $_POST['pass'];
-$pass_re = $_POST['pass_re'];
-
 // 未入力チェック
 if(!empty ($_POST)){
+  // 変数定義
+  $email = $_POST['email'];
+  $username = $_POST['username'];
+  $pass = $_POST['pass'];
+  $pass_re = $_POST['pass_re'];
+
+  // email未入力チェック
   varidRequired($email, 'email');
+  // ユーザー名の未入力チェック
   varidRequired($username, 'username');
+  // パスワードの未入力チェック
   varidRequired($pass, 'pass');
+  // パスワード（再入力）の未入力チェック
   varidRequired($pass_re, 'pass_re');
 
-}
+  debug('未入力チェック完了');
 
+  // エラーメッセージがここまでなければ以下の処理へ
+  if(empty($err_msg)){
+    // emailの形式チェック
+    validEmail($email, 'email');
+    // emailの重複チェック
+    validEmailDup($email);
+    // emailの最大文字数チェック
+    validLenMax($email, 'email');
+
+    // ユーザー名の形式チェック
+    validUsername($username, 'username');
+    // ユーザー名の最大文字数チェック
+    validLenMax($username, 'username');
+
+    // パスワードの半角英数字チェック
+    validHalfAZ09($pass, 'pass');
+    // パスワードの最小文字数チェック
+    validLenMin($pass, 'pass');
+    // // パスワードの最大文字数チェック
+    validLenMax($pass, 'pass');
+
+
+    if(empty($err_msg)){
+      validMatch($pass, $pass_re, 'pass_re');
+      debug('パスワード同値チェックまで完了');
+
+      if(empty($err_msg)){
+        try{
+          // DB接続
+          $dbh = dbConnect();
+          $sql = 'INSERT INTO user (username,email,password,login_time,create_date) VALUES(:username,:email,:password,:login_time,:create_date)';
+          $data = array(':username' => $username,
+                        ':email' => $email,
+                        ':password' => $pass,
+                        ':login_time' =>date("Y/m/d H:i:s"),
+                        ':create_date' =>date("Y/m/d H:i:s"));
+         // クエリ実行
+         queryPost($dbh, $sql, $data);
+
+          if (empty($err_msg)) {
+            debug('ページ遷移します');
+            header("Location:myMemo.html");
+          }
+
+        } catch(Exception $e){
+          error_log("エラー発生：" . $e->getMessage());
+          $err_msg['common'] = MSG07;
+          debug('SQL実行失敗。ページ遷移しません');
+        }
+      }
+    }
+        
+  }
+
+}
 ?>
 
 
@@ -76,7 +136,7 @@ if(!empty ($_POST)){
           <!-- ユーザー名 -->
           <label class="username">ユーザー名</label>
           
-          <input type="text" name="username" placeholder="サイトで使う名前を入力してください" value="<?php if (!empty($_POST['username'])) echo $_POST['username']; ?>">
+          <input type="text" name="username" placeholder="サイトで使う名前を日本語で入力してください" value="<?php if (!empty($_POST['username'])) echo $_POST['username']; ?>">
 <?php  ?>
           <div class="area-msg">
            <?php 
