@@ -89,9 +89,10 @@ function validEmailDup($email){
         //fetch:取り出す。Assoc:Associationで、連想する
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         debug('Email重複チェック  $resultの中身：'.print_r($result));
+        debug('Email重複チェック  $resultの中身：'.var_dump($result));
     
         //取得した結果、値が入っているかどうかをチェックする
-        if (!empty(array_shift($result))) {
+        if (!empty($result)) {
             $err_msg['email'] = MSG08;
         }
     } catch (Exeption $e) {
@@ -170,16 +171,12 @@ function dbConnect(){
 //==============================
 // $sql = 今後作成するSQL文
 // $data = プレースホルダーの値
-function queryPost($dbh, $sql, $data){
+function queryPost($dbh, $sql, $data)
+{
     // SQL文作成（クエリー作成）
     $stmt = $dbh->prepare($sql);
-    // プレースホルダーに値をセットし、SQL文を実行
-    $stmt->execute($data);
     //プレースホルダに値をセットし、SQL文を実行
-    if ($stmt->execute($data)) {
-        debug('クエリ成功。');
-        return $stmt;
-    } else {
+    if (!$stmt->execute($data)) {
         debug('クエリに失敗しました。');
         debug('SQLエラー：'.print_r($stmt, true));
         debug('SQLエラー(Code)：' . $stmt->errorCode());
@@ -187,8 +184,16 @@ function queryPost($dbh, $sql, $data){
 
         $err_msg['common'] = MSG07;
         return 0;
+    } else {
+        debug('クエリ成功。');
+        return $stmt;
     }
 }
+
+//==============================
+//パスワードハッシュ化関数
+//==============================
+
 
 
 ?>
