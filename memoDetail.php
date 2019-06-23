@@ -1,14 +1,38 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <meta charset="UTF-8">
-  <title>パスワード再設定ページ | memopa</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-</head>
+<?php
+$siteTitle = 'メモ詳細画面';
+ require("head.php");
+?>
 
 <body class="page-login page-1colum">
+
+<style>
+    .form .btn {
+      float: none;
+      margin: 30px 15px;
+    }
+
+    .form {
+      text-align: center;
+    }
+
+    /* 編集ボタン */
+    .form .btn-Edit{
+      background: #5bbfea;
+    }
+
+    .form .btn-Edit:hover{
+      background: #22A8E2;
+    }
+
+    /* 削除ボタン */
+    .form .btn-del{
+      background: #EA534F;
+      color: #fff;
+    }
+    .form .btn-del:hover{
+      background: #f90902;
+    }
+  </style>
 
   <!-- ヘッダー  -->
   <header>
@@ -16,8 +40,8 @@
       <h1><a href="index.html">memopa</a></h1>
       <nav id="top-nav">
         <ul>
-          <li><a href="login.html">ログイン</a></li>
-          <li><a href="signup.html">サインアップ</a></li>
+          <li><a href="list.html">リストを作成</a></li>
+          <li><a href="myMemo.html">マイメモ</a></li>
         </ul>
       </nav>
     </div>
@@ -30,20 +54,27 @@
     <section id="main">
       <div class="form-container">
         <form action="" method="post" class="form">
-          <h2 class="title">パスワード再設定</h2>
 
-          <div class="area-msg">
-            エラー：ご登録のないメールアドレスです。
-          </div>
-          <!-- メールアドレス -->
-          <label class="">メールアドレス</label>
-          <input type="text" name="email">
+          <!-- タイトル -->
+          <label class="memo-title">タイトル</label>
+          <input type="text" name="name">
+
+          <!-- メモ内容 -->
+          <label class="memo-contents">メモ</label>
+          <textarea name="contents" id="memo-area" cols="30" rows="10"></textarea>
 
           <div class="btn-container">
-            <input type="submit" class="btn btn-mid" value="送信">
+            <input type="submit" class="btn btn-mid btn-Edit" value="編集する">
+            <input type="submit" class="btn btn-mid btn-del" value="削除する">
           </div>
+
+          <label class="prev-a">
+            <a href="memoContents.html">&lt;&lt;前のページに戻る</a>
+          </label>
+
         </form>
       </div>
+
     </section>
 
   </div>
