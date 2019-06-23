@@ -128,7 +128,9 @@ if(!empty ($_POST)){
           <h2 class="title">アカウント作成</h2>
 
           <div class="area-msg">
-            
+            <?php 
+            if(!empty($err_msg['common'])) echo $err_msg['common'];
+            ?>
           </div>
           <!-- メールアドレス -->
           <label class="">メールアドレス</label>
@@ -190,9 +192,9 @@ if(!empty ($_POST)){
 
   <!-- footer -->
   <footer id="footer">
-    Copyright memopa. All Rights Reserved.
+    Copyright <a href="top.php">memopa</a> . All Rights Reserved.
   </footer>
-
+<a href="top.php">memopa</a>
   <!-- innnerHeightに関しての参考記事→ https://www.flatflag.nir87.com/height-1083 -->
   <!-- innerHeight = 要素＋padding(borderの内側)を取得 -->
   <!-- outerHeight = 要素＋padding+borderを取得 -->
