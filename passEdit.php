@@ -1,31 +1,10 @@
-<!DOCTYPE html>
-<html lang="ja">
+<?php
+$siteTitle = 'パスワード変更画面';
+ require("head.php");
 
-<head>
-  <meta charset="UTF-8">
-  <title>メモ作成ページ | memopa</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-</head>
+?>
 
 <body class="page-login page-1colum">
-
-  <style>
-    .form .btn {
-      float: none;
-      margin: 30px 15px;
-    }
-
-    .form {
-      text-align: center;
-    }
-    .form .btn-create{
-      background: #1CAE35;
-    }
-    .form .btn-create:hover{
-        background: #32cd32;
-      }
-    </style>
 
   <!-- ヘッダー  -->
   <header>
@@ -33,7 +12,7 @@
       <h1><a href="index.html">memopa</a></h1>
       <nav id="top-nav">
         <ul>
-          <li><a href="list.html">リストを作成</a></li>
+          <li><a href="myProf.html">マイプロフ</a></li>
           <li><a href="myMemo.html">マイメモ</a></li>
         </ul>
       </nav>
@@ -47,17 +26,25 @@
     <section id="main">
       <div class="form-container">
         <form action="" method="post" class="form">
-          
-          <!-- タイトル -->
-          <label class="memo-title">タイトル</label>
-          <input type="text" name="name">
+          <h2 class="title">パスワード変更</h2>
 
-          <!-- メモ内容 -->
-          <label class="memo-contents">メモ</label>
-          <textarea name="contents" id="memo-area" cols="30" rows="30"></textarea>
-          
+          <div class="area-msg">
+
+          </div>
+          <!-- 旧メールアドレス -->
+          <label class="">旧メールアドレス</label>
+          <input type="password" name="email">
+
+          <!-- 新メールアドレス -->
+          <label class="">新メールアドレス</label>
+          <input type="password" name="email">
+
+          <!-- 新メールアドレス（再入力） -->
+          <label class="">新メールアドレス（再入力）</label>
+          <input type="password" name="email">
+
           <div class="btn-container">
-            <input type="submit" class="btn btn-mid btn-create" value="作成">
+            <input type="submit" class="btn btn-mid" value="変更">
           </div>
         </form>
       </div>
