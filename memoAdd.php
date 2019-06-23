@@ -1,35 +1,28 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <meta charset="UTF-8">
-  <title>メモ変更ページ | memopa</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-</head>
+<?php
+$siteTitle = 'メモ作成ページ';
+ require("head.php");
+?>
 
 <body class="page-login page-1colum">
-  
-    <style>
-      .form .btn {
-        float: none;
-        margin: 30px 15px;
-      }
-    
-      .form {
-        text-align: center;
-      }
-    
-      .form .btn-change {
-        background: #5bbfea;
-      }
-    
-      .form .btn-change:hover {
-        background: #22A8E2;
+
+  <style>
+    .form .btn {
+      float: none;
+      margin: 30px 15px;
+    }
+
+    .form {
+      text-align: center;
+    }
+    .form .btn-create{
+      background: #1CAE35;
+    }
+    .form .btn-create:hover{
+        background: #32cd32;
       }
     </style>
 
-    <!-- ヘッダー  -->
+  <!-- ヘッダー  -->
   <header>
     <div class="site-width">
       <h1><a href="index.html">memopa</a></h1>
@@ -49,30 +42,20 @@
     <section id="main">
       <div class="form-container">
         <form action="" method="post" class="form">
-
+          
           <!-- タイトル -->
           <label class="memo-title">タイトル</label>
           <input type="text" name="name">
 
           <!-- メモ内容 -->
           <label class="memo-contents">メモ</label>
-          <textarea name="contents" id="memo-contents" cols="30" rows="10"></textarea>
-
-          <!-- リスト -->
-          <label class="memo-title">リスト名</label>
-          <input type="text" name="list">
-
-          <div class="btn-container">
-            <input type="submit" class="btn btn-mid btn-change" value="変更する">
-           </div>
-
-          <label class="prev-a">
-            <a href="memoContents.html">&lt;&lt;前のページに戻る</a>
-          </label>
+          <textarea name="contents" id="memo-area" cols="30" rows="30"></textarea>
           
+          <div class="btn-container">
+            <input type="submit" class="btn btn-mid btn-create" value="作成">
+          </div>
         </form>
       </div>
-
     </section>
 
   </div>
