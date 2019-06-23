@@ -1,7 +1,7 @@
 <?php
 require('function.php');
 
-debug('　　　　　　');
+debug('                  ');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debug('「　アカウント作成画面　」');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
@@ -51,26 +51,33 @@ if(!empty ($_POST)){
     validLenMax($pass, 'pass');
 
 
+    // エラーメッセージがここまでなければ以下の処理へ
     if(empty($err_msg)){
       validMatch($pass, $pass_re, 'pass_re');
       debug('パスワード同値チェックまで完了');
 
       if(empty($err_msg)){
+        // 例外処理
         try{
           // DB接続
           $dbh = dbConnect();
+          //DB接続完了
+
+          // SQL文作成
           $sql = 'INSERT INTO user (username,email,password,login_time,create_date) VALUES(:username,:email,:password,:login_time,:create_date)';
           $data = array(':username' => $username,
                         ':email' => $email,
-                        ':password' => $pass,
+                        ':password' => password_hash($pass, PASSWORD_BCRYPT),
                         ':login_time' =>date("Y/m/d H:i:s"),
                         ':create_date' =>date("Y/m/d H:i:s"));
+          debug('SQL文作成完了');
          // クエリ実行
-         queryPost($dbh, $sql, $data);
+         $stmt = queryPost($dbh, $sql, $data);
+         debug('クエリ実行完了');
 
-          if (empty($err_msg)) {
+          if ($stmt) {
             debug('ページ遷移します');
-            header("Location:myMemo.html");
+            header("Location:myMemo.html");  //マイメモページへ
           }
 
         } catch(Exception $e){
@@ -80,7 +87,6 @@ if(!empty ($_POST)){
         }
       }
     }
-        
   }
 
 }

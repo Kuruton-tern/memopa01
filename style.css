@@ -245,7 +245,7 @@ ul li a:hover::after{
 }
 /* エラーメッセージを表示させる部分 */
 .form .area-msg{
-  padding: 0 0 30px 0;
+  padding: 0 0 12px 0;
   color: red;
 }
 label{
@@ -371,7 +371,7 @@ input[type="submit"]:hover{
 }
 
 .btn:hover{
-  background: #363636;
+  background: black;
 }
 
 
