@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="ja">
+<?php
+$siteTitle = 'マイプロフ';
+ require("head.php");
 
-<head>
-  <meta charset="UTF-8">
-  <title>マイプロフ変更ページ | memopa</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-</head>
+?>
 
 <body class="page-logined page-2colum page-profEdit">
 
