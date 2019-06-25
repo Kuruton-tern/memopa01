@@ -19,13 +19,13 @@ if(!empty ($_POST)){
   $pass_re = $_POST['pass_re'];
 
   // email未入力チェック
-  varidRequired($email, 'email');
+  validRequired($email, 'email');
   // ユーザー名の未入力チェック
-  varidRequired($username, 'username');
+  validRequired($username, 'username');
   // パスワードの未入力チェック
-  varidRequired($pass, 'pass');
+  validRequired($pass, 'pass');
   // パスワード（再入力）の未入力チェック
-  varidRequired($pass_re, 'pass_re');
+  validRequired($pass_re, 'pass_re');
 
   debug('未入力チェック完了');
 
@@ -77,7 +77,7 @@ if(!empty ($_POST)){
 
           if ($stmt) {
             debug('ページ遷移します');
-            header("Location:myMemo.html");  //マイメモページへ
+            header("Location:myMemo.php");  //マイメモページへ
           }
 
         } catch(Exception $e){
@@ -104,8 +104,8 @@ $siteTitle = 'アカウント登録画面';
       <h1><a href="index.html">memopa</a></h1>
       <nav id="top-nav">
         <ul>
-          <li><a href="top.html">トップ</a></li>
-          <li><a href="login.html">ログイン</a></li>
+          <li><a href="top.php">トップ</a></li>
+          <li><a href="login.php">ログイン</a></li>
         </ul>
       </nav>
     </div>

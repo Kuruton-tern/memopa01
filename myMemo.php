@@ -9,7 +9,7 @@ $siteTitle = 'マイメモ';
   <!-- ヘッダー  -->
   <header>
     <div class="site-width">
-      <h1><a href="index.html">memopa</a></h1>
+      <h1><a href="myMemo.php">memopa</a></h1>
       <nav id="top-nav">
         <ul>
           <li><a href="list.html">リストを作成</a></li>
