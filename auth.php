@@ -1,5 +1,4 @@
 <?php
-require("function.php");
 
 // ログイン認証
 // session_id =サーバーから与えられたもの
