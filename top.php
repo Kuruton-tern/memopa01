@@ -9,11 +9,11 @@ $siteTitle = 'memopaトップ';
     <!-- ヘッダー  -->
     <header>
       <div class="site-width">
-        <h1><a href="index.html">memopa</a></h1>
+        <h1><a href="top.html">memopa</a></h1>
         <nav id="top-nav">
           <ul>
-            <li><a href="login.html">ログイン</a></li>
-            <li><a href="signup.html">新規会員登録</a></li>
+            <li><a href="login.php">ログイン</a></li>
+            <li><a href="signup.php">新規会員登録</a></li>
           </ul>
         </nav>
       </div>
