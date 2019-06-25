@@ -21,13 +21,33 @@ function debug($str){
 }
 
 //==============================
+//セッション準備・セッションの有効期限を伸ばす
+//==============================
+// セッションファイルの置き場を変更（/tmp/ではなく、/var/tmp/に置くと30日は削除されない）
+session_save_path("/var/tmp/");
+// サーバに保存されているセッションファイルの保存期間を設定（30日以上たっているものに対してだけ100分の1の確率で削除）
+// session.gc_maxlifetime = 1440秒（24分）がデフォルトでの設定→30日（60*60*24*30）に変更
+ini_set('session.gc_maxlifetime', 60*60*24*30);
+// クッキーの有効期限を伸ばす（session.gc_maxlifetime のみ変更をしても、デフォルトだとブラウザを閉じたらセッションが破棄されるため。）
+// session.cookie_lifetime = 0がデフォルト（ブラウザを閉じるまでという意味）
+ini_set('session.cookie_lifetime', 60*60*24*30);
+// セッションを使う
+session_start();
+// 現在のセッションIDを新しく生成したものと置き換える（なりすましのセキュリティ対策）
+session_regenerate_id();
+
+//==============================
 //画面表示処理開始ログ吐き出し関数
 //==============================
 // セッションを使う
 function debugLogStart(){
-  debug('[[[[[[[[[[[[[[[[[[[[画面表示処理開始');
-  debug('');
-  debug('');
+  debug('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始');
+  debug('セッションID：'.session_id());
+  debug('セッション変数の中身：'.print_r($_SESSION, true));
+  debug('現在日時のタイムスタンプ：'.time());
+  if(!empty($_SESSION['login_date']) && !empty($_SESSION['login_limit'])){
+    debug('ログイン期限日時タイムスタンプ：'.($_SESSION['login_date'] + $_SESSION['login_limit']));
+  }
 }
 
 //==============================
@@ -57,7 +77,7 @@ $err_msg = array();
 // 未入力チェック
 //$str = フォームに入力する文字列
 // $key = input要素の name属性（今回はemail, username, pass, pass_re）
-function varidRequired($str, $key){
+function validRequired($str, $key){
   if(empty($str)){
     global $err_msg;
     $err_msg[$key] = MSG01;
@@ -89,7 +109,6 @@ function validEmailDup($email){
         //fetch:取り出す。Assoc:Associationで、連想する
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         debug('Email重複チェック  $resultの中身：'.print_r($result));
-        debug('Email重複チェック  $resultの中身：'.var_dump($result));
     
         //取得した結果、値が入っているかどうかをチェックする
         if (!empty($result)) {
