@@ -142,6 +142,7 @@ ul li a:hover::after{
   float: left;
   /* width: 100% ←これを入れると２カラムにできない*/ 
   min-height: 800px;
+  height: 100%;
   /* mainにwwidth100%を指定すると2コラムのとき、サイドバーが横に来ない */
 }
 
@@ -540,12 +541,12 @@ input[type="submit"]:hover{
   background: #8BAC9D;
   text-align: center;
   line-height: 60px;
-  position: sticky;
+  position: fixed;
   bottom: 0;
   padding: 10px 10px;
-  z-index: 5;
+  margin-top: 50px;
   box-sizing: border-box;
-  
+
 }
 
 #footer a{

@@ -30,6 +30,7 @@ if(!empty($_POST)){
     if($stmt2){
       debug('退会処理のためセッションを破壊します');
       // セッションを壊す
+      $_SESSION = array();
       session_destroy();
       // 本当に消せたか確認
       debug('$_SESSIONの確認：'.print_r($_SESSION, true));
@@ -105,6 +106,7 @@ $siteTitle = '退会画面';
 
   </div>
 
- <?php
+  
+<?php 
  require('footer.php');
- ?>
+ ?> 
