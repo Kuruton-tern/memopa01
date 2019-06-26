@@ -1,3 +1,31 @@
+
+<?php
+require('function.php');
+
+debug('                  ');
+debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
+debug('「　退会画面　」');
+debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
+
+
+//==============================
+//画面処理
+//==============================
+// POST送信の有無のチェック
+if(!empty($_POST)){
+  debug('POST送信があります');
+  try{
+    // DBに接続
+    $dbh = dbConnect();
+    // SQL文作成
+    $sql = 'UPDATE memo SET delete_flg = 1 WHERE id = :user_id';
+    $data = array(:user_id => );
+    
+  }
+}
+
+?>
+
 <?php
 $siteTitle = '退会画面';
  require("head.php");
@@ -18,17 +46,9 @@ $siteTitle = '退会画面';
 
 
   <!-- ヘッダー  -->
-  <header>
-    <div class="site-width">
-      <h1><a href="index.html">memopa</a></h1>
-      <nav id="top-nav">
-        <ul>
-          <li><a href="mymemo.html.html">マイメモ</a></li>
-          <li><a href="">ログアウト</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <?php
+    require('header.php');
+   ?>
 
   <!-- メインコンテンツ -->
   <div id="contents" class="site-width">
