@@ -1,7 +1,7 @@
 
 <header>
   <div class="site-width">
-    <h1><a href="myMemo.php">memopa</a></h1>
+    <h1><a href="top.php">memopa</a></h1>
     <nav id="top-nav">
       <ul>
 <?php
@@ -12,9 +12,9 @@ if (empty($_SESSION['user_id'])) {
 <?php
 }else{
     ?>
-      <li><a href="list.html">リストを作成</a></li>
-      <li><a href="">ログアウト</a></li>
-      <li><a href="myProf.html">マイプロフ</a></li>
+      <li><a href="list.php">リストを作成</a></li>
+      <li><a href="logout.php">ログアウト</a></li>
+      <li><a href="myProf.php">マイプロフ</a></li>
 <?php
 }
 ?>
