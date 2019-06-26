@@ -3186,162 +3186,1481 @@ Stack trace:
     [login_limit] => 2592000
 )
 
-[26-Jun-2019 02:38:21 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561484301
-[26-Jun-2019 02:38:21 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564076298
-[26-Jun-2019 02:38:21 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
-[26-Jun-2019 02:38:21 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
-[26-Jun-2019 02:38:21 Asia/Tokyo] デバッグ：マイページへ遷移します。
-[26-Jun-2019 02:38:21 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-[26-Jun-2019 02:38:34 Asia/Tokyo] デバッグ：                  
-[26-Jun-2019 02:38:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 02:38:34 Asia/Tokyo] デバッグ：「　ログイン画面　」
-[26-Jun-2019 02:38:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 02:38:34 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
-[26-Jun-2019 02:38:34 Asia/Tokyo] デバッグ：セッションID：anua6liea9hkba26vpq323vbfk
-[26-Jun-2019 02:38:34 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+[26-Jun-2019 15:30:16 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 15:30:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:30:16 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[26-Jun-2019 15:30:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:30:16 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 15:30:16 Asia/Tokyo] デバッグ：セッションID：92feoa98bqdcl2mukj8c6u01bk
+[26-Jun-2019 15:30:16 Asia/Tokyo] デバッグ：セッション変数の中身：Array
 (
     [username] => クルトン
     [user_id] => 37
-    [login_date] => 1561484301
+    [login_date] => 1561530385
     [login_limit] => 2592000
 )
 
-[26-Jun-2019 02:38:34 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561484314
-[26-Jun-2019 02:38:34 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564076301
-[26-Jun-2019 02:38:34 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
-[26-Jun-2019 02:38:34 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
-[26-Jun-2019 02:38:34 Asia/Tokyo] デバッグ：マイページへ遷移します。
-[26-Jun-2019 02:38:34 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-[26-Jun-2019 02:39:04 Asia/Tokyo] デバッグ：                  
-[26-Jun-2019 02:39:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 02:39:04 Asia/Tokyo] デバッグ：「　ログイン画面　」
-[26-Jun-2019 02:39:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 02:39:04 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
-[26-Jun-2019 02:39:04 Asia/Tokyo] デバッグ：セッションID：k08af34c4o1iimum69ukr7u17g
-[26-Jun-2019 02:39:04 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+[26-Jun-2019 15:30:16 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561530616
+[26-Jun-2019 15:30:16 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564122385
+[26-Jun-2019 15:30:16 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[26-Jun-2019 15:30:18 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 15:30:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:30:18 Asia/Tokyo] デバッグ：「　ログアウト画面　」
+[26-Jun-2019 15:30:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:30:18 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 15:30:18 Asia/Tokyo] デバッグ：セッションID：06otuqdrj0jqv4n9e1q18rh7ca
+[26-Jun-2019 15:30:18 Asia/Tokyo] デバッグ：セッション変数の中身：Array
 (
     [username] => クルトン
     [user_id] => 37
-    [login_date] => 1561484314
+    [login_date] => 1561530616
     [login_limit] => 2592000
 )
 
-[26-Jun-2019 02:39:04 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561484344
-[26-Jun-2019 02:39:04 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564076314
-[26-Jun-2019 02:39:04 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
-[26-Jun-2019 02:39:04 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
-[26-Jun-2019 02:39:04 Asia/Tokyo] デバッグ：マイページへ遷移します。
-[26-Jun-2019 02:39:04 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-[26-Jun-2019 02:39:34 Asia/Tokyo] デバッグ：                  
-[26-Jun-2019 02:39:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 02:39:34 Asia/Tokyo] デバッグ：「　ログイン画面　」
-[26-Jun-2019 02:39:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 02:39:34 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
-[26-Jun-2019 02:39:34 Asia/Tokyo] デバッグ：セッションID：lov5r7970ble818ku2cqeh88me
-[26-Jun-2019 02:39:34 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+[26-Jun-2019 15:30:18 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561530618
+[26-Jun-2019 15:30:18 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564122616
+[26-Jun-2019 15:30:18 Asia/Tokyo] デバッグ：セッションIDを削除しました
+[26-Jun-2019 15:31:17 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 15:31:17 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:31:17 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 15:31:17 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:31:17 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 15:31:17 Asia/Tokyo] デバッグ：セッションID：i3vc9kgojj1kmg53tpnor4jchq
+[26-Jun-2019 15:31:17 Asia/Tokyo] デバッグ：セッション変数の中身：Array
 (
-    [username] => クルトン
-    [user_id] => 37
-    [login_date] => 1561484344
-    [login_limit] => 2592000
 )
 
-[26-Jun-2019 02:39:34 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561484374
-[26-Jun-2019 02:39:34 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564076344
-[26-Jun-2019 02:39:34 Asia/Tokyo] デバッグ：ログイン済ユーザーです
-[26-Jun-2019 02:39:34 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-[26-Jun-2019 02:39:35 Asia/Tokyo] デバッグ：                  
-[26-Jun-2019 02:39:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 02:39:35 Asia/Tokyo] デバッグ：「　ログイン画面　」
-[26-Jun-2019 02:39:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 02:39:35 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
-[26-Jun-2019 02:39:35 Asia/Tokyo] デバッグ：セッションID：ii79qbeif2cddbhn87mm7anqm6
-[26-Jun-2019 02:39:35 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+[26-Jun-2019 15:31:17 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561530677
+[26-Jun-2019 15:31:17 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 15:31:17 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 15:31:23 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 15:31:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:31:23 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 15:31:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:31:23 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 15:31:23 Asia/Tokyo] デバッグ：セッションID：c7h2o0qahvg32k0okc3hb74cn5
+[26-Jun-2019 15:31:23 Asia/Tokyo] デバッグ：セッション変数の中身：Array
 (
-    [username] => クルトン
-    [user_id] => 37
-    [login_date] => 1561484374
-    [login_limit] => 2592000
 )
 
-[26-Jun-2019 02:39:35 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561484375
-[26-Jun-2019 02:39:35 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564076374
-[26-Jun-2019 02:39:35 Asia/Tokyo] デバッグ：ログイン済ユーザーです
-[26-Jun-2019 02:39:35 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-[26-Jun-2019 02:39:41 Asia/Tokyo] デバッグ：                  
-[26-Jun-2019 02:39:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 02:39:41 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
-[26-Jun-2019 02:39:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 02:39:53 Asia/Tokyo] デバッグ：                  
-[26-Jun-2019 02:39:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 02:39:53 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
-[26-Jun-2019 02:39:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 02:40:00 Asia/Tokyo] デバッグ：                  
-[26-Jun-2019 02:40:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 02:40:00 Asia/Tokyo] デバッグ：「　ログイン画面　」
-[26-Jun-2019 02:40:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 02:40:00 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
-[26-Jun-2019 02:40:00 Asia/Tokyo] デバッグ：セッションID：tsi1ml61225u23s3c6r0g3f4g1
-[26-Jun-2019 02:40:00 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+[26-Jun-2019 15:31:23 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561530683
+[26-Jun-2019 15:31:23 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 15:31:23 Asia/Tokyo] デバッグ：POST送信があります
+[26-Jun-2019 15:31:23 Asia/Tokyo] デバッグ：バリデーションチェックOK
+[26-Jun-2019 15:31:23 Asia/Tokyo] デバッグ：クエリ成功。
+[26-Jun-2019 15:31:23 Asia/Tokyo] デバッグ：SQL実行結果の中身Array
 (
-    [username] => クルトン
-    [user_id] => 37
-    [login_date] => 1561484375
-    [login_limit] => 2592000
+    [password] => $2y$10$pVXKts74JHdxMoWefv/QPOci1zzXk5RArCzXpRx1XUNFz9jB2t7Nm
+    [id] => 37
 )
 
-[26-Jun-2019 02:40:00 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561484400
-[26-Jun-2019 02:40:00 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564076375
-[26-Jun-2019 02:40:00 Asia/Tokyo] デバッグ：ログイン済ユーザーです
-[26-Jun-2019 02:40:00 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-[26-Jun-2019 14:21:39 Asia/Tokyo] デバッグ：                  
-[26-Jun-2019 14:21:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:21:39 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
-[26-Jun-2019 14:21:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:21:43 Asia/Tokyo] デバッグ：                  
-[26-Jun-2019 14:21:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:21:43 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
-[26-Jun-2019 14:21:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:33:54 Asia/Tokyo] デバッグ：                  
-[26-Jun-2019 14:33:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:33:54 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
-[26-Jun-2019 14:33:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:33:54 Asia/Tokyo] デバッグ：ログイン済ユーザーです
-[26-Jun-2019 14:44:55 Asia/Tokyo] デバッグ：                  
-[26-Jun-2019 14:44:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:44:55 Asia/Tokyo] デバッグ：「　ログイン画面　」
-[26-Jun-2019 14:44:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:44:55 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
-[26-Jun-2019 14:44:55 Asia/Tokyo] デバッグ：セッションID：nuo1ej9i3811n5fjqsfpvsndmd
-[26-Jun-2019 14:44:55 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+[26-Jun-2019 15:31:23 Asia/Tokyo] デバッグ：入力されたpass:111111
+[26-Jun-2019 15:31:24 Asia/Tokyo] デバッグ：パスワードがマッチしました。
+[26-Jun-2019 15:31:24 Asia/Tokyo] デバッグ：ログイン保持にチェックがあります
+[26-Jun-2019 15:31:24 Asia/Tokyo] デバッグ：ログイン有限期限：2592000
+[26-Jun-2019 15:31:24 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 15:31:24 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 15:31:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:31:24 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[26-Jun-2019 15:31:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:31:24 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 15:31:24 Asia/Tokyo] デバッグ：セッションID：vro25nutoeb0u770li65n6fcf1
+[26-Jun-2019 15:31:24 Asia/Tokyo] デバッグ：セッション変数の中身：Array
 (
-    [username] => クルトン
     [user_id] => 37
-    [login_date] => 1561527234
+    [login_date] => 1561530684
     [login_limit] => 2592000
 )
 
-[26-Jun-2019 14:44:55 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561527895
-[26-Jun-2019 14:44:55 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564119234
-[26-Jun-2019 14:44:55 Asia/Tokyo] デバッグ：ログイン済ユーザーです
-[26-Jun-2019 14:44:55 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-[26-Jun-2019 14:52:34 Asia/Tokyo] デバッグ：                  
-[26-Jun-2019 14:52:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:52:34 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
-[26-Jun-2019 14:52:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:52:34 Asia/Tokyo] デバッグ：ログイン済ユーザーです
-[26-Jun-2019 14:52:36 Asia/Tokyo] デバッグ：                  
-[26-Jun-2019 14:52:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:52:36 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
-[26-Jun-2019 14:52:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:52:36 Asia/Tokyo] デバッグ：ログイン済ユーザーです
-[26-Jun-2019 14:52:46 Asia/Tokyo] デバッグ：                  
-[26-Jun-2019 14:52:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:52:46 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
-[26-Jun-2019 14:52:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:52:46 Asia/Tokyo] デバッグ：ログイン済ユーザーです
-[26-Jun-2019 14:52:46 Asia/Tokyo] デバッグ：                  
-[26-Jun-2019 14:52:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:52:46 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
-[26-Jun-2019 14:52:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
-[26-Jun-2019 14:52:46 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[26-Jun-2019 15:31:24 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561530684
+[26-Jun-2019 15:31:24 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564122684
+[26-Jun-2019 15:31:24 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[26-Jun-2019 15:31:27 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 15:31:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:31:27 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[26-Jun-2019 15:31:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:31:27 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 15:31:27 Asia/Tokyo] デバッグ：セッションID：98qlb12t8b4281h5cdrv960vs6
+[26-Jun-2019 15:31:27 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561530684
+    [login_limit] => 2592000
+)
+
+[26-Jun-2019 15:31:27 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561530687
+[26-Jun-2019 15:31:27 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564122684
+[26-Jun-2019 15:31:27 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[26-Jun-2019 15:33:17 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 15:33:17 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:33:17 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[26-Jun-2019 15:33:17 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:33:17 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 15:33:17 Asia/Tokyo] デバッグ：セッションID：vp9kkaobvsl2a3j4mcs65qs86b
+[26-Jun-2019 15:33:17 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561530687
+    [login_limit] => 2592000
+)
+
+[26-Jun-2019 15:33:17 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561530797
+[26-Jun-2019 15:33:17 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564122687
+[26-Jun-2019 15:33:17 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[26-Jun-2019 15:33:19 Asia/Tokyo] デバッグ：セッションIDを削除しました
+[26-Jun-2019 15:34:57 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 15:34:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:34:57 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 15:34:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:34:57 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 15:34:57 Asia/Tokyo] デバッグ：セッションID：h5rld7c3j1leoqiej4f9ve5tjo
+[26-Jun-2019 15:34:57 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 15:34:57 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561530897
+[26-Jun-2019 15:34:57 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 15:34:57 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 15:34:58 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 15:34:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:34:58 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 15:34:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:34:58 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 15:34:58 Asia/Tokyo] デバッグ：セッションID：scd4fqhnof05ffornml4fgrbb2
+[26-Jun-2019 15:34:58 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 15:34:58 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561530898
+[26-Jun-2019 15:34:58 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 15:34:58 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：セッションID：unjmk5k4fs1u8q2fkfddq52lsf
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561530907
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：POST送信があります
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：バリデーションチェックOK
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：クエリ成功。
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：SQL実行結果の中身Array
+(
+    [password] => $2y$10$pVXKts74JHdxMoWefv/QPOci1zzXk5RArCzXpRx1XUNFz9jB2t7Nm
+    [id] => 37
+)
+
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：入力されたpass:111111
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：パスワードがマッチしました。
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：ログイン保持にチェックがあります
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：ログイン有限期限：2592000
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：セッションID：hn3jpm39468tvgrm9f2o3e86s3
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561530907
+    [login_limit] => 2592000
+)
+
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561530907
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564122907
+[26-Jun-2019 15:35:07 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：セッションID：07kb9d9argmkq64qermgfbik8q
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561530907
+    [login_limit] => 2592000
+)
+
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561542901
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564122907
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：マイメモに遷移します
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：セッションID：q6dld6gvfh5a7l1kq1lh60cvjn
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561542901
+    [login_limit] => 2592000
+)
+
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561542901
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564134901
+[26-Jun-2019 18:55:01 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[26-Jun-2019 18:55:13 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 18:55:13 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 18:55:13 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[26-Jun-2019 18:55:13 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 18:55:13 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 18:55:13 Asia/Tokyo] デバッグ：セッションID：edghjq3h22f78pv1799o2q3f74
+[26-Jun-2019 18:55:13 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561542901
+    [login_limit] => 2592000
+)
+
+[26-Jun-2019 18:55:13 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561542913
+[26-Jun-2019 18:55:13 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564134901
+[26-Jun-2019 18:55:13 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[26-Jun-2019 18:55:35 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 18:55:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 18:55:35 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[26-Jun-2019 18:55:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 18:55:35 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 18:55:35 Asia/Tokyo] デバッグ：セッションID：6ln94ieq4c28hj8e3nnrfn7c42
+[26-Jun-2019 18:55:35 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561542913
+    [login_limit] => 2592000
+)
+
+[26-Jun-2019 18:55:35 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561542935
+[26-Jun-2019 18:55:35 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564134913
+[26-Jun-2019 18:55:35 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[26-Jun-2019 18:55:38 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 18:55:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 18:55:38 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[26-Jun-2019 18:55:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 18:55:38 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 18:55:38 Asia/Tokyo] デバッグ：セッションID：cmrvtv5s62aa343vhijenmd1ii
+[26-Jun-2019 18:55:38 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561542935
+    [login_limit] => 2592000
+)
+
+[26-Jun-2019 18:55:38 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561542938
+[26-Jun-2019 18:55:38 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564134935
+[26-Jun-2019 18:55:38 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[26-Jun-2019 18:55:39 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 18:55:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 18:55:39 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[26-Jun-2019 18:55:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 18:55:39 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 18:55:39 Asia/Tokyo] デバッグ：セッションID：p6j4ume1g6kl6rb3ag17dud2lv
+[26-Jun-2019 18:55:39 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561542938
+    [login_limit] => 2592000
+)
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=pvp8lv9omrcgq0iukv21ht0m7k
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.867
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=m17bpfbo00r59lfuq6hnne5sfo
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.875
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=i3kt1grtgvruchpbmljtmvonc3
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.879
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=flp1am654a7u6jgag545m3o0l7
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.883
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=a4av3uc1furjcpl2hfdl4bc3ii
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.888
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=de7btqbhb2vte9nf2jv57ab8dt
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.892
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=l8lgl32ibi1ij29jja1lm6r2nb
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.896
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=3p2daatguleg83bhql2nre1v1u
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.901
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=2e2ad4tfvjqv6vc334md115s19
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.905
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=679nca79d6rulavip01qpf1d30
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.909
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=6u9r7v6cmq3rluncec5csltcec
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.912
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=jffmnarrh6so6iqvbccdcrhten
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.916
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=v9dvo8526e3inr1g6jl89pj7gc
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.92
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=jmop0f503fn4ehusp99u82jegd
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.924
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=jta24f8c9823bsmd0s07ui032e
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.931
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=27humgm0ss4teju5qmoaskilon
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.94
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=2p8dm73pins025g9da4chsmu23
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.95
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=p6j66epo6d7nkl3ijdso0pvg57
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.956
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=em7v8ch3c0e4rldrdab74pl64a
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.961
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：未ログインユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：ログイン未ユーザーです
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：$_SERVERの中身：Array
+(
+    [HTTP_HOST] => localhost:8888
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja,en-US;q=0.9,en;q=0.8,und;q=0.7
+    [HTTP_COOKIE] => _ga=GA1.1.1074099190.1556519267; PHPSESSID=ilf864a530jofdub3vn1ph7cup
+    [PATH] => /usr/bin:/bin:/usr/sbin:/sbin
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.10 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 8888
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => /Applications/MAMP/htdocs
+    [SERVER_ADMIN] => you@example.com
+    [SCRIPT_FILENAME] => /Applications/MAMP/htdocs/memopa/top.php
+    [REMOTE_PORT] => 51505
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /memopa/top.php
+    [SCRIPT_NAME] => /memopa/top.php
+    [PHP_SELF] => /memopa/top.php
+    [REQUEST_TIME_FLOAT] => 1561550488.965
+    [REQUEST_TIME] => 1561550488
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+[26-Jun-2019 21:01:28 Asia/Tokyo] デバッグ：トップページに遷移します
+[26-Jun-2019 21:08:36 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:08:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:36 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:08:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:36 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:08:36 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:08:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:36 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 21:08:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:36 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:08:36 Asia/Tokyo] デバッグ：セッションID：o8ebj1tudgcdoquolbj8vomupo
+[26-Jun-2019 21:08:36 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:08:36 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561550916
+[26-Jun-2019 21:08:36 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:08:36 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：セッションID：so1urf0hpejc6rk76r6m2kolpt
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561550919
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：セッションID：oaj3p3bj2b7ta3k0a6o6dv61o8
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561550919
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:08:39 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：セッションID：8v5p49i81e2e45cuie5md6hpjl
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561550920
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：セッションID：8pqmf0jp69e8h7knabj5cmv9tf
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561550920
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:08:40 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 21:08:59 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:08:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:59 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[26-Jun-2019 21:08:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:59 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:08:59 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:08:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:59 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 21:08:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:08:59 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:08:59 Asia/Tokyo] デバッグ：セッションID：23q8i27kqeiqsb6ni55jn35knp
+[26-Jun-2019 21:08:59 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:08:59 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561550939
+[26-Jun-2019 21:08:59 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:08:59 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：セッションID：v1sp7qdeqe4v8vog36cjvj0v45
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561550941
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：セッションID：e8fcm8ma9cjerfn2t2qon0233m
+[26-Jun-2019 21:09:01 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:09:02 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561550942
+[26-Jun-2019 21:09:02 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:09:02 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 21:09:40 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:09:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:40 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 21:09:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:40 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:09:40 Asia/Tokyo] デバッグ：セッションID：el1701ut9svh4peqkhmb6hdpih
+[26-Jun-2019 21:09:40 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:09:40 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561550980
+[26-Jun-2019 21:09:40 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:09:40 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 21:09:44 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:09:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:44 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 21:09:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:44 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:09:44 Asia/Tokyo] デバッグ：セッションID：9av921nn9crk5mm8hk3aq07j8o
+[26-Jun-2019 21:09:44 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:09:44 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561550984
+[26-Jun-2019 21:09:44 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:09:44 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：セッションID：1f4g0fvj3dv7tb253hcs53h32l
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561550985
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：セッションID：me7tguqb1l4seu53au5r568ar3
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561550985
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:09:45 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 21:09:54 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:09:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:54 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 21:09:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:54 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:09:54 Asia/Tokyo] デバッグ：セッションID：22dttoti8t6u3hrp5i1vk8pokb
+[26-Jun-2019 21:09:54 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:09:54 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561550994
+[26-Jun-2019 21:09:54 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:09:54 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 21:09:55 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:09:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:55 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[26-Jun-2019 21:09:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:56 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:09:56 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:56 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[26-Jun-2019 21:09:56 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:56 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:09:56 Asia/Tokyo] デバッグ：セッションID：q8unom6ngupaqqjgdmnjbtdho7
+[26-Jun-2019 21:09:56 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:09:56 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561550996
+[26-Jun-2019 21:09:56 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:09:57 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:09:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:57 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 21:09:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:09:57 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:09:57 Asia/Tokyo] デバッグ：セッションID：2p0k12af1m0fvkkd9t3sgvm9gm
+[26-Jun-2019 21:09:57 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:09:57 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561550997
+[26-Jun-2019 21:09:57 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:09:57 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 21:10:18 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:10:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:10:18 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 21:10:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:10:18 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:10:18 Asia/Tokyo] デバッグ：セッションID：6hsjn69ede84of5hubi2u8lcdu
+[26-Jun-2019 21:10:18 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:10:18 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561551018
+[26-Jun-2019 21:10:18 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:10:18 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 21:10:19 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:10:19 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:10:19 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:10:19 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:10:20 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:10:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:10:20 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 21:10:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:10:20 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:10:20 Asia/Tokyo] デバッグ：セッションID：eqioiliuo0p9k14580h1os7oal
+[26-Jun-2019 21:10:20 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:10:20 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561551020
+[26-Jun-2019 21:10:20 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:10:20 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 21:10:21 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:10:21 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:10:21 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[26-Jun-2019 21:10:21 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:10:23 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:10:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:10:23 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:10:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:10:24 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:10:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:10:24 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 21:10:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:10:24 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:10:24 Asia/Tokyo] デバッグ：セッションID：34n5akv3eu8jcn0rg208dd5oia
+[26-Jun-2019 21:10:24 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:10:24 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561551024
+[26-Jun-2019 21:10:24 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:10:24 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 21:10:25 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:10:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:10:25 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[26-Jun-2019 21:10:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:11:42 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:11:42 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:11:42 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[26-Jun-2019 21:11:42 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:11:48 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:11:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:11:48 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[26-Jun-2019 21:11:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:11:49 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:11:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:11:49 Asia/Tokyo] デバッグ：「　トップ画面　」
+[26-Jun-2019 21:11:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:11:50 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:11:50 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:11:50 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[26-Jun-2019 21:11:50 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:11:50 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[26-Jun-2019 21:11:50 Asia/Tokyo] デバッグ：セッションID：3ntnhi70ebr6io4ps22a7v5b09
+[26-Jun-2019 21:11:50 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[26-Jun-2019 21:11:50 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561551110
+[26-Jun-2019 21:11:50 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[26-Jun-2019 21:11:50 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[26-Jun-2019 21:11:51 Asia/Tokyo] デバッグ：                  
+[26-Jun-2019 21:11:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[26-Jun-2019 21:11:51 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[26-Jun-2019 21:11:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「

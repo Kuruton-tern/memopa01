@@ -1,4 +1,15 @@
 <?php
+ require('function.php');
+ 
+  debug('                  ');
+  debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
+  debug('「　トップ画面　」');
+  debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
+
+?>
+
+
+<?php
 $siteTitle = 'memopaトップ';
  require("head.php");
 
