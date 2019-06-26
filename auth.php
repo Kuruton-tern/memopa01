@@ -28,19 +28,24 @@ if (!empty($_SESSION['login_date'])) {
     } elseif (($_SESSION['login_date'] + $_SESSION['login_limit']) > time()) {
         // セッションを最新に更新
         $_SESSION['login_date'] = time();
-
-        // myMemoに遷移させる
-        header("Location:myMemo.php");
+        if(basename($_SERVER['PHP_SELF']) === 'login.php'){
+          debug('マイメモに遷移します');
+          // myMemoに遷移させる
+          header("Location:myMemo.php");
+        }
     }
 
 }else{
-  // ログインしていない場合($_SESSION['login_date']がない場合)
-  debug('ログイン未ユーザーです');
-  // 特に何もせずマイメモページヘ遷移させる
 
-  // topに遷移させる
-  header("Location:top.php");
+    // ログインしていない場合($_SESSION['login_date']がない場合)
+    debug("未ログインユーザーです。");
+    if(basename($_SERVER['PHP_SELF']) !== 'login.php'){
+      //  if(basename($_SERVER['PHP_SELF']) === 'login.php'){ にすると、永遠にループしちゃう。
 
-} 
+      header("Location:login.php"); //ログインページへ
+    }
+}
+
+
 
 ?>
