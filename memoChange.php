@@ -25,17 +25,9 @@ $siteTitle = 'メモ変更画面';
     </style>
 
     <!-- ヘッダー  -->
-  <header>
-    <div class="site-width">
-      <h1><a href="index.html">memopa</a></h1>
-      <nav id="top-nav">
-        <ul>
-          <li><a href="list.html">リストを作成</a></li>
-          <li><a href="myMemo.html">マイメモ</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<?php 
+require('header.php');
+?>
 
   <!-- メインコンテンツ -->
   <div id="contents" class="site-width">

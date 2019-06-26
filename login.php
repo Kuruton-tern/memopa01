@@ -8,11 +8,11 @@ debug('「「「「「「「「「「「「「「「「「「「「「「「「�
 debugLogStart();
 
 
-$_SESSION['username'] = "クルトン";
+// $_SESSION['username'] = "クルトン";
 // このusernameは消しても「クルトン」ってphp.logに残る
 
 // ログイン認証
-require('auth02.php');
+require('auth.php');
 //==============================
 //画面処理
 //==============================
@@ -107,17 +107,9 @@ $siteTitle = 'ログイン画面';
 <body class="page-logined page-1colum">
 
 <!-- ヘッダー  -->
-<header>
-  <div class="site-width">
-    <h1><a href="myMemo.php">memopa</a></h1>
-    <nav id="top-nav">
-      <ul>
-        <li><a href="myProf.php">マイプロフ</a></li>
-        <li><a href="signup.php">新規会員登録</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<?php 
+require('header.php');
+?>
 
 <!-- メインコンテンツ -->
 <div id="contents" class="site-width">

@@ -7,18 +7,9 @@ $siteTitle = 'memopaトップ';
   <body class="page-logout page-1colum">
   
     <!-- ヘッダー  -->
-    <header>
-      <div class="site-width">
-        <h1><a href="top.html">memopa</a></h1>
-        <nav id="top-nav">
-          <ul>
-            <li><a href="login.php">ログイン</a></li>
-            <li><a href="signup.php">新規会員登録</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-  
+<?php 
+require('header.php');
+?>  
 
   <div class="t-text-box">
     <h1 class="t-text-title">memopaへようこそ！</h1>
