@@ -1,4 +1,21 @@
 <?php
+require('function.php');
+
+debug('                  ');
+debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
+debug('「　マイメモ画面　」');
+debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
+debugLogStart();
+
+
+// ログイン認証
+require('auth.php');
+
+?>
+
+
+
+<?php
 $siteTitle = 'マイメモ';
  require("head.php");
 
