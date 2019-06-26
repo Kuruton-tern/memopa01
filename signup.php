@@ -6,6 +6,8 @@ debug('「「「「「「「「「「「「「「「「「「「「「「「「�
 debug('「　アカウント作成画面　」');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 
+// ログイン認証
+require('auth.php');
 
 //==============================
 //画面処理
@@ -75,6 +77,29 @@ if(!empty ($_POST)){
          $stmt = queryPost($dbh, $sql, $data);
          debug('クエリ実行完了');
 
+            // セッションをもたせる
+            $_SESSION['login_date'] = time();
+            $_SESSION['user_id'] = $dbh->lastInsertId();
+            debug('$_SESSION["user_id"]の中身：'.print_r($_SESSION['user_id'], true));
+            // ログイン有効期限を変数を作り、設定（60秒*60分）
+            $session_limit = 60*60;
+
+            // ログイン保持にチェックがある場合
+            if (!empty('pass_save')) {
+                debug('ログイン保持にチェックがあります');
+                // ログイン有効期限を30日にする
+                $_SESSION['login_limit'] = $session_limit*24*30;
+                debug('ログイン有限期限：'.print_r($_SESSION['login_limit'], true));
+            } else {
+                debug('ログイン保持にチェックがありません');
+                // ログイン有限期限を1時間にする
+                $_SESSION['login_limit'] = $session_limit;
+                debug('ログイン有限期限：'.print_r($_SESSION['login_limit'], true));
+            }
+
+            header('location:myMemo.php');
+
+
           if ($stmt) {
             debug('ページ遷移します');
             header("Location:myMemo.php");  //マイメモページへ
@@ -99,17 +124,9 @@ $siteTitle = 'アカウント登録画面';
 
 ?>
   <!-- ヘッダー  -->
-  <header>
-    <div class="site-width">
-      <h1><a href="index.html">memopa</a></h1>
-      <nav id="top-nav">
-        <ul>
-          <li><a href="top.php">トップ</a></li>
-          <li><a href="login.php">ログイン</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<?php 
+require('header.php');
+?>
 
   <!-- メインコンテンツ -->
   <div id="contents" class="site-width">
