@@ -46,6 +46,7 @@ $siteTitle = '退会画面';
 
 
   <!-- ヘッダー  -->
+
   <?php
     require('header.php');
    ?>
