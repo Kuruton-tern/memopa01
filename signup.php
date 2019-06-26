@@ -197,6 +197,7 @@ require('header.php');
 
   </div>
 
+
   <?php
- require('footer.php');
- ?>
+  require('footer.php');
+  ?>
