@@ -7,18 +7,9 @@ $siteTitle = 'マイメモ';
 <body class="page-logined page-1colum">
 
   <!-- ヘッダー  -->
-  <header>
-    <div class="site-width">
-      <h1><a href="myMemo.php">memopa</a></h1>
-      <nav id="top-nav">
-        <ul>
-          <li><a href="list.html">リストを作成</a></li>
-          <li><a href="">ログアウト</a></li>
-          <li><a href="myProf.html">マイプロフ</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <?php 
+require('header.php');
+?>
 
   <!-- メインコンテンツ -->
   <div id="page-panel">

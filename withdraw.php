@@ -18,17 +18,9 @@ $siteTitle = '退会画面';
 
 
   <!-- ヘッダー  -->
-  <header>
-    <div class="site-width">
-      <h1><a href="index.html">memopa</a></h1>
-      <nav id="top-nav">
-        <ul>
-          <li><a href="mymemo.html.html">マイメモ</a></li>
-          <li><a href="">ログアウト</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<?php 
+require('header.php');
+?>
 
   <!-- メインコンテンツ -->
   <div id="contents" class="site-width">
