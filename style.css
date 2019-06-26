@@ -540,6 +540,11 @@ input[type="submit"]:hover{
   background: #8BAC9D;
   text-align: center;
   line-height: 60px;
+  position: sticky;
+  bottom: 0;
+  padding: 10px 10px;
+  z-index: 5;
+  box-sizing: border-box;
 }
 
 #footer a{
