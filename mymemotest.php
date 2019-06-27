@@ -24,7 +24,7 @@ $siteTitle = 'マイメモ';
 <body class="page-logined page-1colum">
 
   <!-- ヘッダー  -->
-  <?php 
+  <?php
 require('header.php');
 ?>
 
