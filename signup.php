@@ -111,8 +111,9 @@ if(!empty ($_POST)){
       }
     }
   }
-
 }
+debug('画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
+
 ?>
 
 
@@ -196,6 +197,7 @@ require('header.php');
 
   </div>
 
+
   <?php
- require('footer.php');
- ?>
+  require('footer.php');
+  ?>
