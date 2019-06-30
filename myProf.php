@@ -1,3 +1,31 @@
+<?php 
+require('function.php');
+
+debug('                  ');
+debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
+debug('「　アカウント作成画面　」');
+debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
+debugLogStart();
+
+// ログイン認証
+require('auth.php');
+
+//==============================
+//画面処理
+//==============================
+
+
+//画面表示用データを変数に格納
+//==============================
+// DBからユーザーデータを取得
+$dbFormData = getUser($_SESSION['user_id']);
+debug('DBから取得したユーザーデータ：'.print_r($dbFormData, true));
+$u_id = $_SESSION['user_id'];
+$username = $_POST['username'];
+$email = $_POST['email'];
+$pic = ;
+?>
+
 <?php
 $siteTitle = 'マイプロフ';
  require("head.php");
