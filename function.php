@@ -64,6 +64,7 @@ define('MSG07', 'エラーが発生しました。しばらく経ってからや
 define('MSG08', 'そのEmailはすでに登録されています');
 define('MSG09', 'メールアドレス、もしくはパスワードが不正です');
 define('MSG10', '日本語で入力してください');
+define('MSG11', '10文字以内で入力してください。');
 
 //==============================
 //グローバル変数
@@ -146,6 +147,14 @@ function validLenMax($str, $key, $max = 255){
   }
 }
 
+// 最大文字数チェック（ユーザー名用）
+function validUnameMax($str, $key, $max = 10){
+  if(mb_strlen($str) > $max){
+    global $err_msg;
+    $err_msg[$key] = MSG11;
+  }
+}
+
 // 最小文字数チェック
 function validLenMin($str, $key, $min = 6){
   if(mb_strlen($str) < $min){
@@ -209,10 +218,83 @@ function queryPost($dbh, $sql, $data)
     }
 }
 
-//==============================
-//パスワードハッシュ化関数
-//==============================
 
+// DB情報を取得する関数
+//==============================
+// ユーザー情報取得関数
+function getUser($u_id){
+  debug('ユーザー情報を取得します');
+  // 例外処理
+  try{
+    // DBに接続
+    $dbh = dbConnect();
+    // SQL文作成
+    $sql = 'SELECT * FROM user WHERE id = :u_id AND delete_flg = 0';
+    $data = array(':u_id' => $u_id);
+    // クエリ実行
+    $stmt = queryPost($dbh, $sql, $data);
 
+    // クエリ結果のデータを1レコード返却
+    if($stmt){
+      return $stmt->fetch(PDO::FETCH_ASSOC);
+      debug('クエリ成功。ユーザー情報取得しました。');
+    }else{
+      return false;
+      debug('クエリ失敗');
+    }
+  }catch(Exception $e){
+    error_log('エラー発生：'. $e->getMessage());
+  }
+}
+
+//==============================
+// 画像処理
+//==============================
+function uploadImg($file, $key)
+{
+    debug('画像アップロード処理開始');
+    debug('FILE情報：'.print_r($fire, true));
+  
+    //isset:変数に値がセットされていて、かつNULLでないときに、TRUE(真)を戻り値として返す。
+    if (isset($file['error']) && is_int($file['error'])) {
+        try {
+            switch ($file['error']) {
+           case UPLOAD_ERR_OK:  //OKの場合
+                break;
+           case UPLOAD_ERR_NO_FILE: //ファイル未選択の場合
+                throw new RuntimeException('ファイルが選択されていません');
+           case UPLOAD_ERR_INI_SIZE:  // php.ini定義の最大サイズが超過した場合
+           case UPLOAD_ERR_FORM_SIZE: // フォーム定義の最大サイズを超過した場合
+               throw new RuntimeException('ファイルサイズが大きすぎます');
+           default:  // その他の場合
+               throw new RuntimeException('その他のエラーが発生しました');
+       }
+            //
+            //
+            $type = @exif_imagetype($file['tmp_name']);
+            if (!in_array($type, [IMAGETYPE_GIF, IMAGETYPE_JPEG, IMAGETYPE_PNG], true)) {
+                //
+                throw new RutimeException('画像形式が未対応です');
+            }
+            $path = 'uploads/'. sha1_file($file['tmp_name']).image_type_tO_extension($type);
+
+            if (!move_upload_file($file['tmp_name'], $path)) { //
+                throw new RuntimeException('ファイル保存時にエラーが発生しました');
+            }
+            // 保存したファイルのパーミッション（権限）を変更する。
+            chmod($path, 0644);
+
+            debug('ファイルは正常にアップロードされました');
+            debug('ファイルパス：'.$path);
+            return $path;
+        } catch (RuntimeException $e) {
+            debug($e->getMessage());
+            global $err_msg;
+            $err_msg[$key] = $e->getMessage();
+        }
+    }
+}
+
+function UploadImgOri()
 
 ?>
