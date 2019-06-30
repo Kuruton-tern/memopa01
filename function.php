@@ -226,24 +226,24 @@ function getUser($u_id){
   debug('ユーザー情報を取得します');
   // 例外処理
   try{
-    // DBに接続
-    $dbh = dbConnect();
-    // SQL文作成
-    $sql = 'SELECT * FROM user WHERE id = :u_id AND delete_flg = 0';
-    $data = array(':u_id' => $u_id);
-    // クエリ実行
-    $stmt = queryPost($dbh, $sql, $data);
+      // DBに接続
+      $dbh = dbConnect();
+      // SQL文作成
+      $sql = 'SELECT * FROM user WHERE id = :u_id AND delete_flg = 0';
+      $data = array(':u_id' => $u_id);
+      // クエリ実行
+      $stmt = queryPost($dbh, $sql, $data);
 
-    // クエリ結果のデータを1レコード返却
-    if($stmt){
-      return $stmt->fetch(PDO::FETCH_ASSOC);
-      debug('クエリ成功。ユーザー情報取得しました。');
-    }else{
-      return false;
-      debug('クエリ失敗');
-    }
+      // クエリ結果のデータを1レコード返却
+      if($stmt){
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+        debug('クエリ成功。ユーザー情報取得しました。');
+      }else{
+        return false;
+        debug('クエリ失敗');
+      }
   }catch(Exception $e){
-    error_log('エラー発生：'. $e->getMessage());
+      error_log('エラー発生：'. $e->getMessage());
   }
 }
 
@@ -307,17 +307,14 @@ function uploadImg($file, $key)
     }
 }
 
-<<<<<<< Updated upstream
-function UploadImgOri()
-=======
 
-function ploadImgOri($file, $key){
+
+function UploadImgOri($file, $key){
   debug('画像アップロード処理開始');
   debug('FILE情報：'.print_r($file, true));
   if($_FILES['file']){
     move_uploaded_file(['tmp_name'],$key);
   }
 }
->>>>>>> Stashed changes
 
 ?>
