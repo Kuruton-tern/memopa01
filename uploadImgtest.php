@@ -1,7 +1,8 @@
 <?php
 header('Content-Type: text/plain; charset=utf-8');
 $file = $_FILES['pic'];
-function uploadImg($file,$key){
+
+function uploadImgOri($file,$key){
     try {
 
     // 未定義である・複数ファイルである・$_FILES Corruption 攻撃を受けた
