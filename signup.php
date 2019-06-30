@@ -5,6 +5,7 @@ debug('                  ');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debug('「　アカウント作成画面　」');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
+debugLogStart();
 
 
 //==============================
@@ -39,9 +40,9 @@ if(!empty ($_POST)){
     validLenMax($email, 'email');
 
     // ユーザー名の形式チェック
-    validUsername($username, 'username');
+    // validUsername($username, 'username');   日本語だけでなく英語でも登録できるように。
     // ユーザー名の最大文字数チェック
-    validLenMax($username, 'username');
+    validUnameMax($username, 'username');
 
     // パスワードの半角英数字チェック
     validHalfAZ09($pass, 'pass');
