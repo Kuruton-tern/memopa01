@@ -247,6 +247,18 @@ function getUser($u_id){
   }
 }
 
+// フォーム入力保持関数
+//==============================
+function getFormData($str){
+// ユーザーデータが有る場合
+  // フォームのエラーが有る場合
+    // POSTにデータが有る場合
+    // ない場合
+  // POSTにデータが有り、DBの情報と違う場合
+// そもそも変更していない場合
+}
+
+
 //==============================
 // 画像処理
 //==============================
@@ -295,6 +307,17 @@ function uploadImg($file, $key)
     }
 }
 
+<<<<<<< Updated upstream
 function UploadImgOri()
+=======
+
+function ploadImgOri($file, $key){
+  debug('画像アップロード処理開始');
+  debug('FILE情報：'.print_r($file, true));
+  if($_FILES['file']){
+    move_uploaded_file(['tmp_name'],$key);
+  }
+}
+>>>>>>> Stashed changes
 
 ?>

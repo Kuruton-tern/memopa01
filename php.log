@@ -6689,3 +6689,369 @@ Stack trace:
 [29-Jun-2019 02:53:52 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561744432
 [29-Jun-2019 02:53:52 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564336432
 [29-Jun-2019 02:53:52 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：セッションID：m38vdu0qshku6q5av4ub2igvnv
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561744432
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561916278
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564336432
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：クエリ成功。
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 37
+    [username] => サドル
+    [email] => ponpon@gmail.com
+    [password] => $2y$10$pVXKts74JHdxMoWefv/QPOci1zzXk5RArCzXpRx1XUNFz9jB2t7Nm
+    [pic] => 
+    [delete_flg] => 0
+    [login_time] => 2019-06-25 01:45:36
+    [create_date] => 2019-06-25 01:45:36
+    [update_date] => 2019-06-25 01:45:36
+)
+
+[01-Jul-2019 02:37:58 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/myProf.php on line 27
+[01-Jul-2019 02:37:58 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/myProf.php on line 29
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：$picの内容：
+[01-Jul-2019 02:37:58 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/myProf.php on line 40
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：ユーザー名が新たに入力されました
+[01-Jul-2019 02:37:58 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/myProf.php on line 48
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：emailが新たに入力されました
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：クエリ成功。
+[01-Jul-2019 02:37:58 Asia/Tokyo] デバッグ：Email重複チェック  $resultの中身：1
+[01-Jul-2019 02:37:58 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function validMaxLen() in /Applications/MAMP/htdocs/memopa/myProf.php:56
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/memopa/myProf.php on line 56
+[01-Jul-2019 02:40:52 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 02:40:52 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:40:52 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 02:40:52 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:40:52 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 02:40:52 Asia/Tokyo] デバッグ：セッションID：rcc7amkvm2433slp71jt2d3ga6
+[01-Jul-2019 02:40:52 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561916278
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 02:40:52 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561916452
+[01-Jul-2019 02:40:52 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564508278
+[01-Jul-2019 02:40:52 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 02:40:52 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function emmpty() in /Applications/MAMP/htdocs/memopa/myProf.php:17
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/memopa/myProf.php on line 17
+[01-Jul-2019 02:41:07 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 02:41:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:41:07 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 02:41:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:41:07 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 02:41:07 Asia/Tokyo] デバッグ：セッションID：neta609u7sf24f2pfst4f9qadc
+[01-Jul-2019 02:41:07 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561916452
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 02:41:07 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561916467
+[01-Jul-2019 02:41:07 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564508452
+[01-Jul-2019 02:41:07 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 02:41:07 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/myProf.php on line 122
+[01-Jul-2019 02:41:07 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/myProf.php on line 126
+[01-Jul-2019 02:41:40 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 02:41:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:41:40 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 02:41:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:41:40 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 02:41:40 Asia/Tokyo] デバッグ：セッションID：9517b4h8ercbkc3gmjodbpljeb
+[01-Jul-2019 02:41:40 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561916467
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 02:41:40 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561916500
+[01-Jul-2019 02:41:40 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564508467
+[01-Jul-2019 02:41:40 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 02:41:40 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/myProf.php on line 122
+[01-Jul-2019 02:41:40 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/myProf.php on line 126
+[01-Jul-2019 02:43:44 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 02:43:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:43:44 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 02:43:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:43:44 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 02:43:44 Asia/Tokyo] デバッグ：セッションID：9bid24loe51busnb5ultin44l2
+[01-Jul-2019 02:43:44 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561916500
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 02:43:44 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561916624
+[01-Jul-2019 02:43:44 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564508500
+[01-Jul-2019 02:43:44 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 02:43:44 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/myProf.php on line 122
+[01-Jul-2019 02:43:44 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/myProf.php on line 130
+[01-Jul-2019 02:44:39 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 02:44:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:44:39 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 02:44:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:44:39 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 02:44:39 Asia/Tokyo] デバッグ：セッションID：m3aoaud6iuf9f637mnb5lngjuu
+[01-Jul-2019 02:44:39 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561916624
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 02:44:39 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561916679
+[01-Jul-2019 02:44:39 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564508624
+[01-Jul-2019 02:44:39 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 02:44:39 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/myProf.php on line 122
+[01-Jul-2019 02:44:39 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/myProf.php on line 130
+[01-Jul-2019 02:45:49 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 02:45:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:45:49 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 02:45:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:45:49 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 02:45:49 Asia/Tokyo] デバッグ：セッションID：r0hru4ag7rvc1uh58jaa025jpl
+[01-Jul-2019 02:45:49 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561916679
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 02:45:49 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561916749
+[01-Jul-2019 02:45:49 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564508679
+[01-Jul-2019 02:45:49 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 02:45:49 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/myProf.php on line 122
+[01-Jul-2019 02:45:49 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/myProf.php on line 130
+[01-Jul-2019 02:45:54 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 02:45:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:45:54 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 02:45:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:45:54 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 02:45:54 Asia/Tokyo] デバッグ：セッションID：4uvg7lkr65oen2pubqjuncv8es
+[01-Jul-2019 02:45:54 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561916749
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 02:45:54 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561916754
+[01-Jul-2019 02:45:54 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564508749
+[01-Jul-2019 02:45:54 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 02:45:54 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/myProf.php on line 122
+[01-Jul-2019 02:45:54 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/myProf.php on line 130
+[01-Jul-2019 02:46:04 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 02:46:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:46:04 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 02:46:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:46:04 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 02:46:04 Asia/Tokyo] デバッグ：セッションID：htvkiqtgdc9qvlgvm015kuabb2
+[01-Jul-2019 02:46:04 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561916754
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 02:46:04 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561916764
+[01-Jul-2019 02:46:04 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564508754
+[01-Jul-2019 02:46:04 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 02:46:04 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/myProf.php on line 122
+[01-Jul-2019 02:46:04 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/myProf.php on line 130
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：セッションID：aotre3klp8bgpjb17feiki91md
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561916764
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561916779
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564508764
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：クエリ成功。
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 37
+    [username] => サドル
+    [email] => ponpon@gmail.com
+    [password] => $2y$10$pVXKts74JHdxMoWefv/QPOci1zzXk5RArCzXpRx1XUNFz9jB2t7Nm
+    [pic] => 
+    [delete_flg] => 0
+    [login_time] => 2019-06-25 01:45:36
+    [create_date] => 2019-06-25 01:45:36
+    [update_date] => 2019-06-25 01:45:36
+)
+
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：$picの内容：
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：ユーザー名が新たに入力されました
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：emailが新たに入力されました
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：クエリ成功。
+[01-Jul-2019 02:46:19 Asia/Tokyo] デバッグ：Email重複チェック  $resultの中身：1
+[01-Jul-2019 02:46:19 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function validMaxLen() in /Applications/MAMP/htdocs/memopa/myProf.php:57
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/memopa/myProf.php on line 57
+[01-Jul-2019 02:47:24 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 02:47:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:47:24 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 02:47:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:47:24 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 02:47:24 Asia/Tokyo] デバッグ：セッションID：fmsvp03h23c1h43la1dr3pubj0
+[01-Jul-2019 02:47:24 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561916779
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 02:47:24 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561916844
+[01-Jul-2019 02:47:24 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564508779
+[01-Jul-2019 02:47:24 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 02:47:24 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/myProf.php on line 122
+[01-Jul-2019 02:47:24 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/myProf.php on line 130
+[01-Jul-2019 02:52:09 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 02:52:09 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:52:09 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 02:52:09 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:52:09 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 02:52:09 Asia/Tokyo] デバッグ：セッションID：jplv6b192tpu504tfrao30lpko
+[01-Jul-2019 02:52:09 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561916844
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 02:52:09 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561917129
+[01-Jul-2019 02:52:09 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564508844
+[01-Jul-2019 02:52:09 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 02:52:09 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[01-Jul-2019 02:52:09 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/myProf.php on line 127
+[01-Jul-2019 02:52:09 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/myProf.php on line 135
+[01-Jul-2019 02:56:40 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 02:56:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:56:40 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 02:56:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:56:40 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 02:56:40 Asia/Tokyo] デバッグ：セッションID：fnj4sgi4e5hrd8ljf97j9fqmfi
+[01-Jul-2019 02:56:40 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561917129
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 02:56:40 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561917400
+[01-Jul-2019 02:56:40 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564509129
+[01-Jul-2019 02:56:40 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 02:56:40 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[01-Jul-2019 02:56:40 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function dbFormData() in /Applications/MAMP/htdocs/memopa/myProf.php:127
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/memopa/myProf.php on line 127
+[01-Jul-2019 02:58:48 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 02:58:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:58:48 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 02:58:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 02:58:48 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 02:58:48 Asia/Tokyo] デバッグ：セッションID：r9hp5a6tr8qgqe76v8j8v43sid
+[01-Jul-2019 02:58:48 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561917400
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 02:58:48 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561917528
+[01-Jul-2019 02:58:48 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564509400
+[01-Jul-2019 02:58:48 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 02:58:48 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[01-Jul-2019 02:58:48 Asia/Tokyo] PHP Notice:  Undefined variable: dbFormData in /Applications/MAMP/htdocs/memopa/myProf.php on line 127
+[01-Jul-2019 02:58:48 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/myProf.php on line 135
+[01-Jul-2019 03:01:14 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 03:01:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 03:01:14 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 03:01:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 03:01:14 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 03:01:14 Asia/Tokyo] デバッグ：セッションID：qi90cuebdgaigbjha80ah76kj8
+[01-Jul-2019 03:01:14 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561917528
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 03:01:14 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561917674
+[01-Jul-2019 03:01:14 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564509528
+[01-Jul-2019 03:01:14 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 03:01:14 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[01-Jul-2019 03:01:14 Asia/Tokyo] PHP Notice:  Undefined variable: dbFormData in /Applications/MAMP/htdocs/memopa/myProf.php on line 127
+[01-Jul-2019 03:01:14 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/myProf.php on line 135
+[01-Jul-2019 03:01:16 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 03:01:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 03:01:16 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 03:01:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 03:01:16 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 03:01:16 Asia/Tokyo] デバッグ：セッションID：j4g9dihiiqh1pbq2a9iivsqm3j
+[01-Jul-2019 03:01:16 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561917674
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 03:01:16 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561917676
+[01-Jul-2019 03:01:16 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564509674
+[01-Jul-2019 03:01:16 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 03:01:16 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[01-Jul-2019 03:01:16 Asia/Tokyo] PHP Notice:  Undefined variable: dbFormData in /Applications/MAMP/htdocs/memopa/myProf.php on line 127
+[01-Jul-2019 03:01:16 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/myProf.php on line 135
+[01-Jul-2019 03:02:30 Asia/Tokyo] デバッグ：                  
+[01-Jul-2019 03:02:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 03:02:30 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[01-Jul-2019 03:02:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[01-Jul-2019 03:02:30 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[01-Jul-2019 03:02:30 Asia/Tokyo] デバッグ：セッションID：jlvd0rtr3i2185tcrnjluvd8cb
+[01-Jul-2019 03:02:30 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1561917676
+    [login_limit] => 2592000
+)
+
+[01-Jul-2019 03:02:30 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1561917750
+[01-Jul-2019 03:02:30 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564509676
+[01-Jul-2019 03:02:30 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[01-Jul-2019 03:02:30 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[01-Jul-2019 03:02:30 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[01-Jul-2019 03:02:30 Asia/Tokyo] デバッグ：クエリ成功。
+[01-Jul-2019 03:02:30 Asia/Tokyo] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/memopa/myProf.php on line 127
+[01-Jul-2019 03:02:30 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/myProf.php on line 135
