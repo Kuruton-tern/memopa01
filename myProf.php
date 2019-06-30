@@ -21,16 +21,6 @@ if (!empty($_POST)) {
   debug('FILE情報：'. print_r($_FILES, true));
 
 //画面表示用データを変数に格納
-<<<<<<< Updated upstream
-//==============================
-// DBからユーザーデータを取得
-$dbFormData = getUser($_SESSION['user_id']);
-debug('DBから取得したユーザーデータ：'.print_r($dbFormData, true));
-$u_id = $_SESSION['user_id'];
-$username = $_POST['username'];
-$email = $_POST['email'];
-$pic = ;
-=======
     //==============================
     // DBからユーザーデータを取得
     // DBから取得したユーザーデータ
@@ -53,6 +43,17 @@ $pic = ;
     // DB情報($dbFormData)と入力した情報($_POST)が違う場合にバリデーションを行う
     // ユーザー名チェック
     if ($dbFormData['username'] !== $_POST['username']) {
+
+//画像をアップロードし、パスを格納
+$pic = (!empty($_FILES['pic']['name'])) ? uploadImg($_FILES['pic'], 'pic') : '';
+//画像をPOSTしてない（登録していない）がすでにDBに登録されている場合、DBのパスを入れる（POSTには反映されないため）
+$pic = (empty($pic) && !empty($dbFormData['pic'])) ? $dbFormData['pic'] : $pic;
+  debug('$picの内容：'.print_r($pic, true));
+
+
+  // DB情報($dbFormData)と入力した情報($_POST)が違う場合にバリデーションを行う
+  // ユーザー名チェック
+  if($dbFormData['username'] !== $_POST['username']){
       // 名前の長さのバリデーションチェック
       validUnameMax($username, 'username');
       // 名前の未入力チェック
@@ -94,7 +95,41 @@ $pic = ;
 }
 debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
 
->>>>>>> Stashed changes
+  }
+  // メールアドレスチェック
+  if($dbFormData['email'] !== $_POST['email']){
+    debug('emailが新たに入力されました');
+    if(empty($err_msg['email'])){
+      validEmailDup($email);
+    }
+    // emailの形式チェック
+    validEMail($email, 'email');
+    // 最大文字数チェック
+    validMaxLen($mail, 'email');
+    // 未入力チェック
+    validRequired($email, 'email');
+  }
+  if(empty($err_msg)){
+    debug('バリデーションチェックOKです');
+    try{
+      // DB接続
+      $dbh = dbConnect();
+      // SQL文作成
+      // 新しく入力した情報をDBに登録する
+      $sql = 'UPDATE user SET username = :username, email = :email WHERE id = :u_id';
+      $data = array(':username' => $username, ':email' => $email);
+      $stmt = queryPost($dbh, $sql, $data);
+
+      if($stmt){
+        debug('画面を更新する');
+      }
+      }catch(Exeption $e){
+        error_log('エラー発生：'.$e->getMessage());
+        $err_msg['common'] = MSG07;
+      }
+  }
+
+
 ?>
 
 <?php
@@ -128,13 +163,9 @@ require('header.php');
           </div>
           <!-- アバター写真 -->
           <div class="prof-img">
-<<<<<<< Updated upstream
-           <img src="img/me01.png" alt="">
-=======
           <input type="hidden" name="MAX-FILE-SIZE" value="3145728">
           <input type="file" name="pic" class="input-file">
            <img src="img/me01.png" alt="アバター写真">
->>>>>>> Stashed changes
           </div>
           
           <!-- ユーザー名 -->
