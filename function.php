@@ -109,7 +109,7 @@ function validEmailDup($email){
         // クエリの結果を取得する
         //fetch:取り出す。Assoc:Associationで、連想する
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
-        debug('Email重複チェック  $resultの中身：'.print_r($result));
+        debug('Email重複チェックできました');
     
         //取得した結果、値が入っているかどうかをチェックする
         if (!empty($result)) {
@@ -250,12 +250,35 @@ function getUser($u_id){
 // フォーム入力保持関数
 //==============================
 function getFormData($str){
+  global $dbFormData;  // myProfで$dbFormData = getUser($_SESSION['user_id']);と変数定義してある
+
 // ユーザーデータが有る場合
+if(!empty($dbFormData[$str])){
   // フォームのエラーが有る場合
+  if(!empty($err_msg[$str])){
     // POSTにデータが有る場合
-    // ない場合
-  // POSTにデータが有り、DBの情報と違う場合
-// そもそも変更していない場合
+   if(!empty($_POST[$str])){
+      return sanitize($_POST[$str]);
+     // POSTにない場合
+   }else{
+      return sanitize($dbFormData[$str]);
+   }
+
+   // POSTにデータが有り、DBの情報と違う場合
+  }else{
+    if(!empty($_POST[$str]) && $_POST[$str] !== $dbFormData[$str]){
+      return sanitize($_POST[$str]);
+    }else{
+      // POSTにデータがなく、DBの情報と同じ場合（そもそも変更していない場合）
+      return sanitize($dbFormData[$str]);
+    }
+  }
+  // ユーザーデータがない場合
+}else{
+  if(empty($dbFormData[$str])){
+    return sanitize($_POST[$str]);
+  }
+ }
 }
 
 
@@ -314,6 +337,24 @@ function UploadImgOri($file, $key){
   debug('FILE情報：'.print_r($file, true));
   if($_FILES['file']){
     move_uploaded_file(['tmp_name'],$key);
+  }
+}
+
+//==============================
+// その他
+//==============================
+// サニタイズ
+function sanitize($str){
+  return htmlspecialchars($str, ENT_QUOTES);
+}
+
+// jsで表示させるやつ
+function getSessionFlash($key){
+  if(!empty($_SESSION[$key])){
+    debug('$_SESSION[$key]の中身：'.print_r($_SESSION[$key], true));
+    $data = $_SESSION[$key];
+    $_SESSION[$key] = '';
+    return $data;
   }
 }
 
