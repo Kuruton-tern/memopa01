@@ -1,6 +1,7 @@
 <?php
 header('Content-Type: text/plain; charset=utf-8');
 $file = $_FILES['pic'];
+
 function uploadImgOri($file,$key){
     try {
 
