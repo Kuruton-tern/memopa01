@@ -86,40 +86,6 @@ if (!empty($_POST)) {
 }
 debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
 
-  }
-  // メールアドレスチェック
-  if($dbFormData['email'] !== $_POST['email']){
-    debug('emailが新たに入力されました');
-    if(empty($err_msg['email'])){
-      validEmailDup($email);
-    }
-    // emailの形式チェック
-    validEMail($email, 'email');
-    // 最大文字数チェック
-    validMaxLen($mail, 'email');
-    // 未入力チェック
-    validRequired($email, 'email');
-  }
-  if(empty($err_msg)){
-    debug('バリデーションチェックOKです');
-    try{
-      // DB接続
-      $dbh = dbConnect();
-      // SQL文作成
-      // 新しく入力した情報をDBに登録する
-      $sql = 'UPDATE user SET username = :username, email = :email WHERE id = :u_id';
-      $data = array(':username' => $username, ':email' => $email);
-      $stmt = queryPost($dbh, $sql, $data);
-
-      if($stmt){
-        debug('画面を更新する');
-      }
-      }catch(Exeption $e){
-        error_log('エラー発生：'.$e->getMessage());
-        $err_msg['common'] = MSG07;
-      }
-  }
-
 
 ?>
 
