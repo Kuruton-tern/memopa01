@@ -1,7 +1,7 @@
 
 <header>
   <div class="site-width">
-    <h1><a href="top.php">memopa</a></h1>
+    <h1><a href="myMemo.php">memopa</a></h1>
     <nav id="top-nav">
       <ul>
 <?php
