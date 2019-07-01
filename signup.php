@@ -123,6 +123,9 @@ $siteTitle = 'アカウント登録画面';
  require("head.php");
 
 ?>
+
+<body class="page-logined page-1colum">
+
   <!-- ヘッダー  -->
 <?php 
 require('header.php');
