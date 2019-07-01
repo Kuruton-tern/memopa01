@@ -8,7 +8,6 @@
   debugLogStart();
 
 
-require('auth.php');
 ?>
 
 
