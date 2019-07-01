@@ -7,8 +7,6 @@
   debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
   debugLogStart();
 
-
-require('auth.php');
 ?>
 
 
