@@ -1,6 +1,6 @@
  <!-- footer -->
   <footer id="footer">
-    Copyright memopa. All Rights Reserved.
+  Copyright <a href="top.php">memopa</a>. All Rights Reserved.
   </footer>
 
   <!-- innnerHeightに関しての参考記事→ https://www.flatflag.nir87.com/height-1083 -->
