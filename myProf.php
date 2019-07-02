@@ -102,11 +102,14 @@ $siteTitle = 'マイプロフ';
 <?php 
 require('header.php');
 ?>
+
 <p id="js-show-msg" class="msg-slide">
 <?php
 echo getSessionFlash('msg_success');
+debug('サクセスメッセージを出しました');
 ?>
 </p>
+
 
   <!-- メインコンテンツ -->
   <div id="contents" class="site-width">
