@@ -75,8 +75,9 @@ if (!empty($_POST)) {
 
             // クエリ成功の場合
             if ($stmt) {
-                debug('画面を更新する');
-                $_SESSION['msg_success'] = SUK02;
+              debug('クエリ成功');
+              debug('画面を更新する');
+              $_SESSION['msg_success'] = SUC01;
             }
         } catch (Exeption $e) {
             error_log('エラー発生：'.$e->getMessage());
@@ -101,6 +102,11 @@ $siteTitle = 'マイプロフ';
 <?php 
 require('header.php');
 ?>
+<p id="js-show-msg" class="msg-slide">
+<?php
+echo getSessionFlash('msg_success');
+?>
+</p>
 
   <!-- メインコンテンツ -->
   <div id="contents" class="site-width">
@@ -120,9 +126,17 @@ require('header.php');
           </div>
           <!-- アバター写真 -->
           <div class="prof-img">
-          <input type="hidden" name="MAX-FILE-SIZE" value="3145728">
-          <input type="file" name="pic" class="input-file">
-           <img src="img/me01.png" alt="アバター写真">
+              <label class="area-drop <?php if (!empty($err_msg['pic'])) echo 'err'; ?>">
+                <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
+                <input type="file" name="pic" class="input-file" >
+                <img src="<?php echo getFormData('pic'); ?>" alt="" class="prev-img" style="<?php if (empty(getFormData('pic'))) echo 'display:none;' ?>">
+                アイコン
+              </label>
+              <div class="area-msg">
+                <?php
+                if (!empty($err_msg['pic'])) echo $err_msg['pic'];
+                ?>
+              </div>
           </div>
           
           <!-- ユーザー名 -->
