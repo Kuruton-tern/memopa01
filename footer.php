@@ -16,6 +16,11 @@
       if(msg,replace(/^[\s　]+|[\s　]+$/g, "").length){
         $jsShowMsg..,slideToggle('show');
         setTimeout(function(){ $jsShowMsg.slideToggle('show'); }, 5000);
+<<<<<<< HEAD
+=======
+      }
+
+>>>>>>> ca99be7e29efd890d67aa90ae9fdc7c4b029a34f
 
     });
   </script>

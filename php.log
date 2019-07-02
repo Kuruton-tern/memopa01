@@ -1487,10 +1487,13 @@ Stack trace:
 [23-Jun-2019 22:32:55 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
 [23-Jun-2019 22:32:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 =======
 >>>>>>> d610af4ec613c8492b5d57c355a8e1820639afc8
+=======
+>>>>>>> ca99be7e29efd890d67aa90ae9fdc7c4b029a34f
 [24-Jun-2019 02:03:48 Asia/Tokyo] デバッグ：                  
 [24-Jun-2019 02:03:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
 [24-Jun-2019 02:03:48 Asia/Tokyo] デバッグ：「　ログイン画面　」
@@ -9811,8 +9814,11 @@ Stack trace:
 )
 
 [02-Jul-2019 02:10:35 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562001035
+<<<<<<< HEAD
 [02-Jul-2019 02:10:35 Asia/Tokyo] デバッグ：未ログインユーザーです。
 <<<<<<< HEAD
+=======
+>>>>>>> ca99be7e29efd890d67aa90ae9fdc7c4b029a34f
 [02-Jul-2019 02:10:35 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：                  
 [02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
 [02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
@@ -9877,6 +9883,7 @@ Stack trace:
 )
 
 [02-Jul-2019 19:49:54 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<< HEAD
 >>>>>>> Stashed changes
 =======
 [02-Jul-2019 02:10:35 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -10483,3 +10490,5 @@ Stack trace:
 [02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：サクセスメッセージを出しました
 [02-Jul-2019 20:43:12 Asia/Tokyo] PHP Notice:  Undefined index: pic in /Applications/MAMP/htdocs/memopa/function.php on line 280
 [02-Jul-2019 20:43:12 Asia/Tokyo] PHP Notice:  Undefined index: pic in /Applications/MAMP/htdocs/memopa/function.php on line 280
+=======
+>>>>>>> ca99be7e29efd890d67aa90ae9fdc7c4b029a34f
