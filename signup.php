@@ -5,6 +5,7 @@ debug('                  ');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debug('「　アカウント作成画面　」');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
+debugLogStart();
 
 
 //==============================
@@ -19,13 +20,13 @@ if(!empty ($_POST)){
   $pass_re = $_POST['pass_re'];
 
   // email未入力チェック
-  varidRequired($email, 'email');
+  validRequired($email, 'email');
   // ユーザー名の未入力チェック
-  varidRequired($username, 'username');
+  validRequired($username, 'username');
   // パスワードの未入力チェック
-  varidRequired($pass, 'pass');
+  validRequired($pass, 'pass');
   // パスワード（再入力）の未入力チェック
-  varidRequired($pass_re, 'pass_re');
+  validRequired($pass_re, 'pass_re');
 
   debug('未入力チェック完了');
 
@@ -39,9 +40,9 @@ if(!empty ($_POST)){
     validLenMax($email, 'email');
 
     // ユーザー名の形式チェック
-    validUsername($username, 'username');
+    // validUsername($username, 'username');   日本語だけでなく英語でも登録できるように。
     // ユーザー名の最大文字数チェック
-    validLenMax($username, 'username');
+    validUnameMax($username, 'username');
 
     // パスワードの半角英数字チェック
     validHalfAZ09($pass, 'pass');
@@ -75,9 +76,32 @@ if(!empty ($_POST)){
          $stmt = queryPost($dbh, $sql, $data);
          debug('クエリ実行完了');
 
+            // セッションをもたせる
+            $_SESSION['login_date'] = time();
+            $_SESSION['user_id'] = $dbh->lastInsertId();
+            debug('$_SESSION["user_id"]の中身：'.print_r($_SESSION['user_id'], true));
+            // ログイン有効期限を変数を作り、設定（60秒*60分）
+            $session_limit = 60*60;
+
+            // ログイン保持にチェックがある場合
+            if (!empty('pass_save')) {
+                debug('ログイン保持にチェックがあります');
+                // ログイン有効期限を30日にする
+                $_SESSION['login_limit'] = $session_limit*24*30;
+                debug('ログイン有限期限：'.print_r($_SESSION['login_limit'], true));
+            } else {
+                debug('ログイン保持にチェックがありません');
+                // ログイン有限期限を1時間にする
+                $_SESSION['login_limit'] = $session_limit;
+                debug('ログイン有限期限：'.print_r($_SESSION['login_limit'], true));
+            }
+
+            header('location:myMemo.php');
+
+
           if ($stmt) {
             debug('ページ遷移します');
-            header("Location:myMemo.html");  //マイメモページへ
+            header("Location:myMemo.php");  //マイメモページへ
           }
 
         } catch(Exception $e){
@@ -88,8 +112,9 @@ if(!empty ($_POST)){
       }
     }
   }
-
 }
+debug('画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
+
 ?>
 
 
@@ -98,18 +123,13 @@ $siteTitle = 'アカウント登録画面';
  require("head.php");
 
 ?>
+
+<body class="page-logined page-1colum">
+
   <!-- ヘッダー  -->
-  <header>
-    <div class="site-width">
-      <h1><a href="index.html">memopa</a></h1>
-      <nav id="top-nav">
-        <ul>
-          <li><a href="top.html">トップ</a></li>
-          <li><a href="login.html">ログイン</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<?php 
+require('header.php');
+?>
 
   <!-- メインコンテンツ -->
   <div id="contents" class="site-width">
@@ -181,6 +201,7 @@ $siteTitle = 'アカウント登録画面';
 
   </div>
 
+
   <?php
- require('footer.php');
- ?>
+  require('footer.php');
+  ?>
