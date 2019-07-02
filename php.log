@@ -1486,6 +1486,14 @@ Stack trace:
 [23-Jun-2019 22:32:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
 [23-Jun-2019 22:32:55 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
 [23-Jun-2019 22:32:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> d610af4ec613c8492b5d57c355a8e1820639afc8
+=======
+>>>>>>> ca99be7e29efd890d67aa90ae9fdc7c4b029a34f
 [24-Jun-2019 02:03:48 Asia/Tokyo] デバッグ：                  
 [24-Jun-2019 02:03:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
 [24-Jun-2019 02:03:48 Asia/Tokyo] デバッグ：「　ログイン画面　」
@@ -9806,5 +9814,681 @@ Stack trace:
 )
 
 [02-Jul-2019 02:10:35 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562001035
+<<<<<<< HEAD
 [02-Jul-2019 02:10:35 Asia/Tokyo] デバッグ：未ログインユーザーです。
+<<<<<<< HEAD
+=======
+>>>>>>> ca99be7e29efd890d67aa90ae9fdc7c4b029a34f
+[02-Jul-2019 02:10:35 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
+[02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：セッションID：4d61nl80b8hlr1svrpafq94c3k
+[02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1562027033
+    [user_id] => 42
+    [login_limit] => 2592000
+)
+
+[02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562064325
+[02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564619033
+[02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 42
+    [username] => あああ
+    [email] => test@gmail.com
+    [password] => $2y$10$w9bEQ/C18rZk7CSxFtB6pedEcHrYSs7BNNJD/9wHFyUbErr5ygG7C
+    [pic] => img/me01.png
+    [delete_flg] => 0
+    [login_time] => 2019-07-02 09:13:16
+    [create_date] => 2019-07-02 09:13:16
+    [update_date] => 2019-07-02 09:13:16
+)
+
+[02-Jul-2019 19:45:25 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 19:49:54 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 19:49:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 19:49:54 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
+[02-Jul-2019 19:49:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 19:49:54 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 19:49:54 Asia/Tokyo] デバッグ：セッションID：k9jk7eo6dguk1pveukvdnj55pv
+[02-Jul-2019 19:49:54 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1562064325
+    [user_id] => 42
+    [login_limit] => 2592000
+)
+
+[02-Jul-2019 19:49:54 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562064594
+[02-Jul-2019 19:49:54 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564656325
+[02-Jul-2019 19:49:54 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[02-Jul-2019 19:49:54 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[02-Jul-2019 19:49:54 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 19:49:54 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 42
+    [username] => あああ
+    [email] => test@gmail.com
+    [password] => $2y$10$w9bEQ/C18rZk7CSxFtB6pedEcHrYSs7BNNJD/9wHFyUbErr5ygG7C
+    [pic] => img/me01.png
+    [delete_flg] => 0
+    [login_time] => 2019-07-02 09:13:16
+    [create_date] => 2019-07-02 09:13:16
+    [update_date] => 2019-07-02 09:13:16
+)
+
+[02-Jul-2019 19:49:54 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<< HEAD
+>>>>>>> Stashed changes
+=======
 [02-Jul-2019 02:10:35 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>> d610af4ec613c8492b5d57c355a8e1820639afc8
+[02-Jul-2019 19:59:03 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 19:59:03 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 19:59:03 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
+[02-Jul-2019 19:59:03 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 19:59:03 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 19:59:03 Asia/Tokyo] デバッグ：セッションID：3aie5paa9b9oj3ov4n34e3m6a0
+[02-Jul-2019 19:59:03 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1562064594
+    [user_id] => 42
+    [login_limit] => 2592000
+)
+
+[02-Jul-2019 19:59:03 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562065143
+[02-Jul-2019 19:59:03 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564656594
+[02-Jul-2019 19:59:03 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[02-Jul-2019 19:59:03 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[02-Jul-2019 19:59:03 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 19:59:03 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 42
+    [username] => あああ
+    [email] => test@gmail.com
+    [password] => $2y$10$w9bEQ/C18rZk7CSxFtB6pedEcHrYSs7BNNJD/9wHFyUbErr5ygG7C
+    [pic] => img/me01.png
+    [delete_flg] => 0
+    [login_time] => 2019-07-02 09:13:16
+    [create_date] => 2019-07-02 09:13:16
+    [update_date] => 2019-07-02 09:13:16
+)
+
+[02-Jul-2019 19:59:03 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：セッションID：dem987j7beiind7plduja6go7u
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1562065143
+    [user_id] => 42
+    [login_limit] => 2592000
+)
+
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562065154
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564657143
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 42
+    [username] => あああ
+    [email] => test@gmail.com
+    [password] => $2y$10$w9bEQ/C18rZk7CSxFtB6pedEcHrYSs7BNNJD/9wHFyUbErr5ygG7C
+    [pic] => img/me01.png
+    [delete_flg] => 0
+    [login_time] => 2019-07-02 09:13:16
+    [create_date] => 2019-07-02 09:13:16
+    [update_date] => 2019-07-02 09:13:16
+)
+
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：POST送信があります
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：POST情報：Array
+(
+    [MAX_FILE_SIZE] => 3145728
+    [pic] => 
+    [username] => いおいいい
+    [email] => test@gmail.com
+)
+
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：FILE情報：Array
+(
+)
+
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：$picの内容：img/me01.png
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：ユーザー名が新たに入力されました
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：バリデーションチェックOKです
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：クエリ成功
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：画面を更新する
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 19:59:14 Asia/Tokyo] デバッグ：$_SESSION[$key]の中身：プロフィールを変更しました。
+[02-Jul-2019 19:59:56 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 19:59:56 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 19:59:56 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
+[02-Jul-2019 19:59:56 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 19:59:56 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 19:59:56 Asia/Tokyo] デバッグ：セッションID：81c24ir24j1betsm8k89ajm1e1
+[02-Jul-2019 19:59:56 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1562065154
+    [user_id] => 42
+    [login_limit] => 2592000
+    [msg_success] => 
+)
+
+[02-Jul-2019 19:59:56 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562065196
+[02-Jul-2019 19:59:56 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564657154
+[02-Jul-2019 19:59:56 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[02-Jul-2019 19:59:56 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[02-Jul-2019 19:59:56 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 19:59:56 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 42
+    [username] => いおいいい
+    [email] => test@gmail.com
+    [password] => $2y$10$w9bEQ/C18rZk7CSxFtB6pedEcHrYSs7BNNJD/9wHFyUbErr5ygG7C
+    [pic] => img/me01.png
+    [delete_flg] => 0
+    [login_time] => 2019-07-02 09:13:16
+    [create_date] => 2019-07-02 09:13:16
+    [update_date] => 2019-07-02 09:13:16
+)
+
+[02-Jul-2019 19:59:56 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 19:59:56 Asia/Tokyo] デバッグ：サクセスメッセージを出しました
+[02-Jul-2019 20:07:38 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 20:07:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:07:38 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
+[02-Jul-2019 20:07:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:07:38 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 20:07:38 Asia/Tokyo] デバッグ：セッションID：uomev06mtegotteji30q21drpn
+[02-Jul-2019 20:07:38 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1562065196
+    [user_id] => 42
+    [login_limit] => 2592000
+    [msg_success] => 
+)
+
+[02-Jul-2019 20:07:38 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562065658
+[02-Jul-2019 20:07:38 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564657196
+[02-Jul-2019 20:07:38 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[02-Jul-2019 20:07:38 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[02-Jul-2019 20:07:38 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:07:38 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 42
+    [username] => いおいいい
+    [email] => test@gmail.com
+    [password] => $2y$10$w9bEQ/C18rZk7CSxFtB6pedEcHrYSs7BNNJD/9wHFyUbErr5ygG7C
+    [pic] => img/me01.png
+    [delete_flg] => 0
+    [login_time] => 2019-07-02 09:13:16
+    [create_date] => 2019-07-02 09:13:16
+    [update_date] => 2019-07-02 09:13:16
+)
+
+[02-Jul-2019 20:07:38 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 20:07:38 Asia/Tokyo] デバッグ：サクセスメッセージを出しました
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：セッションID：ld94qf0juen6sfjma1618jeh9r
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1562065658
+    [user_id] => 42
+    [login_limit] => 2592000
+    [msg_success] => 
+)
+
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562065663
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564657658
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 42
+    [username] => いおいいい
+    [email] => test@gmail.com
+    [password] => $2y$10$w9bEQ/C18rZk7CSxFtB6pedEcHrYSs7BNNJD/9wHFyUbErr5ygG7C
+    [pic] => img/me01.png
+    [delete_flg] => 0
+    [login_time] => 2019-07-02 09:13:16
+    [create_date] => 2019-07-02 09:13:16
+    [update_date] => 2019-07-02 09:13:16
+)
+
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：POST送信があります
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：POST情報：Array
+(
+    [MAX_FILE_SIZE] => 3145728
+    [pic] => 
+    [username] => いおい
+    [email] => test@gmail.com
+)
+
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：FILE情報：Array
+(
+)
+
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：$picの内容：img/me01.png
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：ユーザー名が新たに入力されました
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：バリデーションチェックOKです
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：クエリ成功
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：画面を更新する
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：$_SESSION[$key]の中身：プロフィールを変更しました。
+[02-Jul-2019 20:07:43 Asia/Tokyo] デバッグ：サクセスメッセージを出しました
+[02-Jul-2019 20:09:02 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 20:09:02 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:09:02 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
+[02-Jul-2019 20:09:02 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:09:02 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 20:09:02 Asia/Tokyo] デバッグ：セッションID：bnep35ltjpurpfhmabpm2m54cn
+[02-Jul-2019 20:09:02 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1562065663
+    [user_id] => 42
+    [login_limit] => 2592000
+    [msg_success] => 
+)
+
+[02-Jul-2019 20:09:02 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562065742
+[02-Jul-2019 20:09:02 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564657663
+[02-Jul-2019 20:09:02 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[02-Jul-2019 20:09:02 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[02-Jul-2019 20:09:02 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:09:02 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 42
+    [username] => いおい
+    [email] => test@gmail.com
+    [password] => $2y$10$w9bEQ/C18rZk7CSxFtB6pedEcHrYSs7BNNJD/9wHFyUbErr5ygG7C
+    [pic] => img/me01.png
+    [delete_flg] => 0
+    [login_time] => 2019-07-02 09:13:16
+    [create_date] => 2019-07-02 09:13:16
+    [update_date] => 2019-07-02 09:13:16
+)
+
+[02-Jul-2019 20:09:02 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 20:09:02 Asia/Tokyo] デバッグ：サクセスメッセージを出しました
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：セッションID：cckq1ng4nngjunc2032sd6qc56
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1562065742
+    [user_id] => 42
+    [login_limit] => 2592000
+    [msg_success] => 
+)
+
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562065750
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564657742
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 42
+    [username] => いおい
+    [email] => test@gmail.com
+    [password] => $2y$10$w9bEQ/C18rZk7CSxFtB6pedEcHrYSs7BNNJD/9wHFyUbErr5ygG7C
+    [pic] => img/me01.png
+    [delete_flg] => 0
+    [login_time] => 2019-07-02 09:13:16
+    [create_date] => 2019-07-02 09:13:16
+    [update_date] => 2019-07-02 09:13:16
+)
+
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：POST送信があります
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：POST情報：Array
+(
+    [MAX_FILE_SIZE] => 3145728
+    [pic] => 
+    [username] => いおいいい
+    [email] => test@gmail.com
+)
+
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：FILE情報：Array
+(
+)
+
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：$picの内容：img/me01.png
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：ユーザー名が新たに入力されました
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：バリデーションチェックOKです
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：クエリ成功
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：画面を更新する
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：$_SESSION[$key]の中身：プロフィールを変更しました。
+[02-Jul-2019 20:09:10 Asia/Tokyo] デバッグ：サクセスメッセージを出しました
+[02-Jul-2019 20:13:45 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 20:13:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:13:45 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
+[02-Jul-2019 20:13:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:13:45 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 20:13:45 Asia/Tokyo] デバッグ：セッションID：hm6evbrdj94bgjlpaeoptt96v6
+[02-Jul-2019 20:13:45 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1562065750
+    [user_id] => 42
+    [login_limit] => 2592000
+    [msg_success] => 
+)
+
+[02-Jul-2019 20:13:45 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562066025
+[02-Jul-2019 20:13:45 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564657750
+[02-Jul-2019 20:13:45 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[02-Jul-2019 20:13:45 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[02-Jul-2019 20:13:45 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:13:45 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 42
+    [username] => いおいいい
+    [email] => test@gmail.com
+    [password] => $2y$10$w9bEQ/C18rZk7CSxFtB6pedEcHrYSs7BNNJD/9wHFyUbErr5ygG7C
+    [pic] => img/me01.png
+    [delete_flg] => 0
+    [login_time] => 2019-07-02 09:13:16
+    [create_date] => 2019-07-02 09:13:16
+    [update_date] => 2019-07-02 09:13:16
+)
+
+[02-Jul-2019 20:13:45 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 20:13:45 Asia/Tokyo] デバッグ：サクセスメッセージを出しました
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：セッションID：pav3rhsubilrbp3vecv33ts8mt
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1562066025
+    [user_id] => 42
+    [login_limit] => 2592000
+    [msg_success] => 
+)
+
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562066033
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564658025
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 42
+    [username] => いおいいい
+    [email] => test@gmail.com
+    [password] => $2y$10$w9bEQ/C18rZk7CSxFtB6pedEcHrYSs7BNNJD/9wHFyUbErr5ygG7C
+    [pic] => img/me01.png
+    [delete_flg] => 0
+    [login_time] => 2019-07-02 09:13:16
+    [create_date] => 2019-07-02 09:13:16
+    [update_date] => 2019-07-02 09:13:16
+)
+
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：POST送信があります
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：POST情報：Array
+(
+    [MAX_FILE_SIZE] => 3145728
+    [pic] => 
+    [username] => いおいいいaaaaa
+    [email] => test@gmail.com
+)
+
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：FILE情報：Array
+(
+)
+
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：$picの内容：img/me01.png
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：ユーザー名が新たに入力されました
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：バリデーションチェックOKです
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：クエリ成功
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：画面を更新する
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：$_SESSION[$key]の中身：プロフィールを変更しました。
+[02-Jul-2019 20:13:53 Asia/Tokyo] デバッグ：サクセスメッセージを出しました
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：セッションID：70e50uh2e2ckpccafct2ma97ie
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562066055
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[02-Jul-2019 20:14:15 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/memopa/myProf.php on line 19
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：サクセスメッセージを出しました
+[02-Jul-2019 20:14:15 Asia/Tokyo] PHP Notice:  Undefined index: pic in /Applications/MAMP/htdocs/memopa/function.php on line 280
+[02-Jul-2019 20:14:15 Asia/Tokyo] PHP Notice:  Undefined index: pic in /Applications/MAMP/htdocs/memopa/function.php on line 280
+[02-Jul-2019 20:14:15 Asia/Tokyo] PHP Notice:  Undefined index: username in /Applications/MAMP/htdocs/memopa/function.php on line 280
+[02-Jul-2019 20:14:15 Asia/Tokyo] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/memopa/function.php on line 280
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：セッションID：oph0443pa0ikpcmduo36ltnouk
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562066055
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[02-Jul-2019 20:14:15 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：セッションID：s8vnje3li7q8a80qs6lg025uth
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562066064
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：POST送信があります
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：バリデーションチェックOK
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：SQL実行結果の中身
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：入力されたpass:111111
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：パスワードアンマッチです
+[02-Jul-2019 20:14:24 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：セッションID：isvgubbv4pdvq3i22e8llgj168
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562066074
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：POST送信があります
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：バリデーションチェックOK
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：SQL実行結果の中身Array
+(
+    [password] => $2y$10$pVXKts74JHdxMoWefv/QPOci1zzXk5RArCzXpRx1XUNFz9jB2t7Nm
+    [id] => 37
+)
+
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：入力されたpass:111111
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：パスワードがマッチしました。
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：ログイン保持にチェックがあります
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：ログイン有限期限：2592000
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：セッションID：7j19d38oj549ljouuis74h0qjq
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1562066074
+    [login_limit] => 2592000
+)
+
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562066074
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564658074
+[02-Jul-2019 20:14:34 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[02-Jul-2019 20:14:36 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 20:14:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:14:36 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
+[02-Jul-2019 20:14:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:14:36 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 20:14:36 Asia/Tokyo] デバッグ：セッションID：ghbncdu2cl3u5cqj8867f7rq26
+[02-Jul-2019 20:14:36 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1562066074
+    [login_limit] => 2592000
+)
+
+[02-Jul-2019 20:14:36 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562066076
+[02-Jul-2019 20:14:36 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564658074
+[02-Jul-2019 20:14:36 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[02-Jul-2019 20:14:36 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[02-Jul-2019 20:14:36 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:14:36 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 37
+    [username] => ううううう
+    [email] => ponpon222@gmail.com
+    [password] => $2y$10$pVXKts74JHdxMoWefv/QPOci1zzXk5RArCzXpRx1XUNFz9jB2t7Nm
+    [pic] => 
+    [delete_flg] => 0
+    [login_time] => 2019-06-25 01:45:36
+    [create_date] => 2019-06-25 01:45:36
+    [update_date] => 2019-06-25 01:45:36
+)
+
+[02-Jul-2019 20:14:36 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 20:14:36 Asia/Tokyo] デバッグ：サクセスメッセージを出しました
+[02-Jul-2019 20:14:36 Asia/Tokyo] PHP Notice:  Undefined index: pic in /Applications/MAMP/htdocs/memopa/function.php on line 280
+[02-Jul-2019 20:14:36 Asia/Tokyo] PHP Notice:  Undefined index: pic in /Applications/MAMP/htdocs/memopa/function.php on line 280
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：セッションID：0pvud74gja7g5tcvtquld86pat
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1562066076
+    [login_limit] => 2592000
+)
+
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562066109
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564658076
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 37
+    [username] => ううううう
+    [email] => ponpon222@gmail.com
+    [password] => $2y$10$pVXKts74JHdxMoWefv/QPOci1zzXk5RArCzXpRx1XUNFz9jB2t7Nm
+    [pic] => 
+    [delete_flg] => 0
+    [login_time] => 2019-06-25 01:45:36
+    [create_date] => 2019-06-25 01:45:36
+    [update_date] => 2019-06-25 01:45:36
+)
+
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：POST送信があります
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：POST情報：Array
+(
+    [MAX_FILE_SIZE] => 3145728
+    [pic] => 
+    [username] => うううううあああ
+    [email] => ponpon222@gmail.com
+)
+
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：FILE情報：Array
+(
+)
+
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：$picの内容：
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：ユーザー名が新たに入力されました
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：バリデーションチェックOKです
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：クエリ成功
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：画面を更新する
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：$_SESSION[$key]の中身：プロフィールを変更しました。
+[02-Jul-2019 20:15:09 Asia/Tokyo] デバッグ：サクセスメッセージを出しました
+[02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：                  
+[02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：「　プロフ編集画面　」
+[02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：セッションID：ecdr6vjb1m7vseu9r6t8212kll
+[02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 37
+    [login_date] => 1562066109
+    [login_limit] => 2592000
+    [msg_success] => 
+)
+
+[02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1562067792
+[02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1564658109
+[02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：ユーザー情報を取得します
+[02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：クエリ成功。
+[02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：DBから取得したユーザーデータ：Array
+(
+    [id] => 37
+    [username] => うううううあああ
+    [email] => ponpon222@gmail.com
+    [password] => $2y$10$pVXKts74JHdxMoWefv/QPOci1zzXk5RArCzXpRx1XUNFz9jB2t7Nm
+    [pic] => 
+    [delete_flg] => 0
+    [login_time] => 2019-06-25 01:45:36
+    [create_date] => 2019-06-25 01:45:36
+    [update_date] => 2019-06-25 01:45:36
+)
+
+[02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[02-Jul-2019 20:43:12 Asia/Tokyo] デバッグ：サクセスメッセージを出しました
+[02-Jul-2019 20:43:12 Asia/Tokyo] PHP Notice:  Undefined index: pic in /Applications/MAMP/htdocs/memopa/function.php on line 280
+[02-Jul-2019 20:43:12 Asia/Tokyo] PHP Notice:  Undefined index: pic in /Applications/MAMP/htdocs/memopa/function.php on line 280
+=======
+>>>>>>> ca99be7e29efd890d67aa90ae9fdc7c4b029a34f
