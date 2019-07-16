@@ -480,6 +480,18 @@ function getMemoList($category){
   }
 }
 
+// カテゴリーを連想配列にして、メモリストのタイトルとして並べたい
+function getCategoryData($u_id){
+  debug('カテゴリーを取得する');
+// 例外処理
+try{
+  // DBへ接続
+  $dbh = dbConnect();
+  // SQL文作成
+  $sql = '';
+}
+}
+
 // メモデータを取得する
 function getMemoData($u_id)
 {
@@ -499,7 +511,8 @@ function getMemoData($u_id)
         if (!empty($rst)) {
             foreach ($rst as $key => $val) {
                 // SQL文作成
-                $sql = 'SELECT * FROM contentsMemo WHERE memo_id = :id AND delete_flg = 0 ORDER BY upload_date DESC';
+                // 古いものが先頭に来るように
+                $sql = 'SELECT * FROM category WHERE memo_id = :id AND delete_flg = 0 ORDER BY upload_date ASC';
                 $data = array(':id' => $val['id']);
                 // クエリ実行
                 $stmt = queryPost($dbh, $sql, $data);
