@@ -1,4 +1,5 @@
 <?php
+// 共有変数・関数ファイルを読み込み
 require('function.php');
 
 debug('                  ');
@@ -141,11 +142,14 @@ require('header.php');
           <h2 class="title">アカウント作成</h2>
 
           <div class="area-msg">
-            
+           <?php 
+            if(!empty($err_msg['common'])) echo $err_msg['common'];
+            ?>
           </div>
           <!-- メールアドレス -->
-          <label class="">メールアドレス</label>
+          <label class="<?php if(!empty($err_msg['email'])) echo 'err';?>">メールアドレス
           <input type="text" name="email" value="<?php if (!empty($_POST['email'])) echo $_POST['email']; ?>">
+          </label>
           <div class="area-msg">
            <?php 
             if(!empty($err_msg['email'])) echo $err_msg['email'];
@@ -153,10 +157,9 @@ require('header.php');
           </div>
 
           <!-- ユーザー名 -->
-          <label class="username">ユーザー名</label>
-          
+          <label class="<?php if(!empty($err_msg['username'])) echo 'err';?>">ユーザー名
           <input type="text" name="username" placeholder="サイトで使う名前を日本語で入力してください" value="<?php if (!empty($_POST['username'])) echo $_POST['username']; ?>">
-<?php  ?>
+          </label>
           <div class="area-msg">
            <?php 
             if(!empty($err_msg['username'])) echo $err_msg['username'];
@@ -164,8 +167,9 @@ require('header.php');
           </div>
 
           <!-- パスワード -->
-          <label class="pass">パスワード</label>
+          <label class="<?php if(!empty($err_msg['pass'])) echo 'err';?>">パスワード
           <input type="password" name="pass" placeholder="６文字以上で入力してください。" value="<?php if (!empty($_POST['pass'])) echo $_POST['pass']; ?>">
+          </label>
           <div class="area-msg">
            <?php 
             if(!empty($err_msg['pass'])) echo $err_msg['pass'];
@@ -174,8 +178,9 @@ require('header.php');
 
 
           <!-- パスワード（再入力） -->
-          <label class="pass pass_re">パスワード（再入力）</label>
+          <label class="<?php if(!empty($err_msg['pass_re'])) echo 'err';?>">パスワード（再入力）
           <input type="password" name="pass_re" placeholder="６文字以上で入力してください。" value="<?php if (!empty($_POST['pass_re'])) echo $_POST['pass_re']; ?>">
+          </label>
           <div class="area-msg">
            <?php 
             if(!empty($err_msg['pass_re'])) echo $err_msg['pass_re'];

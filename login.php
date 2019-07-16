@@ -8,8 +8,6 @@ debug('「「「「「「「「「「「「「「「「「「「「「「「「�
 debugLogStart();
 
 
-// $_SESSION['username'] = "クルトン";
-// このusernameは消しても「クルトン」ってphp.logに残る
 
 // ログイン認証
 require('auth.php');
@@ -23,8 +21,7 @@ if (!empty($_POST)) {
   // 変数にユーザー情報を代入
   $email = $_POST['email'];
   $pass = $_POST['pass'];
-  $pass_re = (!empty($_POST['pass_re']))? true : false;
-
+  
     // emailの形式チェック
     validEmail($email, 'email');
     // emailの最大文字数チェック
@@ -111,6 +108,7 @@ $siteTitle = 'ログイン画面';
 require('header.php');
 ?>
 
+
 <!-- メインコンテンツ -->
 <div id="contents" class="site-width">
 
@@ -127,17 +125,19 @@ require('header.php');
            </div>
           <!-- メールアドレス -->
           
-            <label class="">メールアドレス</label>
+            <label class="<?php if(!empty($err_msg['email'])) echo 'err';?>">メールアドレス
             <input type="text" name="email" placeholder="emailの形式で入力してください" value="<?php if(!empty($_POST['email'])) echo $_POST['email']; ?>">
+            </label>
             <div class="area-msg">
-              <?php if(!empty($err_msg['email']))  echo $err_msg['email']; ?>
+              <?php echo getErr_msg('email'); ?>
             </div>
         
           <!-- パスワード -->
-            <label class="">パスワード</label>
+            <label class="<?php if(!empty($err_msg['pass'])) echo 'err';?>">パスワード
             <input type="password" name="pass" placeholder="６文字以上で入力してください。" value="<?php if(!empty($_POST['pass'])) echo $_POST['pass']; ?>">
+            </label>
             <div class="area-msg">
-              <?php if (!empty($err_msg['pass']))  echo $err_msg['pass']; ?>
+              <?php echo getErr_msg('pass'); ?>
             </div>
 
 
@@ -152,7 +152,7 @@ require('header.php');
             <input type="submit" class="btn btn-mid" value="ログイン">
           </div>
           <span class="help-block">
-            パスワードを忘れた方は<a href="passRemindSend.html">コチラ</a>
+            パスワードを忘れた方は<a href="passRemindSend.php">コチラ</a>
           </span>
         </form>
     </div>
