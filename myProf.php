@@ -30,7 +30,7 @@ if (!empty($_POST)) {
     $email = $_POST['email'];
 
     //画像をアップロードし、パスを格納
-    $pic = (!empty($_FILES['pic']['name'])) ? uploadImgOri($_FILES['pic'], 'pic') : '';
+    $pic = (!empty($_FILES['pic']['name'])) ? uploadImg($_FILES['pic'], 'pic') : '';
     //画像をPOSTしてない（登録していない）がすでにDBに登録されている場合、DBのパスを入れる（POSTには反映されないため）
     $pic = (empty($pic) && !empty($dbFormData['pic'])) ? $dbFormData['pic'] : $pic;
     debug('$picの内容：'.print_r($pic, true));
@@ -68,16 +68,16 @@ if (!empty($_POST)) {
             $dbh = dbConnect();
             // SQL文作成
             // 新しく入力した情報をDBに登録する
-            $sql = 'UPDATE user SET username = :username, email = :email WHERE id = :u_id';
-            $data = array(':username' => $username, ':email' => $email, ':u_id' => $dbFormData['id']);
+            $sql = 'UPDATE user SET username = :username, email = :email, pic = :pic WHERE id = :u_id';
+            $data = array(':username' => $username, ':email' => $email, ':pic' => $pic, ':u_id' => $dbFormData['id']);
             // クエリ実行
             $stmt = queryPost($dbh, $sql, $data);
 
             // クエリ成功の場合
             if ($stmt) {
-              debug('クエリ成功');
               debug('画面を更新する');
               $_SESSION['msg_success'] = SUC01;
+              header('location:myMemo.php');
             }
         } catch (Exeption $e) {
             error_log('エラー発生：'.$e->getMessage());
@@ -103,12 +103,6 @@ $siteTitle = 'マイプロフ';
 require('header.php');
 ?>
 
-<p id="js-show-msg" class="msg-slide">
-<?php
-echo getSessionFlash('msg_success');
-debug('サクセスメッセージを出しました');
-?>
-</p>
 
 
   <!-- メインコンテンツ -->
@@ -128,6 +122,7 @@ debug('サクセスメッセージを出しました');
             ?>
           </div>
           <!-- アバター写真 -->
+          <div style="overflow:hidden;">
           <div class="prof-img">
               <label class="area-drop <?php if (!empty($err_msg['pic'])) echo 'err'; ?>">
                 <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
@@ -140,6 +135,7 @@ debug('サクセスメッセージを出しました');
                 if (!empty($err_msg['pic'])) echo $err_msg['pic'];
                 ?>
               </div>
+            </div>
           </div>
           
           <!-- ユーザー名 -->
