@@ -14,6 +14,12 @@ require('auth.php');
 //==============================
 //画面処理
 //==============================
+// DBからユーザーデータを取得
+// DBから取得したユーザーデータ
+$dbFormData = getUser($_SESSION['user_id']);
+debug('DBから取得したユーザーデータ：'.print_r($dbFormData, true));
+
+
 // GETデータを格納
 // メモID＝memo_id
 // memo_idが空なら空文字を入れる
@@ -21,7 +27,7 @@ $memo_id = (!empty($_GET['memo_id'])) ? $_GET['memo_id'] : '';
 // DBからメモデータを取得
 $dbMemoData = (!empty($memo_id)) ? getMemo($_SESSION['user_id'], $memo_id) : '';
 // DBからメモのカテゴリを取得
-$dbMemoCategory = getMemoCategory();
+$dbMemoCategory = MemoCategory();
 // 新規メモ作成画面か、編集画面か判別する
 // 新規作成ならfalse, 編集ならtrue
 $edit_flg = (empty($dbMemoData)) ? false : true;
@@ -88,12 +94,12 @@ if (!empty($_POST)) {
             // 新規作成画面なら、INSERT。編集画面の場合は、UPDATE。
             if ($edit_flg) {
                 debug('編集画面なのでDB更新です。');
-                $sql = 'UPDATE memo SET category_id = :memolist, name = :name, contents = :contents, WHERE user_id = :u_id AND id = :m_id ';
-                $data = array(':memolist' => $m_list, ':name' => $m_title, ':contents' => $m_contents, ':u_id' => $_SESSION['user_id'] , ':m_id' => $memo_id);
+                $sql = 'UPDATE memo SET name = :name, contents = :contents, category_id = :m_list, WHERE user_id = :u_id AND id = :m_id ';
+                $data = array(':name' => $m_title, ':contents' => $m_contents, ':m_list' => $m_list, ':u_id' => $_SESSION['user_id'] , ':m_id' => $memo_id);
             } else {
                 debug('新規作成画面なのでDB登録です。');
-                $sql = 'INSERT INTO memo (category_id, name, contents, user_id, create_date) VALUES (:memolist, :name, :contents, :u_id, :date)';
-                $data = array(':memolist' => $m_list, ':name' => $m_title, ':contents' => $m_contents, ':u_id' => $_SESSION['user_id'], ':date' => date('Y-m-d H:i:s'));
+                $sql = 'INSERT INTO memo (name, contents, category_id, user_id, create_date) VALUES (:name, :contents, :m_list, :u_id, :date)';
+                $data = array(':name' => $m_title, ':contents' => $m_contents, ':m_list' => $m_list, ':u_id' => $_SESSION['user_id'], ':date' => date('Y-m-d H:i:s'));
             }
             debug('SQLの中身：'.print_r($sql, true));
             debug('流し込みデータ：'.print_r($data, true));
@@ -102,9 +108,18 @@ if (!empty($_POST)) {
 
             // クエリ成功の場合
             if ($stmt) {
-               $_SESSION['msg_success'] = SUC04;
-   debug('マイページへ遷移します。');
-    header("location:myMemo.php"); //マイページへ	// 編集画面なら
+                if ($edit_flg) {
+                    //  編集画面なら
+                    $_SESSION['msg_success'] = SUC04;
+                    debug('マイメモに遷移します。');
+                    header("location: myMemo.php");
+                } else {
+                    // 新規作成画面なら
+                    $_SESSION['msg_success'] = SUC05;
+                    debug('マイメモに遷移します。');
+                    header("location: myMemo.php");
+                }
+                
             }
         } catch (Exceptiojn $e) {
             err_lo('エラー発生'.$e->getMessage());
@@ -186,37 +201,13 @@ require('header.php');
 
         <!-- リスト名 -->
        
-          <label class="memolist <?php if (!empty($err_msg['memolist'])) echo 'err'; ?>">
-            リスト
-           </label>
-            <div class="select-wrap">
-            <select class="select-cate" name="memolist" id="">
-              <option value=" <?php if (getFormData('category_id') == 0) {
-                                echo 'selected';
-                              } ?>">no name</option>
-              <?php
-              foreach ($dbMemoCategory as $key => $val) {
-                ?>
-                <option value="<?php echo $val['id'] ?>" <?php if (getFormData('memolist') == $val['id']) {
-                                                            echo 'selected';
-                                                          } ?>>
-                  <?php echo $val['name']; ?>
-                </option>
-              <?php
-            }
-            ?>
-            </select>
-            </div>
-         
-          <div class="area-msg">
-            <?php
-            if (!empty($err_msg['memolist'])) echo $err_msg['memolist'];
-            ?>
-          </div>
+          <label class="memo-list  ">リスト
+          <input type="text" name="memolist">
+          </label>
 
         <!-- タイトル -->
-          <label class="memo-title  <?php if(!empty($err_msg['memotitle'])) echo "err"; ?>">タイトル
-          <input type="text" name="memotitle" value="<?php echo getFormData('name'); ?>">
+          <label class="memo-title  <?php if(!empty($err_msg['memotitle'])) echo $err_msg['memotitle']; ?>">タイトル
+          <input type="text" name="memotitle" value="">
           <div class="area-msg">
               <?php echo getErr_msg('memotitle'); ?>
             </div>
@@ -224,20 +215,19 @@ require('header.php');
           </label>
 
         <!-- メモ内容 -->
-          <label class="memo-contents <?php if(!empty($err_msg['contents'])) echo "err"; ?>">メモ</label>
-          <textarea name="contents" id="memo-area" cols="30" rows="10" value="<?php echo getFormData('contents'); ?>"></textarea>
+          <label class="memo-contents <?php if(!empty($err_msg['memotitle'])) echo $err_msg['memotitle']; ?>">メモ</label>
+          <textarea name="contents" id="memo-area" cols="30" rows="10" value=""></textarea>
           <div class="area-msg">
               <?php echo getErr_msg('contents'); ?>
             </div>
 
           <div class="btn-container">
-            
-            <input type="submit" class="btn btn-mid btn-Edit" value="<?php echo (!$edit_flg) ? '新規作成' : '編集' ?>">
+            <input type="submit" class="btn btn-mid btn-Edit" value="編集する">
             <input type="submit" class="btn btn-mid btn-del" value="削除する">
           </div>
 
           <label class="prev-a">
-            <a href="myMemo.php">&lt;&lt;前のページに戻る</a>
+            <a href="memoContents.html">&lt;&lt;前のページに戻る</a>
           </label>
 
         </form>
@@ -248,6 +238,24 @@ require('header.php');
   </div>
 
   <!-- footer -->
-  <?php
- require('footer.php');
-?>
+  <footer id="footer">
+    Copyright memopa. All Rights Reserved.
+  </footer>
+
+  <!-- innnerHeightに関しての参考記事→ https://www.flatflag.nir87.com/height-1083 -->
+  <!-- innerHeight = 要素＋padding(borderの内側)を取得 -->
+  <!-- outerHeight = 要素＋padding+borderを取得 -->
+  <!-- window ＝ 画面上に出てくる小さい画面のこと-->
+  <script> src = "js/vendor/jquery-3.4.1.min.js"</script>
+  <script>
+    $(function () {
+      var $ftr = $('#footer');
+      if (window.innerHeight() > $ftr.offset().top + $ftr.outerHeight()) {
+        $ftr.attr({ 'style': 'position: fixed; top:' + (window.innerHeight - $ftr.outerHeight()) + 'px;' });
+      }
+    });
+  </script>
+
+</body>
+
+</html>
