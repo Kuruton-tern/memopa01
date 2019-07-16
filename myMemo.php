@@ -25,7 +25,7 @@ if (empty($_SESSION['login_date'])) {
 //------------------------------
 // カテゴリー
 $u_id = $_SESSION['user_id'];
-$category = (!empty($_GET['c_id'])) ? $_GET['c_id'] : '';
+// $category = getmemoCategory();
 $memoData = getMemoData($u_id);
 
 debug('$memoDataの中身：'.print_r($memoData, true));
@@ -59,6 +59,9 @@ debug('サクセスメッセージを出しました');
 
  
   <div id="page-panel">
+    <!-- <?php
+    // foreach($category as $key => $val);
+     ?> -->
   <!-- メモの大枠1 -->
   <section class="list-wrap">
     <div class="list-panel">
