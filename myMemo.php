@@ -16,7 +16,19 @@ if (empty($_SESSION['login_date'])) {
     debug('SESSIONがなかったためトップ画面に遷移します');
 }
 
+//==============================
+//画面処理
+//==============================
+//画面表示用データ取得
+//==============================
+// GETパラメータを取得
+//------------------------------
+// カテゴリー
+$u_id = $_SESSION['user_id'];
+$category = (!empty($_GET['c_id'])) ? $_GET['c_id'] : '';
+$memoData = getMemoData($u_id);
 
+debug('$memoDataの中身：'.print_r($memoData, true));
 ?>
 
 
@@ -34,6 +46,14 @@ $siteTitle = 'マイメモ';
 require('header.php');
 ?>
 
+<p id="js-show-msg" class="msg-slide" style="display:none;">
+<?php
+echo getSessionFlash('msg_success');
+debug('サクセスメッセージを出しました');
+?>
+</p>
+
+
   <!-- メインコンテンツ -->
  <div id="mymemo-main">
 
@@ -44,10 +64,10 @@ require('header.php');
     <div class="list-panel">
       <!-- メモのヘッダー -->
       <div class="list-header">
-        <h2 class="list-title"> やること </h2>
+        <h2 class="list-title"> <?php  ?></h2>
         <div class="list-header-icon">
           <i class="fas fa-trash-alt"></i>
-          <i class="fas fa-edit"></i>
+          <a href="memoDetail.php"><i class="fas fa-edit"></i></a>
         </div>
       </div>
       <!-- メモの内容（タイトル部分） それの繰り返し -->
@@ -58,46 +78,46 @@ require('header.php');
       </div>
       </div>
       <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
+      html作成（メモタイトル）
+      <div class="memo-panel-icon">
+        <i class="fas fa-bars"></i>
+      </div>
       </div>
       <div class="memo-panel">
-      testtesttestestestsetssetset作成（メモタイトル）aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
+      html作成（メモタイトル）
+      <div class="memo-panel-icon">
+        <i class="fas fa-bars"></i>
+      </div>
       </div>
       <div class="memo-panel">
-        メモタイトル
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
+      html作成（メモタイトル）ssssddddddddddddddddd
+      <div class="memo-panel-icon">
+        <i class="fas fa-bars"></i>
+      </div>
       </div>
       <div class="memo-panel">
-        php
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
+      html作成（メモタイトル）
+      <div class="memo-panel-icon">
+        <i class="fas fa-bars"></i>
+      </div>
       </div>
       <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
+      html作成（メモタイトル）
+      <div class="memo-panel-icon">
+        <i class="fas fa-bars"></i>
+      </div>
       </div>
       <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
+      html作成（メモタイトル）
+      <div class="memo-panel-icon">
+        <i class="fas fa-bars"></i>
+      </div>
       </div>
       <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
+      html作成（メモタイトル）
+      <div class="memo-panel-icon">
+        <i class="fas fa-bars"></i>
+      </div>
       </div>
       <div class="memo-add">
         <span><a href="memoAdd.html"><i class="fas fa-pen-square"></i>さらにメモを追加する</a></span>
