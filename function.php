@@ -70,11 +70,13 @@ define('MSG13', '古いパスワードと同じです。');
 define('MSG14', '8文字で入力してください。');
 define('MSG15', '正しくありません。');
 define('MSG16', 'セッションの有効期限が切れています。');
+define('MSG17', 'そのリスト名はすでに登録されています。');
 define('SUC01', 'プロフィールを更新しました。');
 define('SUC02', 'パスワードを変更しました。');
 define('SUC03', 'メールを送信しました。ご確認ください。');
 define('SUC04', 'メモを変更しました。');
-define('SUC-05', 'メモを新規作成しました。');
+define('SUC05', 'メモを新規作成しました。');
+define('SUC06', 'リストを新規作成しました。');
 
 
 //==============================
@@ -130,6 +132,35 @@ function validEmailDup($email){
         error_log("エラー発生：" . $e->getMessage());
         $err_msg['common'] = MSG07;
         debug('email重複チェックできず');
+    }
+}
+// リスト名重複チェック
+function validListDup($category){
+    global $err_msg;
+ 
+    try {
+
+    // DB接続
+        $dbh = dbConnect();
+        $sql = 'SELECT count(*) FROM category WHERE name = :c_name AND user_id = :u_id AND delete_flg = 0';
+        $data = array(':c_name' => $category, ':u_id' => $_SESSION['user_id']);
+        // クエリ実行
+        $stmt = queryPost($dbh, $sql, $data);
+        debug('クエリ実行しました。');
+        // クエリの結果を取得する
+        //fetch:取り出す。Assoc:Associationで、連想する
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        debug('リスト名重複チェックできました。重複なし。');
+    
+        //取得した結果、値が入っているかどうかをチェックする
+        if (!empty(array_shift($result))) {
+            $err_msg['common'] = MSG17;
+            debug('リスト名が重複している');
+        }
+    } catch (Exeption $e) {
+        error_log("エラー発生：" . $e->getMessage());
+        $err_msg['common'] = MSG07;
+        debug('リスト名重複チェックできず');
     }
 }
 
@@ -192,6 +223,13 @@ function validLength($str, $key, $length = 8){
 // セレクトボックスチェック(未入力かどうか)
 function validSelect($str, $key){
   if(!preg_match("/^[0-9]+$/", $str)){
+    global $err_msg;
+    $err_msg[$key] = MSG01;
+  }
+}
+
+function validSelectChoice($str, $key){
+  if(getFormData('category_id') == 0){
     global $err_msg;
     $err_msg[$key] = MSG01;
   }
@@ -300,7 +338,7 @@ if(!empty($dbFormData)){
   // フォームのエラーが有る場合
   if(!empty($err_msg[$str])){
     // POSTにデータが有る場合
-   if(!empty($method[$str])){
+   if(isset($method[$str])){
       return sanitize($method[$str]);
      // POSTにない場合
    }else{
@@ -434,14 +472,14 @@ function getMemo($u_id, $memo_id){
   }
 }
 
-// メモのリストを取得する
-function getmemoCategory(){
+// ユーザーIDを足がかりにメモのリストを取得する
+function getmemoCategory($u_id){
     try {
         // DB接続
         $dbh = dbConnect();
         // SQL文作成
-        $sql = 'SELECT * FROM category';
-        $data = array();
+        $sql = 'SELECT * FROM category WHERE user_id = :u_id';
+        $data = array(':u_id' => $u_id);
         // クエリ実行
         $stmt = queryPost($dbh, $sql, $data);
         if ($stmt) {
@@ -455,6 +493,30 @@ function getmemoCategory(){
         err_log("エラー発生：".$e->getMessage());
     }
 }
+
+// カテゴリー情報を全取得する関数
+function getCategory()
+{
+    try {
+        // DB接続
+        $dbh = dbConnect();
+        // SQL文作成
+        $sql = 'SELECT * FROM category';
+        $data = array();
+        // クエリ実行
+        $stmt = queryPost($dbh, $sql, $data);
+        if ($stmt) {
+            // クエリ結果の全データを取得（これを書かないと連想配列の形で返ってこない）
+            $result = $stmt->fetchAll();
+            return $result;
+        } else {
+            return false;
+        }
+    } catch (Exception $e) {
+        err_log("エラー発生：".$e->getMessage());
+    }
+}
+
 
 //メモデータを取得する
 function getMemoList($category){
@@ -480,19 +542,8 @@ function getMemoList($category){
   }
 }
 
-// カテゴリーを連想配列にして、メモリストのタイトルとして並べたい
-function getCategoryData($u_id){
-  debug('カテゴリーを取得する');
-// 例外処理
-try{
-  // DBへ接続
-  $dbh = dbConnect();
-  // SQL文作成
-  $sql = '';
-}
-}
 
-// メモデータを取得する
+// メモデータを取得する（カテゴリー関係なく）
 function getMemoData($u_id)
 {
     debug('自分のメモを取得します。');
@@ -503,7 +554,10 @@ function getMemoData($u_id)
     
         // まず、メモレコード取得
         // SQL文作成
-        $sql = 'SELECT * FROM memo AS m WHERE m.user_id = :id AND m.delete_flg = 0';
+        // $sql = 'SELECT * FROM memo AS m WHERE m.user_id = :id AND m.category_id = :category_id AND m.delete_flg = 0';
+        // 古いものが上に来るように
+         $sql = 'SELECT * FROM memo AS m WHERE m.user_id = :id AND m.delete_flg = 0 ORDER BY update_date DESC';
+
         $data = array(':id' => $u_id);
         // クエリ実行
         $stmt = queryPost($dbh, $sql, $data);
@@ -511,8 +565,7 @@ function getMemoData($u_id)
         if (!empty($rst)) {
             foreach ($rst as $key => $val) {
                 // SQL文作成
-                // 古いものが先頭に来るように
-                $sql = 'SELECT * FROM category WHERE memo_id = :id AND delete_flg = 0 ORDER BY upload_date ASC';
+                $sql = 'SELECT * FROM category WHERE id = :id AND delete_flg = 0  ORDER BY id DESC';
                 $data = array(':id' => $val['id']);
                 // クエリ実行
                 $stmt = queryPost($dbh, $sql, $data);
@@ -530,6 +583,72 @@ function getMemoData($u_id)
         error_log('エラー発生:' . $e->getMessage());
     }
 }
+
+// 自分のメモデータを取得する
+function getMyMemo($category_id, $u_id){
+  debug('自分のメモを取得します。');
+    //例外処理
+    try {
+        // DBへ接続
+        $dbh = dbConnect();
+    
+        // まず、メモレコード取得
+        // SQL文作成
+        // 古いものが上に来るように
+         $sql = 'SELECT * FROM memo AS m WHERE m.user_id = :id AND m.category_id = :category_id AND m.delete_flg = 0 ORDER BY update_date DESC';
+         $data = array(':id' => $u_id, ':category_id' => $category_id);
+        // クエリ実行
+        $stmt = queryPost($dbh, $sql, $data);
+        $rst = $stmt->fetchAll();
+
+        if ($stmt) {
+            // クエリ結果の全データを返却
+            return $rst;
+        } else {
+            return false;
+        }
+    } catch (Exception $e) {
+        error_log('エラー発生:' . $e->getMessage());
+    }
+}
+
+
+
+
+// // メモをリスト名ごとに取得する関数
+// function groupArray($memoData, $key)
+// {
+//     $retval = array();
+
+//    foreach ($memoData as $val) {
+//         $group = $val[$key];
+
+//         if (!isset($retval[$group])) {
+//             $retval[$group] = array();
+//         }
+
+//         $retval[$group][] = $val;
+//     }
+
+//     return $retval;
+// }
+
+// // メモをリスト名ごとに取得する関数
+// function groupArray($memoData, $key)
+// {
+//     $retval = array();
+
+//     foreach ($memoData as $val) {
+//         $group = $val[$key];
+
+//         if (groupArray($group, $retval)) {
+//             $retval[$group][] = $val;
+//         }else{
+//         $retval[$group] = [$val];
+//     }
+//   }
+//     return $retval;
+// }
 
 
 //==============================

@@ -67,6 +67,10 @@
     $switchImgSubs.on('click',function(e){
       $switchImgMain.attr('src',$(this).attr('src'));
     });
+
+
+  
+
  });
 
 </script>
