@@ -15,26 +15,28 @@ require('auth.php');
 //画面処理
 //==============================
 // GETデータを格納
-// メモID＝memo_id
-// memo_idが空なら空文字を入れる
-$memo_id = (!empty($_GET['m_id'])) ? $_GET['m_id'] : '';
+// メモID＝m_id
+// m_idが空なら空文字を入れる
+$m_id = (!empty($_GET['m_id'])) ? $_GET['m_id'] : '';
+// c-idが空なら空文字を入れる
+$c_id = (!empty($_GET['c_id'])) ? $_GET['c_id'] : '';
 // ユーザーIDをセションより取得
 $u_id = $_SESSION['user_id'];
 
 // DBからメモデータを取得
 // ここで$dbFormDataと名前を定義しないとgetFormData関数が使えない
-$dbFormData = (!empty($memo_id)) ? getMemo($_SESSION['user_id'], $memo_id) : '';
+$dbFormData = (!empty($m_id)) ? getMemo($u_id, $m_id) : '';
 // DBからメモのカテゴリを取得
-$dbMemoCategory = getMemoCategory($u_id);
-$category = (!empty($_GET['c_id'])) ? $_GET['c_id'] : '';
+$dbCategory = getMemoCategory($u_id);  //$dbMemoCategoryだったもの
+// $category = (!empty($_GET['c_id'])) ? $_GET['c_id'] : '';
 // 新規メモ作成画面か、編集画面か判別する
 // 新規作成ならfalse, 編集ならtrue
 $edit_flg = (empty($dbFormData)) ? false : true;
 
 
-debug('メモID情報：'.print_r($memo_id, true));
-debug('フォームに表示させるメモデータ（DB）情報：'.print_r($dbFormData, true));
-debug('メモのカテゴリを表示：'.print_r($dbMemoCategory, true));
+debug('メモID情報：'.print_r($m_id, true));
+debug('フォームに表示させるメモデータ（$dbFormData）情報：'.print_r($dbFormData, true));
+debug('メモのカテゴリ（$dbCategory）を表示：'.print_r($dbCategory, true));
 debug('edit_flgの中身：'.print_r($edit_flg, true));
 debug('$_GETの中身：'.print_r($_GET, true));
 
@@ -42,7 +44,7 @@ debug('$_GETの中身：'.print_r($_GET, true));
 // パラメータ改ざんチェック
 //==============================
 //GETパラメータはあるが、改ざんされている（URLをいじくった）場合、正しいメモデータが取れないのでマイプロフへ遷移させる
-// if(!empty($memo_id) && empty($dbFormData)){
+// if(!empty($m_id) && empty($dbFormData)){
 //   debug('GETパラメータの商品IDは違います。マイプロフへ遷移します');
 //   header("Location:")
 // }
@@ -55,7 +57,7 @@ if (!empty($_POST)) {
   debug('POST情報：'.print_r($_POST, true));
 
 // 変数にユーザー情報を代入
-    $m_list = $_POST['category_id'];
+    $m_c_id = $_POST['category_id'];  //$m_listだったもの
     $m_title = $_POST['memotitle'];
     $m_contents = $_POST['contents'];
 
@@ -80,9 +82,9 @@ if (!empty($_POST)) {
             validRequired($m_contents, 'contents');
         }
         // もしDBのメモリストと入力したものが異なっていたら
-         if ($dbFormData['category_id'] !== $m_list) {
+         if ($dbFormData['category_id'] !== $m_c_id) {
          //  セレクトボックスチェック
-            validSelect($m_list, 'category_id');
+            validSelect($m_c_id, 'category_id');
          }
     }
 
@@ -99,7 +101,7 @@ if (!empty($_POST)) {
             if ($edit_flg) {
                 debug('編集画面なのでDB更新です。');
                 $sql = 'UPDATE memo SET category_id = :category_id, name = :name, contents = :contents, WHERE user_id = :u_id AND id = :m_id ';
-                $data = array(':category_id' => $m_list, ':name' => $m_title, ':contents' => $m_contents, ':u_id' => $_SESSION['user_id'] , ':m_id' => $memo_id);
+                $data = array(':category_id' => $m_c_id, ':name' => $m_title, ':contents' => $m_contents, ':u_id' => $_SESSION['user_id'] , ':m_id' => $m_id);
 
                 debug('SQLの中身：'.print_r($sql, true));
                 debug('流し込みデータ：'.print_r($data, true));
@@ -117,7 +119,7 @@ if (!empty($_POST)) {
             } else {
                 debug('新規作成画面なのでDB登録です。');
                 $sql = 'INSERT INTO memo (category_id, name, contents, user_id, create_date) VALUES (:category_id, :name, :contents, :u_id, :date)';
-                $data = array(':category_id' => $m_list, ':name' => $m_title, ':contents' => $m_contents, ':u_id' => $_SESSION['user_id'], ':date' => date('Y-m-d H:i:s'));
+                $data = array(':category_id' => $m_c_id, ':name' => $m_title, ':contents' => $m_contents, ':u_id' => $_SESSION['user_id'], ':date' => date('Y-m-d H:i:s'));
             
             debug('SQLの中身：'.print_r($sql, true));
             debug('流し込みデータ：'.print_r($data, true));
@@ -220,12 +222,15 @@ require('header.php');
            </label>
             <div class="select-wrap">
             <select class="select-cate" name="category_id" id="">
+            <!-- 新規作成の場合 -->
               <option value=" <?php if (getFormData('category_id') == 0) {
                                 echo 'selected';
                               } ?>">
-                              no name </option>
+                              選択してください </option>
+
+            <!-- メモを編集する場合 -->
               <?php
-              foreach ($dbMemoCategory as $key => $val) {
+              foreach ($dbCategory as $key => $val) {
                 ?>
                 <option value="<?php echo $val['id'] ?>" <?php if (getFormData('category_id') == $val['id']) {
                                                             echo 'selected';
@@ -235,9 +240,21 @@ require('header.php');
               <?php
             }
             ?>
+
+           <!-- カテゴリを指定して、メモを新規作成する場合 -->
+            <?php
+              foreach ($dbCategory as $key => $val) {
+                  ?>
+                <option value="<?php echo $val['id'] ?>" <?php if ($c_id == $val['id']) {
+                      echo 'selected';
+                  } ?>>
+                  <?php echo $val['name']; ?>
+                </option>
+              <?php
+              }
+            ?>
             </select>
             </div>
-          
 
             <?php
             // getFormDataの中身をみる

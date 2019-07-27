@@ -125,7 +125,7 @@ debug('サクセスメッセージを出しました');
        
           echo($memo_by_category['name']); ?>
       <!-- GETパラメータを取れるように各メモのIDを呼び出す。 -->
-      <a href="memoDetail.php?c_id=<?php ?>?m_id=<?php echo sanitize($memo['id']); ?>">
+      <a href="memoDetail.php?m_id=<?php echo sanitize($memo_by_category['id']); ?>">
        <div class="memo-panel-icon">
         <i class="fas fa-bars"></i>
         </a>

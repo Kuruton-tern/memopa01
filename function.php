@@ -447,16 +447,16 @@ function sendEmail($to, $title, $contents, $username){
 // メモ
 //==============================
 // メモのIDを取得する関数
-function getMemo($u_id, $memo_id){
+function getMemo($u_id, $m_id){
   debug('メモ情報を取得します');
   debug('ユーザーID：'.print_r($u_id, true));
-  debug('メモID：'.print_r($memo_id, true));
+  debug('メモID：'.print_r($m_id, true));
   // 例外処理
   try{
     $dbh = dbConnect();
     // SQL文作成
-    $sql = 'SELECT * FROM memo WHERE user_id = :u_id AND id = :memo_id AND delete_flg = 0';
-    $data = array(':u_id' => $u_id, ':memo_id' => $memo_id);
+    $sql = 'SELECT * FROM memo WHERE user_id = :u_id AND id = :m_id AND delete_flg = 0';
+    $data = array(':u_id' => $u_id, ':m_id' => $m_id);
     // クエリ実行
     $stmt = queryPost($dbh, $sql, $data);
 
