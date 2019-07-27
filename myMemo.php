@@ -23,13 +23,38 @@ if (empty($_SESSION['login_date'])) {
 //==============================
 // GETパラメータを取得
 //------------------------------
-// カテゴリー
+//商品IDのGETパラメータを取得
+$memo_id = (!empty($_GET['m_id'])) ? $_GET['m_id'] : '';
+// ユーザーIDをセッションから取得
 $u_id = $_SESSION['user_id'];
-// $category = getmemoCategory();
-$memoData = getMemoData($u_id);
 
-debug('$memoDataの中身：'.print_r($memoData, true));
-?>
+// DBからcategoryテーブルの中身を取得
+$categories = getCategory();
+// DBからユーザーIDが当てはまるmemoテーブルの中身を取得
+$memos = getMemoData($u_id);
+debug('$categoriesの中身：'.print_r($categories, true));
+debug('$memosの中身：'.print_r($memos, true));
+$display_memos = array();
+
+// カテゴリーを全件回す
+foreach ($categories as $category) {
+    // メモのカテゴリーIDをキーに、連想配列へ格納する
+    if ($category['user_id'] === $u_id) {
+        $display_memos[$category['id']]['category'] = $category;
+    }
+}
+
+// メモを全件回す
+foreach($memos as $memo){
+  // メモのカテゴリーIDをキーに、連想配列へ格納する
+  $display_memos[$memo['category_id']]['memo'][] = $memo;
+  $display_memos_memo = $display_memos[$memo['category_id']]['memo'];
+  debug('$display_memos_memoの中身：'.print_r($display_memos_memo, true));
+}
+
+debug('display_memosの中身：'.print_r($display_memos, true));
+
+  ?>
 
 
 
@@ -59,408 +84,70 @@ debug('サクセスメッセージを出しました');
 
  
   <div id="page-panel">
-    <!-- <?php
-    // foreach($category as $key => $val);
-     ?> -->
-  <!-- メモの大枠1 -->
-  <section class="list-wrap">
-    <div class="list-panel">
-      <!-- メモのヘッダー -->
-      <div class="list-header">
-        <h2 class="list-title"> <?php  ?></h2>
-        <div class="list-header-icon">
-          <i class="fas fa-trash-alt"></i>
-          <a href="memoDetail.php"><i class="fas fa-edit"></i></a>
-        </div>
-      </div>
-      <!-- メモの内容（タイトル部分） それの繰り返し -->
-      <div class="memo-panel">
-      html作成（メモタイトル）
-      <div class="memo-panel-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      </div>
-      <div class="memo-panel">
-      html作成（メモタイトル）
-      <div class="memo-panel-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      </div>
-      <div class="memo-panel">
-      html作成（メモタイトル）
-      <div class="memo-panel-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      </div>
-      <div class="memo-panel">
-      html作成（メモタイトル）ssssddddddddddddddddd
-      <div class="memo-panel-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      </div>
-      <div class="memo-panel">
-      html作成（メモタイトル）
-      <div class="memo-panel-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      </div>
-      <div class="memo-panel">
-      html作成（メモタイトル）
-      <div class="memo-panel-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      </div>
-      <div class="memo-panel">
-      html作成（メモタイトル）
-      <div class="memo-panel-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      </div>
-      <div class="memo-panel">
-      html作成（メモタイトル）
-      <div class="memo-panel-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      </div>
-      <div class="memo-add">
-        <span><a href="memoAdd.html"><i class="fas fa-pen-square"></i>さらにメモを追加する</a></span>
-      </div>
-     </div>
-   </section>
-
- 
-  <!-- メモの大枠2 -->
-  <section class="list-wrap">
-    <div class="list-panel">
-      <!-- メモのヘッダー -->
-      <div class="list-header">
-        <h2 class="list-title"> やること </h2>
-        <div class="list-header-icon">
-          <i class="fas fa-trash-alt"></i>
-          <i class="fas fa-edit"></i>
-        </div>
-      </div>
-      <!-- メモの内容（タイトル部分） それの繰り返し -->
-      <div class="memo-panel">
-      html作成（メモタイトル）
-      <div class="memo-panel-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-      testtesttestestestsetssetset作成（メモタイトル）aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        メモタイトル
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        php
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-add">
-        <span><a href="memoAdd.html"><i class="fas fa-pen-square"></i>さらにメモを追加する</a></span>
-      </div>
-     </div>
-   </section>
-
-     <!-- メモの大枠3 -->
-  <section class="list-wrap">
-    <div class="list-panel">
-      <!-- メモのヘッダー -->
-      <div class="list-header">
-        <h2 class="list-title"> やること </h2>
-        <div class="list-header-icon">
-          <i class="fas fa-trash-alt"></i>
-          <i class="fas fa-edit"></i>
-        </div>
-      </div>
-      <!-- メモの内容（タイトル部分） それの繰り返し -->
-      <div class="memo-panel">
-      html作成（メモタイトル）
-      <div class="memo-panel-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-      testtesttestestestsetssetset作成（メモタイトル）aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        メモタイトル
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        php
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-add">
-        <span><a href="memoAdd.html"><i class="fas fa-pen-square"></i>さらにメモを追加する</a></span>
-      </div>
-     </div>
-   </section>
-
-<!-- メモの大枠4 -->
-  <section class="list-wrap">
-    <div class="list-panel">
-      <!-- メモのヘッダー -->
-      <div class="list-header">
-        <h2 class="list-title"> やること </h2>
-        <div class="list-header-icon">
-          <i class="fas fa-trash-alt"></i>
-          <i class="fas fa-edit"></i>
-        </div>
-      </div>
-      <!-- メモの内容（タイトル部分） それの繰り返し -->
-      <div class="memo-panel">
-      html作成（メモタイトル）
-      <div class="memo-panel-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-      testtesttestestestsetssetset作成（メモタイトル）aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        メモタイトル
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        php
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-add">
-        <span><a href="memoAdd.html"><i class="fas fa-pen-square"></i>さらにメモを追加する</a></span>
-      </div>
-     </div>
-   </section>
-
-   <!-- メモの大枠5 -->
-  <section class="list-wrap">
-    <div class="list-panel">
-      <!-- メモのヘッダー -->
-      <div class="list-header">
-        <h2 class="list-title"> やること </h2>
-        <div class="list-header-icon">
-          <i class="fas fa-trash-alt"></i>
-          <i class="fas fa-edit"></i>
-        </div>
-      </div>
-      <!-- メモの内容（タイトル部分） それの繰り返し -->
-      <div class="memo-panel">
-      html作成（メモタイトル）
-      <div class="memo-panel-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-      testtesttestestestsetssetset作成（メモタイトル）aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        メモタイトル
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        php
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-add">
-        <span><a href="memoAdd.html"><i class="fas fa-pen-square"></i>さらにメモを追加する</a></span>
-      </div>
-     </div>
-   </section>
-
- <!-- メモの大枠6 -->
-  <section class="list-wrap">
-    <div class="list-panel">
-      <!-- メモのヘッダー -->
-      <div class="list-header">
-        <h2 class="list-title"> やること </h2>
-        <div class="list-header-icon">
-          <i class="fas fa-trash-alt"></i>
-          <i class="fas fa-edit"></i>
-        </div>
-      </div>
-      <!-- メモの内容（タイトル部分） それの繰り返し -->
-      <div class="memo-panel">
-      html作成（メモタイトル）
-      <div class="memo-panel-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-      testtesttestestestsetssetset作成（メモタイトル）aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        メモタイトル
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        php
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-panel">
-        html作成（メモタイトル）
-        <div class="memo-panel-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-      <div class="memo-add">
-        <span><a href="memoAdd.html"><i class="fas fa-pen-square"></i>さらにメモを追加する</a></span>
-      </div>
-     </div>
-   </section>
+   <?php
+    //  画面描画用の連想配列でループを回す
+    foreach ($display_memos as $category_id => $display_memo) {
+      debug('$display_memoの中身：'.print_r($display_memo, true));
+        
+      // 現在のカテゴリ情報とメモリストを取得する
+        $category = $display_memo['category'];
+       
+        // もし$display_memo['memo']があれば$memo_by_categoryに格納する（下のif文を入れると未メモ有カテゴリに最新メモが入ってしまう）
+        // if (!empty($display_memo['memo'])) {
+            $memos_by_category = $display_memo['memo'];
+        //  }
+        debug('$memos_by_categoryの中身：'.print_r($memos_by_category, true));
+        
+        ?>
    
+
+  <!-- メモの大枠 -->
+    
+  <section class="list-wrap">
+   
+    <div class="list-panel">
+      <!-- メモのヘッダー -->
+      <div class="list-header">
+        <!-- カテゴリ名を出力（PHP） -->
+        <h2 class="list-title"><?php echo sanitize($category['name']); ?></h2>
+        <div class="list-header-icon">
+          <i class="fas fa-trash-alt"></i>
+          <a href="memoDetail.php?c_id=<?php echo sanitize($category['id']); ?>"><i class="fas fa-edit"></i></a>
+        </div>
+      </div>
+          
+          <?php
+          foreach ($memos_by_category as $memo_by_category) {
+              ?>
+      <!-- メモの内容（タイトル部分） それの繰り返し -->
+      <div class="memo-panel">
+        <?php
+       
+          echo($memo_by_category['name']); ?>
+      <!-- GETパラメータを取れるように各メモのIDを呼び出す。 -->
+      <a href="memoDetail.php?c_id=<?php ?>?m_id=<?php echo sanitize($memo['id']); ?>">
+       <div class="memo-panel-icon">
+        <i class="fas fa-bars"></i>
+        </a>
+       </div>
+      </div>
+    <?php
+       }
+    ?>
+
+      <div class="memo-add">
+        <span><a href="memoDetail.php?c_id=<?php echo sanitize($category['id']); ?>"><i class="fas fa-pen-square"></i>さらにメモを追加する</a></span>
+      </div>
+     </div>
+    
+   </section>
+  <?php
+  }
+ ?>
+
   </div>
 </div>
+
 
   <?php
  require('footer.php');
