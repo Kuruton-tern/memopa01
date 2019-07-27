@@ -492,7 +492,7 @@ input[type="submit"]:hover{
 .list-title{
   font-size: 20px;
 }
-.memo-title, .memolist{
+.memo-title, .category_id{
   font-size: 22px;
   margin: 20px 0;
 }
@@ -518,7 +518,7 @@ input[type="submit"]:hover{
 ================================*/
 .list-wrap{
   float: left;
-  height: 650px;
+  /* height: 650px; */
   min-width: 250px;
   margin-left: 60px;
   margin-bottom: 50px;
@@ -671,18 +671,6 @@ input[type="submit"]:hover{
 /* ==============================
 サクセスメッセージ
 ================================*/
-/* .msg-slide{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 200px;
-  background-color:rgba(189,23,184,0.6);
-  color: white;
-  text-align: center;
-  font-size: 16px;
-  z-index: 24;
-} */
-
 .msg-slide{  /* myeMedmoのjs部分 */
   position: fixed;  /* 画面の決まった位置に固定する */
   top: 0;
@@ -693,4 +681,58 @@ input[type="submit"]:hover{
  font-size: 16px;
  line-height: 40px;
  z-index: 24;
+}
+
+
+/* ==============================
+ポップアップ
+================================*/
+html{
+  font-family: "Helvetica Neue", sans-serif;
+  width:100%;
+  color:#666666;
+  text-align:center;
+}
+
+.popup-overlay{
+  /*Hides pop-up when there is no "active" class*/
+  visibility:hidden;
+  position:absolute;
+  background:#ffffff;
+  border:3px solid #666666;
+  width:50%;
+  height:50%;
+  left:25%; 
+}
+.popup-overlay.active{
+  /*displays pop-up when "active" class is present*/
+  visibility:visible;
+  text-align:center;
+}
+
+.popup-content {
+  /*Hides pop-up content when there is no "active" class */
+ visibility:hidden;
+}
+
+.popup-content.active {
+  /*Shows pop-up content when "active" class is present */
+  visibility:visible;
+}
+
+.button{
+  display:inline-block;
+  vertical-align:middle;
+  border-radius:30px;
+  margin:.20rem;
+  font-size: 1rem;
+  color:#666666;
+  background:	#ffffff;
+  border:1px solid #666666;  
+}
+
+.button:hover{
+  border:1px solid #666666;
+  background:#666666;
+  color:#ffffff;
 }

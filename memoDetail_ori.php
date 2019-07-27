@@ -52,7 +52,7 @@ if (!empty($_POST)) {
   debug('POST情報：'.print_r($_POST, true));
 
 // 変数にユーザー情報を代入
-    $m_list = $_POST['memolist'];
+    $m_list = $_POST['category_id'];
     $m_title = $_POST['memotitle'];
     $m_contents = $_POST['contents'];
 
@@ -78,7 +78,7 @@ if (!empty($_POST)) {
         // もしDBのメモリスト、メモタイトル、メモ内容と入力したものが異なっていたら
         // if ($dbMemoData['category_id'] !== $m_list) {
         // //  セレクトボックスチェック
-        //    validSelect($m_list, 'memolist');
+        //    validSelect($m_list, 'category_id');
         // }
         // !!!!!!!あとでカテゴリテーブルとつなげること!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     }
@@ -127,6 +127,16 @@ if (!empty($_POST)) {
         }
     }
 }
+
+
+              foreach ($dbMemoCategory as $key => $val) {
+                  echo $val['id'];
+                  if (getFormData('category_id') == $val['id']) {
+                      echo 'selected';
+                      echo $val['name'];
+                  }
+              }
+
 
 debug('画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
 
@@ -202,7 +212,7 @@ require('header.php');
         <!-- リスト名 -->
        
           <label class="memo-list  ">リスト
-          <input type="text" name="memolist">
+          <input type="text" name="category_id">
           </label>
 
         <!-- タイトル -->
@@ -259,3 +269,15 @@ require('header.php');
 </body>
 
 </html>
+
+<?php
+
+              foreach ($dbMemoCategory as $key => $val) {
+                  echo $val['id'];
+                  if (getFormData('category_id') == $val['id']) {
+                      echo 'selected';
+                      echo $val['name'];
+                  }
+              }
+
+?>
