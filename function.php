@@ -77,6 +77,7 @@ define('SUC03', 'メールを送信しました。ご確認ください。');
 define('SUC04', 'メモを変更しました。');
 define('SUC05', 'メモを新規作成しました。');
 define('SUC06', 'リストを新規作成しました。');
+define('SUC07', 'メモリストを削除しました。');
 
 
 //==============================
@@ -228,6 +229,7 @@ function validSelect($str, $key){
   }
 }
 
+// セレクトボックスチェックが0であればエラーメッセージを出す
 function validSelectChoice($str, $key){
   if(getFormData('category_id') == 0){
     global $err_msg;
@@ -331,7 +333,8 @@ function getFormData($str, $flg = false){
     $method = $_POST;
 }
 
-  global $dbFormData;  // myProfで$dbFormData = getUser($_SESSION['user_id']);と変数定義してある
+// myProfで$dbFormData = getUser($_SESSION['user_id']);と変数定義してある。myMemo.phpでは$dbFormData = (!empty($m_id)) ? getMemo($u_id, $m_id) : '';と定義。
+  global $dbFormData;
 
 // ユーザーデータが有る場合
 if(!empty($dbFormData)){
@@ -446,7 +449,7 @@ function sendEmail($to, $title, $contents, $username){
 //==============================
 // メモ
 //==============================
-// メモのIDを取得する関数
+// ユーザーID,メモIDを基にメモの全情報を取得する関数
 function getMemo($u_id, $m_id){
   debug('メモ情報を取得します');
   debug('ユーザーID：'.print_r($u_id, true));
@@ -473,7 +476,7 @@ function getMemo($u_id, $m_id){
 }
 
 // ユーザーIDを足がかりにメモのリストを取得する
-function getmemoCategory($u_id){
+function getMemoCategory($u_id){
     try {
         // DB接続
         $dbh = dbConnect();
@@ -501,7 +504,7 @@ function getCategory()
         // DB接続
         $dbh = dbConnect();
         // SQL文作成
-        $sql = 'SELECT * FROM category';
+        $sql = 'SELECT * FROM category WHERE delete_flg = 0';
         $data = array();
         // クエリ実行
         $stmt = queryPost($dbh, $sql, $data);
