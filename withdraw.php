@@ -16,6 +16,7 @@ require('auth.php');
 // POST送信の有無のチェック
 if(!empty($_POST)){
   debug('POST送信があります');
+  // 例外処理
   try{
     // DBに接続
     $dbh = dbConnect();

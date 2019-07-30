@@ -32,8 +32,8 @@ $u_id = $_SESSION['user_id'];
 $categories = getCategory();
 // DBからユーザーIDが当てはまるmemoテーブルの中身を取得
 $memos = getMemoData($u_id);
-debug('$categoriesの中身：'.print_r($categories, true));
-debug('$memosの中身：'.print_r($memos, true));
+// debug('$categoriesの中身：'.print_r($categories, true));
+// debug('$memosの中身：'.print_r($memos, true));
 $display_memos = array();
 
 // カテゴリーを全件回す
@@ -49,10 +49,51 @@ foreach($memos as $memo){
   // メモのカテゴリーIDをキーに、連想配列へ格納する
   $display_memos[$memo['category_id']]['memo'][] = $memo;
   $display_memos_memo = $display_memos[$memo['category_id']]['memo'];
-  debug('$display_memos_memoの中身：'.print_r($display_memos_memo, true));
+  // debug('$display_memos_memoの中身：'.print_r($display_memos_memo, true));
 }
 
-debug('display_memosの中身：'.print_r($display_memos, true));
+// debug('display_memosの中身：'.print_r($display_memos, true));
+
+// POST送信の有無のチェック
+if(!empty($_POST)){
+  debug('POST送信があります。');
+  debug('削除内容のPOST送信内容：'.print_r($_POST, true));
+
+  $c_id = $_POST['c_id'];
+  debug('$c_idの中身：'.print_r($c_id, true));
+  // 例外処理
+  try{
+    // DBに接続
+    $dbh = dbConnect();
+    // SQL文作成
+    $sql1 = 'UPDATE memo SET delete_flg = 1 WHERE user_id = :u_id AND category_id = :c_id';
+    $sql2 = 'UPDATE category SET delete_flg = 1 WHERE user_id = :u_id AND id = :c_id';
+    $data = array(':u_id' => $u_id, ':c_id' => $c_id);
+
+    debug('SQLの中身：'.print_r($sql1, true));
+    debug('SQLの中身：'.print_r($sql2, true));
+    debug('流し込みデータ：'.print_r($data, true));
+
+
+    $stmt1 = queryPost($dbh, $sql1, $data);
+    $stmt2 = queryPost($dbh, $sql2, $data);
+    // クエリ実行成功の場合
+    if($stmt2){
+      debug('メモのリストが削除されました。');
+      $_SESSION['msg_success'] = SUC07;
+      header("Location:myMemo.php");
+
+    }else{
+      debug('クエリ失敗しました。');
+      $err_msg = MSG07;
+    }
+  }catch(Exception $e){
+    error_log("エラー発生：".$e->getMessage());
+    debug('SQL実行失敗しました');
+    $err_msg['common'] = MSG07;
+  }
+}
+debug('画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
 
   ?>
 
@@ -87,11 +128,11 @@ debug('サクセスメッセージを出しました');
    <?php
     //  画面描画用の連想配列でループを回す
     foreach ($display_memos as $category_id => $display_memo) {
-      debug('$display_memoの中身：'.print_r($display_memo, true));
+      // debug('$display_memoの中身：'.print_r($display_memo, true));
         
       // 現在のカテゴリ情報とメモリストを取得する
         $category = $display_memo['category'];
-       
+      
         // もし$display_memo['memo']があれば$memo_by_categoryに格納する（下のif文を入れると未メモ有カテゴリに最新メモが入ってしまう）
         // if (!empty($display_memo['memo'])) {
             $memos_by_category = $display_memo['memo'];
@@ -111,8 +152,12 @@ debug('サクセスメッセージを出しました');
         <!-- カテゴリ名を出力（PHP） -->
         <h2 class="list-title"><?php echo sanitize($category['name']); ?></h2>
         <div class="list-header-icon">
-          <i class="fas fa-trash-alt"></i>
-          <a href="memoDetail.php?c_id=<?php echo sanitize($category['id']); ?>"><i class="fas fa-edit"></i></a>
+
+         <form method ="post" action="" onSubmit="return check()">
+            <button type="submit" class="btn-dele" name="c_id" value="<?php echo sanitize($category['id']); ?>"><i class="fas fa-trash-alt"></i></button>
+            <a href="list.php?c_id=<?php echo sanitize($category['id']); ?>"><i class="fas fa-edit"></i></a>
+         </form>
+        
         </div>
       </div>
           
