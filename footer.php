@@ -68,10 +68,37 @@
       $switchImgMain.attr('src',$(this).attr('src'));
     });
 
-
-  
+  //  削除ボタンを押すと、ポップアップが出てくる
+  // var $jspopup = $('#js-popup');
+  // $jspopup.on('click',function(){
+  //   if(!confirm('リスト名だけでなく、リストに含まれているメモもすべて消えてしまいます。本当に削除してもよろしいですか？')){
+  //     // キャンセル時の処理
+  //     return false;
+  //   }else{
+  //     // OK時の処理
+  //     location.href = 'myProf.php';
+  //   }
+  // });
 
  });
+
+
+</script>
+
+<script>
+  
+// フォーム送信時、確認ダイアログを表示するスクリプト
+
+function check()
+{
+    if (window.confirm('リスト名だけでなく、リストに含まれているメモもすべて消えてしまいます。\n本当に削除してもよろしいですか？')) { // 確認ダイアログを表示
+
+        return true; // 「OK」時は送信を実行
+    } else { // 「キャンセル」時の処理
+
+        return false; // 送信を中止
+    }
+}
 
 </script>
 

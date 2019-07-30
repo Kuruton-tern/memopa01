@@ -165,7 +165,6 @@ require('header.php');
     <!-- サイドバー -->
     <section class="sidebar">
       <a href="myMemo.php">マイメモ</a>
-      <a href="memoContents.php">メモを投稿する</a>
       <a href="myProf.php">プロフィール編集</a>
       <a href="passEdit.php">パスワード変更</a>
       <a href="withdraw.php">退会</a>
