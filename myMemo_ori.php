@@ -28,7 +28,7 @@ $u_id = $_SESSION['user_id'];
 //商品IDのGETパラメータを取得
 $memo_id = (!empty($_GET['m_id'])) ? $_GET['m_id'] : '';
 // カテゴリーを取得
-$category = getmemoCategory();
+$category = getMemoCategory();
 $memoData = getMemoData($u_id);
 
 debug('$memoDataの中身：'.print_r($memoData, true));
