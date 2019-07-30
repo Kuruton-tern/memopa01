@@ -452,6 +452,19 @@ input[type="submit"]:hover{
 }
 
 
+/* myMemoの削除（ゴミ箱）ボタン
+==============================*/
+
+.btn-dele{
+  font-size: 18px;
+  background: none !important;
+	border: none !important;
+	outline: none !important;
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+}
+
 /* リストのボタン
 ================================*/
 
