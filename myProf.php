@@ -19,12 +19,13 @@ require('auth.php');
 $dbFormData = getUser($_SESSION['user_id']);
 debug('DBから取得したユーザーデータ：'.print_r($dbFormData, true));
 
+debug('POST送信があったら');
 if (!empty($_POST)) {
   debug('POST送信があります');
   debug('POST情報：' . print_r($_POST, true));
-  debug('FILE情報：'. print_r($_FILES, true));
+  // debug('FILE情報：'. print_r($_FILES, true));
 
-    // ユーザー名
+   // ユーザー名
     $username = $_POST['username'];
     // メールアドレス
     $email = $_POST['email'];
@@ -38,55 +39,62 @@ if (!empty($_POST)) {
 
       // DB情報($dbFormData)と入力した情報($_POST)が違う場合にバリデーションを行う
       // ユーザー名チェック
-      if($dbFormData['username'] !== $username){
-      // 名前の最大文字数チェック
-      validUnameMax($username, 'username');
+      if ($dbFormData['username'] !== $username) {
+          // 名前の最大文字数チェック
+          validUnameMax($username, 'username');
 
-      debug('ユーザー名が新たに入力されました');
-    }
+          debug('ユーザー名が新たに入力されました');
+      }
     // メールアドレスチェック
     if ($dbFormData['email'] !== $email) {
-      // 最大文字数チェック
-      validLenMax($email, 'email');
+        // 最大文字数チェック
+        validLenMax($email, 'email');
 
-      if (empty($err_msg['email'])) {
-        // email重複チェック
-        validEmailDup($email);
-      }
-      // emailの形式チェック
-      validEMail($email, 'email');
-      // 未入力チェック
-      validRequired($email, 'email');
-      debug('emailが新たに入力されました');
-    }
-
-    if (empty($err_msg)) {
-      debug('バリデーションチェックOKです');
-      // 例外処理
-        try {
-            // DB接続
-            $dbh = dbConnect();
-            // SQL文作成
-            // 新しく入力した情報をDBに登録する
-            $sql = 'UPDATE user SET username = :username, email = :email, pic = :pic WHERE id = :u_id';
-            $data = array(':username' => $username, ':email' => $email, ':pic' => $pic, ':u_id' => $dbFormData['id']);
-            // クエリ実行
-            $stmt = queryPost($dbh, $sql, $data);
-
-            // クエリ成功の場合
-            if ($stmt) {
-              debug('画面を更新する');
-              $_SESSION['msg_success'] = SUC01;
-              header('location:myMemo.php');
-            }
-        } catch (Exeption $e) {
-            error_log('エラー発生：'.$e->getMessage());
-            $err_msg['common'] = MSG07;
+        if (empty($err_msg['email'])) {
+            // email重複チェック
+            validEmailDup($email);
         }
+        // emailの形式チェック
+        validEMail($email, 'email');
+        // 未入力チェック
+        validRequired($email, 'email');
+        debug('emailが新たに入力されました');
     }
-}
-debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
+    
+ if (empty($err_msg)) {
+     debug('バリデーションチェックOKです');
+     // 例外処理
+     try {
+         // DB接続
+         $dbh = dbConnect();
+         // SQL文作成
+         // 新しく入力した情報をDBに登録する
+         $sql = 'UPDATE user SET username = :username, email = :email, pic = :pic WHERE id = :u_id';
+         $data = array(':username' => $username, ':email' => $email, ':pic' => $pic, ':u_id' => $dbFormData['id']);
+         
+         debug('SQLの中身：'.print_r($sql, true));
+         debug('流し込みデータ：'.print_r($data, true));
 
+         // クエリ実行
+         $stmt = queryPost($dbh, $sql, $data);
+
+         // クエリ成功の場合
+         if ($stmt) {
+             debug('画面を更新する');
+             $_SESSION['msg_success'] = SUC01;
+             header('location:myMemo.php');
+         }
+     } catch (Exeption $e) {
+         error_log('エラー発生：'.$e->getMessage());
+         $err_msg['common'] = MSG07;
+     }
+ }
+
+
+   
+}
+debug('myProf.phpの画面表示終了');
+debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
 
 ?>
 
@@ -113,7 +121,7 @@ require('header.php');
       <div class="form-container prof-form">
         <h2 class="title">アカウント情報</h2>
         
-        <form action="" method="post" class="form">
+        <form action="" method="post" class="form" enctype="multipart/form-data">
           <div class="area-msg">
             <?php
             if(!empty($err_msg['common'])){
