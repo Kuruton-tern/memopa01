@@ -78,6 +78,7 @@ define('SUC04', 'メモを変更しました。');
 define('SUC05', 'メモを新規作成しました。');
 define('SUC06', 'リストを新規作成しました。');
 define('SUC07', 'メモリストを削除しました。');
+define('SUC08', 'メモを削除しました。');
 
 
 //==============================
@@ -372,7 +373,7 @@ if(!empty($dbFormData)){
 function uploadImg($file, $key)
 {
     debug('画像アップロード処理開始');
-    debug('FILE情報：'.print_r($fire, true));
+    debug('FILE情報：'.print_r($file, true));
   
     //isset:変数に値がセットされていて、かつNULLでないときに、TRUE(真)を戻り値として返す。
     if (isset($file['error']) && is_int($file['error'])) {
@@ -397,7 +398,7 @@ function uploadImg($file, $key)
             }
             $path = 'uploads/'. sha1_file($file['tmp_name']).image_type_tO_extension($type);
 
-            if (!move_upload_file($file['tmp_name'], $path)) { //
+            if (!move_uploaded_file($file['tmp_name'], $path)) { //
                 throw new RuntimeException('ファイル保存時にエラーが発生しました');
             }
             // 保存したファイルのパーミッション（権限）を変更する。

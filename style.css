@@ -504,6 +504,7 @@ input[type="submit"]:hover{
 ================================*/
 .list-title{
   font-size: 20px;
+  font-weight: bold;
 }
 .memo-title, .category_id{
   font-size: 22px;
@@ -525,13 +526,15 @@ input[type="submit"]:hover{
   margin-top: 30px;
   margin-bottom: 0px;
 }
-
+.list-memo-title{
+  font-weight: bold;
+}
 /* ==============================
 マイメモ（リスト）
 ================================*/
 .list-wrap{
   float: left;
-  /* height: 650px; */
+  height: 650px;
   min-width: 250px;
   margin-left: 60px;
   margin-bottom: 50px;
@@ -580,9 +583,23 @@ input[type="submit"]:hover{
   position: relative;
   word-break: break-all;
 }
-.fas{
+.list-memo-title{
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.fas, .far{
   cursor: pointer;
 }
+/* メモのリストパネルの中のアイコン。aタグが線が3つのアイコンの方 */
+.memo-panel-icon > a, .far{
+  display: inline-block;
+  padding: 10px 10px;
+}
+.memo-panel-icon{
+  text-align-last: justify;
+}
+
 .list-panel .memo-add{
   position: sticky;
   bottom: 0;
