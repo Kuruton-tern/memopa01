@@ -20,6 +20,9 @@ if(!empty ($_POST)){
   $pass = $_POST['pass'];
   $pass_re = $_POST['pass_re'];
 
+  debug('POST送信がありました。');
+  debug('POST送信の中身：'.print_r($_POST, true));
+
   // email未入力チェック
   validRequired($email, 'email');
   // ユーザー名の未入力チェック

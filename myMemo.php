@@ -55,44 +55,69 @@ foreach($memos as $memo){
 // debug('display_memosの中身：'.print_r($display_memos, true));
 
 // POST送信の有無のチェック
-if(!empty($_POST)){
-  debug('POST送信があります。');
-  debug('削除内容のPOST送信内容：'.print_r($_POST, true));
+if (!empty($_POST)) {
+    debug('POST送信があります。');
+    debug('削除内容のPOST送信内容：'.print_r($_POST, true));
 
-  $c_id = $_POST['c_id'];
-  debug('$c_idの中身：'.print_r($c_id, true));
-  // 例外処理
-  try{
-    // DBに接続
-    $dbh = dbConnect();
-    // SQL文作成
-    $sql1 = 'UPDATE memo SET delete_flg = 1 WHERE user_id = :u_id AND category_id = :c_id';
-    $sql2 = 'UPDATE category SET delete_flg = 1 WHERE user_id = :u_id AND id = :c_id';
-    $data = array(':u_id' => $u_id, ':c_id' => $c_id);
+    $c_id = $_POST['c_id'];
+    $m_id = $_POST['m_id'];
+    debug('$c_idの中身：'.print_r($c_id, true));
+    debug('$m_idの中身：'.print_r($m_id, true));
 
-    debug('SQLの中身：'.print_r($sql1, true));
-    debug('SQLの中身：'.print_r($sql2, true));
-    debug('流し込みデータ：'.print_r($data, true));
+    // 例外処理
+    try {
+        // DBに接続
+        $dbh = dbConnect();
+        // $m_idの有無チェックで以下のSQL文を分岐させる
+        if (empty($m_id)) {
+            // SQL文作成
+            $sql1 = 'UPDATE memo SET delete_flg = 1 WHERE user_id = :u_id AND category_id = :c_id';
+            $sql2 = 'UPDATE category SET delete_flg = 1 WHERE user_id = :u_id AND id = :c_id';
+            $data = array(':u_id' => $u_id, ':c_id' => $c_id);
+
+            // debug('SQLの中身：'.print_r($sql1, true));
+            // debug('SQLの中身：'.print_r($sql2, true));
+            // debug('流し込みデータ：'.print_r($data, true));
 
 
-    $stmt1 = queryPost($dbh, $sql1, $data);
-    $stmt2 = queryPost($dbh, $sql2, $data);
-    // クエリ実行成功の場合
-    if($stmt2){
-      debug('メモのリストが削除されました。');
-      $_SESSION['msg_success'] = SUC07;
-      header("Location:myMemo.php");
+            $stmt1 = queryPost($dbh, $sql1, $data);
+            $stmt2 = queryPost($dbh, $sql2, $data);
+            // クエリ実行成功の場合
+            if ($stmt2) {
+                debug('メモのリストが削除されました。');
+                $_SESSION['msg_success'] = SUC07;
+                header("Location:myMemo.php");
+            } else {
+                debug('クエリ失敗しました。');
+                $err_msg = MSG07;
+            }
+        } else {
+            // $m_idがある場合（メモ単体を消す場合）
+            // SQL文作成
+            $sql = 'UPDATE memo SET delete_flg = 1 WHERE user_id = :u_id AND id = :m_id';
+            $data = array(':u_id' => $u_id, ':m_id' => $m_id);
 
-    }else{
-      debug('クエリ失敗しました。');
-      $err_msg = MSG07;
+            // debug('SQLの中身：'.print_r($sql2, true));
+            // debug('流し込みデータ：'.print_r($data, true));
+        
+            $stmt = queryPost($dbh, $sql, $data);
+
+            if ($stmt) {
+                debug('メモ単体を削除しました。');
+                $_SESSION['msg_success'] = SUC08;
+                header("Location:myMemo.php");
+            } else {
+                debug('クエリ失敗しました。');
+                $err_msg = MSG07;
+            }
+        }
+    } catch (Exception $e) {
+        error_log("エラー発生：".$e->getMessage());
+        debug('SQL実行失敗しました');
+        $err_msg['common'] = MSG07;
     }
-  }catch(Exception $e){
-    error_log("エラー発生：".$e->getMessage());
-    debug('SQL実行失敗しました');
-    $err_msg['common'] = MSG07;
-  }
 }
+
 debug('画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
 
   ?>
@@ -120,6 +145,8 @@ debug('サクセスメッセージを出しました');
 </p>
 
 
+
+
   <!-- メインコンテンツ -->
  <div id="mymemo-main">
 
@@ -137,7 +164,7 @@ debug('サクセスメッセージを出しました');
         // if (!empty($display_memo['memo'])) {
             $memos_by_category = $display_memo['memo'];
         //  }
-        debug('$memos_by_categoryの中身：'.print_r($memos_by_category, true));
+        // debug('$memos_by_categoryの中身：'.print_r($memos_by_category, true));
         
         ?>
    
@@ -151,14 +178,12 @@ debug('サクセスメッセージを出しました');
       <div class="list-header">
         <!-- カテゴリ名を出力（PHP） -->
         <h2 class="list-title"><?php echo sanitize($category['name']); ?></h2>
-        <div class="list-header-icon">
-
          <form method ="post" action="" onSubmit="return check()">
-            <button type="submit" class="btn-dele" name="c_id" value="<?php echo sanitize($category['id']); ?>"><i class="fas fa-trash-alt"></i></button>
-            <a href="list.php?c_id=<?php echo sanitize($category['id']); ?>"><i class="fas fa-edit"></i></a>
-         </form>
-        
+        <div class="list-header-icon">
+          <button type="submit" class="btn-dele" name="c_id" value="<?php echo sanitize($category['id']); ?>"><i class="fas fa-trash-alt"></i></button>
+          <a href="list.php?c_id=<?php echo sanitize($category['id']); ?>"><i class="fas fa-edit"></i></a>
         </div>
+         </form>
       </div>
           
           <?php
@@ -166,15 +191,22 @@ debug('サクセスメッセージを出しました');
               ?>
       <!-- メモの内容（タイトル部分） それの繰り返し -->
       <div class="memo-panel">
-        <?php
-       
-          echo($memo_by_category['name']); ?>
+        <div class="list-memo-title">
+          <?php echo($memo_by_category['name']); ?>
+        </div>
       <!-- GETパラメータを取れるように各メモのIDを呼び出す。 -->
-      <a href="memoDetail.php?m_id=<?php echo sanitize($memo_by_category['id']); ?>">
-       <div class="memo-panel-icon">
-        <i class="fas fa-bars"></i>
-        </a>
-       </div>
+       <form method ="post" action="" onSubmit="">
+          <div class="memo-panel-icon">
+              <a href="memoDetail.php?m_id=<?php echo sanitize($memo_by_category['id']); ?>"><i class="fas fa-bars"></i></a>
+              <!-- ゴミ箱アイコン -->
+                <button type="submit" class="btn-dele" name="m_id" value="<?php echo sanitize($memo_by_category['id']); ?>"><i class="far fa-trash-alt"></i></button>
+          </div>
+       </form>
+        <!-- メモ日付 -->
+        <p style="font-size:1px;">
+          <?php echo($memo_by_category['update_date']); ?>
+          <?php debug('update_dateの中身：'.print_r($memo_by_category['update_date'],true)); ?>
+        </p>
       </div>
     <?php
        }
