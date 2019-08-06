@@ -2,6 +2,31 @@
 // 共通変数・関数ファイルを読み込み
 require('function.php');
 
+// メモコンテンツの暗号化
+    function encContents($m_contents){
+        $enc_key  = "1234567890abcdefghijklmnopqrstuvwxyz";
+        $method = 'aes-256-ecb';
+        
+        // 暗号化
+        $enc_m_contents = openssl_encrypt($m_contents, $method, $enc_key);
+        // 暗号化済みデータを返す
+        return $enc_m_contents;
+        debug("$enc_m_contentsの中身：".print_r($enc_m_contents, true));
+    }
+
+    function decContents($enc_m_contents){
+      $enc_key = "1234567890abcdefghijklmnopqrstuvwxyz";
+      $method = 'aes-256-ecb';
+      
+      // 復号化
+      $dec_m_contents = openssl_decrypt($enc_m_contents, $method, $enc_key);
+
+      // 復号化済みデータを返す
+      return $dec_m_contents;
+      debug('$dec_m_contentsの中身：'.print_r($dec_m_contents, true));
+    }
+
+
 debug('                  ');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debug('「　メモ編集画面　」');
@@ -52,14 +77,23 @@ debug('$_GETの中身：'.print_r($_GET, true));
 //==============================
 // POST送信チェック
 if (!empty($_POST)) {
-  debug('POST送信があります。');
-  debug('POST情報：'.print_r($_POST, true));
+    debug('POST送信があります。');
 
-// 変数に入力情報を代入
+    debug('POST情報：'.print_r($_POST, true));
+
+    // 変数に入力情報を代入
     $m_c_id = $_POST['category_id'];
     $m_title = $_POST['memotitle'];
     $m_contents = $_POST['contents'];
     debug('$m_c_idの中身：'.print_r($m_c_id, true));
+    // メモ削除ボタンを押したら
+    $dele = $_POST['dele'];
+
+       // メモの内容の暗号化
+        encContents($m_contents);
+        debug('encContentsの中身：'.print_r(encContents($m_contents), true));
+
+
 
     // 新規登録だったら（メモデータがなければ）
     if (empty($dbFormData)) {
@@ -67,6 +101,7 @@ if (!empty($_POST)) {
         validRequired($m_title, 'memotitle');
         validRequired($m_contents, 'contents');
         validSelect($m_c_id, 'category_id');
+        
     } else {
         // メモタイトルが更新されたら
         if ($dbFormData['name'] !== $m_title) {
@@ -80,52 +115,69 @@ if (!empty($_POST)) {
         if ($dbFormData['contents'] !== $m_contents) {
             // 未入力チェック
             validRequired($m_contents, 'contents');
+          
         }
         // もしDBのメモリストと入力したものが異なっていたら
-         if ($dbFormData['category_id'] !== $m_c_id) {
-         //  セレクトボックスチェック
+        if ($dbFormData['category_id'] !== $m_c_id) {
+            //  セレクトボックスチェック
             validSelect($m_c_id, 'category_id');
-         }
+        }
     }
 
     // ここまでエラーメッセージがなければ
     if (empty($err_msg)) {
-      debug('バリデーションOKです。');
+        debug('バリデーションOKです。');
 
-    // 例外処理
+        // 例外処理
         try {
             // DB接続
             $dbh = dbConnect();
-            // SQL文作成
-            // 新規作成画面なら、INSERT。編集画面の場合は、UPDATE。
-            if ($edit_flg) {
-                debug('編集画面なのでDB更新です。');
-                $sql = 'UPDATE memo SET category_id = :category_id, name = :name, contents = :contents, update_date = :date WHERE user_id = :u_id AND id = :m_id';
-                $data = array(':category_id' => $m_c_id, ':name' => $m_title, ':contents' => $m_contents, ':date' => date('Y-m-d H:i:s') , ':u_id' => $_SESSION['user_id'] , ':m_id' => $m_id);
+            // $_POST['dele]の有無チェック
+            if (empty($_POST['dele'])) {
+                if ($edit_flg) {
+                    debug('編集画面なのでDB更新です。');
+                    // SQL文作成
+                    // 新規作成画面なら、INSERT。編集画面の場合は、UPDATE。
+                    $sql = 'UPDATE memo SET category_id = :category_id, name = :name, contents = :contents, update_date = :date WHERE user_id = :u_id AND id = :m_id';
+                    $data = array(':category_id' => $m_c_id, ':name' => $m_title, ':contents' => encContents($m_contents), ':date' => date('Y-m-d H:i:s') , ':u_id' => $_SESSION['user_id'] , ':m_id' => $m_id);
+                } else {
+                    debug('新規作成画面なのでDB登録です。');
+                    $sql = 'INSERT INTO memo (category_id, name, contents, user_id, create_date) VALUES (:category_id, :name, :contents, :u_id, :date)';
+                    $data = array(':category_id' => $m_c_id, ':name' => $m_title, ':contents' => encContents($m_contents), ':u_id' => $_SESSION['user_id'], ':date' => date('Y-m-d H:i:s'));
+                }
+                debug('SQLの中身：'.print_r($sql, true));
+                debug('流し込みデータ：'.print_r($data, true));
+                // クエリ実行
+                $stmt = queryPost($dbh, $sql, $data);
 
+                // クエリ成功の場合
+                if ($stmt) {
+                    $_SESSION['msg_success'] = SUC05;
+                    debug('マイページへ遷移します。');
+                    header("location:myMemo.php"); //マイページへ
+                }
             } else {
-                debug('新規作成画面なのでDB登録です。');
-                $sql = 'INSERT INTO memo (category_id, name, contents, user_id, create_date) VALUES (:category_id, :name, :contents, :u_id, :date)';
-                $data = array(':category_id' => $m_c_id, ':name' => $m_title, ':contents' => $m_contents, ':u_id' => $_SESSION['user_id'], ':date' => date('Y-m-d H:i:s'));
-            }
-            debug('SQLの中身：'.print_r($sql, true));
-            debug('流し込みデータ：'.print_r($data, true));
-            // クエリ実行
-            $stmt = queryPost($dbh, $sql, $data);
+                // SQL文作成
+                $sql = 'UPDATE memo SET delete_flg = 1 WHERE id = :id AND user_id = :u_id';
+                $data = array( ':id' => $m_id, ':u_id' => $u_id);
 
-            // クエリ成功の場合
-            if ($stmt) {
-                $_SESSION['msg_success'] = SUC05;
-                debug('マイページへ遷移します。');
-                header("location:myMemo.php"); //マイページへ
-            }
+                // クエリ実行
+                $stmt = queryPost($dbh, $sql, $data);
 
+                // クエリ成功の場合
+                if ($stmt) {
+                    debug('メモを削除しました。画面を更新します。');
+                    $_SESSION['msg_success'] = SUC08;
+                    header('location:myMemo.php');
+                }
+            }
         } catch (Exceptiojn $e) {
             err_log('エラー発生'.$e->getMessage());
             $err_msg['common'] = MSG07;
         }
     }
 }
+
 
 
 debug('画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
@@ -239,9 +291,8 @@ require('header.php');
 
             <?php
             // getFormDataの中身をみる
-$test = getFormData('category_id', false);
-debug('getFormData(category_id)の中身：'.print_r($test, true));
-
+            $test = getFormData('category_id', false);
+            // debug('getFormData(category_id)の中身：'.print_r($test, true));
             ?>
          
           <div class="area-msg">
@@ -260,7 +311,14 @@ debug('getFormData(category_id)の中身：'.print_r($test, true));
 
         <!-- メモ内容 -->
           <label class="memo-contents <?php if(!empty($err_msg['contents'])) echo "err"; ?>">メモ</label>
-          <textarea name="contents" id="memo-area" cols="30" rows="10"><?php echo getFormData('contents'); ?></textarea>
+          <?php
+          // メモの復号化の前準備
+          $formData_contents = getFormData('contents');
+          debug('$formData_contentsの中身：'.print_r($formData_contents, true));
+          ?>
+          <!-- メモの復号化を行う -->
+          <textarea name="contents" id="memo-area" cols="30" rows="10"><?php if(!empty($formData_contents)) echo decContents($formData_contents); ?></textarea>
+
           <div class="area-msg">
               <?php echo getErr_msg('contents'); ?>
             </div>
@@ -268,7 +326,8 @@ debug('getFormData(category_id)の中身：'.print_r($test, true));
           <div class="btn-container">
             
             <input type="submit" class="btn btn-mid btn-Edit" value="<?php echo (!$edit_flg) ? '新規作成' : '編集' ?>">
-            <input type="submit" class="btn btn-mid btn-del" value="削除する">
+            <input type="submit" class="btn btn-mid btn-del" name="dele" value="削除する">
+            
           </div>
 
           <label class="prev-a">
