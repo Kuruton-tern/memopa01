@@ -1,4 +1,4 @@
-<?php 
+<?php
 //==============================
 //ログ
 //==============================
@@ -12,12 +12,13 @@ ini_set('error_log', 'php.log');
 //デバッグ
 //==============================
 //デバッグフラグ（trueならデバッグをとる）
-$debug_flg = false;
-function debug($str){
-  global $debug_flg;
-  if(!empty($debug_flg)){
-    error_log('デバッグ：'.$str);
-  }
+$debug_flg = true;
+function debug($str)
+{
+    global $debug_flg;
+    if (!empty($debug_flg)) {
+        error_log('デバッグ：'.$str);
+    }
 }
 
 //==============================
@@ -40,14 +41,15 @@ session_regenerate_id();
 //画面表示処理開始ログ吐き出し関数
 //==============================
 // セッションを使う
-function debugLogStart(){
-  debug('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始');
-  debug('セッションID：'.session_id());
-  debug('セッション変数の中身：'.print_r($_SESSION, true));
-  debug('現在日時のタイムスタンプ：'.time());
-  if(!empty($_SESSION['login_date']) && !empty($_SESSION['login_limit'])){
-    debug('ログイン期限日時タイムスタンプ：'.($_SESSION['login_date'] + $_SESSION['login_limit']));
-  }
+function debugLogStart()
+{
+    debug('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始');
+    debug('セッションID：'.session_id());
+    debug('セッション変数の中身：'.print_r($_SESSION, true));
+    debug('現在日時のタイムスタンプ：'.time());
+    if (!empty($_SESSION['login_date']) && !empty($_SESSION['login_limit'])) {
+        debug('ログイン期限日時タイムスタンプ：'.($_SESSION['login_date'] + $_SESSION['login_limit']));
+    }
 }
 
 //==============================
@@ -93,23 +95,26 @@ $err_msg = array();
 // 未入力チェック
 //$str = フォームに入力する文字列
 // $key = input要素の name属性（今回はemail, username, pass, pass_re）
-function validRequired($str, $key){
-  if($str === ''){
-    global $err_msg;
-    $err_msg[$key] = MSG01;
-  }
+function validRequired($str, $key)
+{
+    if ($str === '') {
+        global $err_msg;
+        $err_msg[$key] = MSG01;
+    }
 }
 
 // Email形式チェック
-function validEmail($str, $key){
-  if(!preg_match('|^[0-9a-z_./?-]+@([0-9a-z-]+\.)+[0-9a-z-]+$|', $str)){
-    global $err_msg;
-    $err_msg[$key] = MSG02;
-  }
+function validEmail($str, $key)
+{
+    if (!preg_match('|^[0-9a-z_./?-]+@([0-9a-z-]+\.)+[0-9a-z-]+$|', $str)) {
+        global $err_msg;
+        $err_msg[$key] = MSG02;
+    }
 }
 // Email重複チェック
 // 引数を$emailではなく$strにするとだめ。使えない。
-function validEmailDup($email){
+function validEmailDup($email)
+{
     global $err_msg;
  
     try {
@@ -137,7 +142,8 @@ function validEmailDup($email){
     }
 }
 // リスト名重複チェック
-function validListDup($category){
+function validListDup($category)
+{
     global $err_msg;
  
     try {
@@ -168,84 +174,94 @@ function validListDup($category){
 
 
 // username形式チェック（日本語のみ入力可能）
-function validUsername($str, $key){
-  if (!preg_match('/^[ぁ-んァ-ヶー一-龠]+$/u', $str)) {
-      global $err_msg;
-      $err_msg[$key] = MSG10;
+function validUsername($str, $key)
+{
+    if (!preg_match('/^[ぁ-んァ-ヶー一-龠]+$/u', $str)) {
+        global $err_msg;
+        $err_msg[$key] = MSG10;
     }
 }
 
 // 同値チェック
-function validMatch($str1, $str2, $key){
-  if($str1 !== $str2){  //$str1,2が同じではない時
-    global $err_msg;
-    $err_msg[$key] = MSG03;
-  }
+function validMatch($str1, $str2, $key)
+{
+    if ($str1 !== $str2) {  //$str1,2が同じではない時
+        global $err_msg;
+        $err_msg[$key] = MSG03;
+    }
 }
 
 // 最大文字数チェック
-function validLenMax($str, $key, $max = 255){
-  if(mb_strlen($str) > $max){
-    global $err_msg;
-    $err_msg[$key] = MSG06;
-  }
+function validLenMax($str, $key, $max = 255)
+{
+    if (mb_strlen($str) > $max) {
+        global $err_msg;
+        $err_msg[$key] = MSG06;
+    }
 }
 
 // 最大文字数チェック（ユーザー名用）
-function validUnameMax($str, $key, $max = 10){
-  if(mb_strlen($str) > $max){
-    global $err_msg;
-    $err_msg[$key] = MSG11;
-  }
+function validUnameMax($str, $key, $max = 10)
+{
+    if (mb_strlen($str) > $max) {
+        global $err_msg;
+        $err_msg[$key] = MSG11;
+    }
 }
 
 // 最小文字数チェック
-function validLenMin($str, $key, $min = 6){
-  if(mb_strlen($str) < $min){
-    global $err_msg;
-    $err_msg[$key] = MSG05;
-  }
+function validLenMin($str, $key, $min = 6)
+{
+    if (mb_strlen($str) < $min) {
+        global $err_msg;
+        $err_msg[$key] = MSG05;
+    }
 }
 
 // 半角英数字チェック
-function validHalfAZ09($str, $key){
-  if(!preg_match('/^[a-zA-Z0-9]+$/', $str)){
-    global $err_msg;
-    $err_msg[$key] = MSG04;
-  }
+function validHalfAZ09($str, $key)
+{
+    if (!preg_match('/^[a-zA-Z0-9]+$/', $str)) {
+        global $err_msg;
+        $err_msg[$key] = MSG04;
+    }
 }
 
 // 固定長チェック
-function validLength($str, $key, $length = 8){
-  if(mb_strlen($str) !== $length){
-    global $err_msg;
-    $err_msg[$key] = MSG14;
-  }
+function validLength($str, $key, $length = 8)
+{
+    if (mb_strlen($str) !== $length) {
+        global $err_msg;
+        $err_msg[$key] = MSG14;
+    }
 }
 // セレクトボックスチェック(未入力かどうか)
-function validSelect($str, $key){
-  if(!preg_match("/^[0-9]+$/", $str)){
-    global $err_msg;
-    $err_msg[$key] = MSG01;
-  }
+function validSelect($str, $key)
+{
+    if (!preg_match("/^[0-9]+$/", $str)) {
+        global $err_msg;
+        $err_msg[$key] = MSG01;
+    }
 }
 
 // セレクトボックスチェックが0であればエラーメッセージを出す
-function validSelectChoice($str, $key){
-  if(getFormData('category_id') == 0){
-    global $err_msg;
-    $err_msg[$key] = MSG01;
-  }
+function validSelectChoice($str, $key)
+{
+    if (getFormData('category_id') == 0) {
+        global $err_msg;
+        $err_msg[$key] = MSG01;
+    }
 }
 
 // パスワードチェック
-function validPass($str,$key){
-  // 最大文字数チェック
-  validLenMax($str, $key);
-  // 最小文字数チェック
-  validLenMin($str, $key);
-  // 半角英数字チェック
-  validHalfAZ09($str, $key);
+function validPass($str, $key)
+{
+    // 最大文字数チェック
+    validLenMax($str, $key);
+    // 最小文字数チェック
+    validLenMin($str, $key);
+    // 半角英数字チェック
+    validHalfAZ09($str, $key);
 }
 
 //==============================
@@ -253,12 +269,14 @@ function validPass($str,$key){
 //==============================
 //DB接続関数
 // サーバ: mysql7029.xserver.jp
-function dbConnect(){
-  // mySQLなら
-  $dsn = 'mysql:dbname=cherry921_memopa;host=mysql7029.xserver.jp;port=3306;charset=utf8';
-  $user = 'cherry921_memo';
-  $pass = 'memopa4869';
-  $options = array(
+function dbConnect()
+{
+    // mySQLなら
+
+    $dsn = 'mysql:dbname=memopa;host=localhost;charset=utf8';  
+    $user = 'root';
+    $pass = 'root';
+    $options = array(
   // SQL実行でエラーが起こった際にどう処理するか指定
   PDO::ATTR_ERRMODE => PDO::ERRMODE_SILENT,
   //デフォルトフェッチモードを連想配列形式に設定
@@ -268,9 +286,9 @@ function dbConnect(){
   PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
 );
 
-  // PDOオブジェクト生成
-  $dbh = new PDO($dsn, $user, $pass, $options);
-  return $dbh;
+    // PDOオブジェクト生成
+    $dbh = new PDO($dsn, $user, $pass, $options);
+    return $dbh;
 }
 
 // queryPost関数
@@ -300,71 +318,73 @@ function queryPost($dbh, $sql, $data)
 // DB情報を取得する関数
 //==============================
 // ユーザー情報取得関数
-function getUser($u_id){
-  debug('ユーザー情報を取得します');
-  // 例外処理
-  try{
-      // DBに接続
-      $dbh = dbConnect();
-      // SQL文作成
-      $sql = 'SELECT * FROM user WHERE id = :u_id AND delete_flg = 0';
-      $data = array(':u_id' => $u_id);
-      // クエリ実行
-      $stmt = queryPost($dbh, $sql, $data);
+function getUser($u_id)
+{
+    debug('ユーザー情報を取得します');
+    // 例外処理
+    try {
+        // DBに接続
+        $dbh = dbConnect();
+        // SQL文作成
+        $sql = 'SELECT * FROM user WHERE id = :u_id AND delete_flg = 0';
+        $data = array(':u_id' => $u_id);
+        // クエリ実行
+        $stmt = queryPost($dbh, $sql, $data);
 
-      // クエリ結果のデータを1レコード返却
-      debug('ユーザー情報を取得しました');
-      if($stmt){
-        return $stmt->fetch(PDO::FETCH_ASSOC);
-        debug('クエリ成功。ユーザー情報取得しました。');
-      }else{
-        return false;
-        debug('クエリ失敗');
-      }
-  }catch(Exception $e){
-      error_log('エラー発生：'. $e->getMessage());
-  }
+        // クエリ結果のデータを1レコード返却
+        debug('ユーザー情報を取得しました');
+        if ($stmt) {
+            return $stmt->fetch(PDO::FETCH_ASSOC);
+            debug('クエリ成功。ユーザー情報取得しました。');
+        } else {
+            return false;
+            debug('クエリ失敗');
+        }
+    } catch (Exception $e) {
+        error_log('エラー発生：'. $e->getMessage());
+    }
 }
 
 // フォーム入力保持関数
 //==============================
-function getFormData($str, $flg = false){
-  if ($flg) {
-    $method = $_GET;
-} else {
-    $method = $_POST;
-}
-
-// myProfで$dbFormData = getUser($_SESSION['user_id']);と変数定義してある。myMemo.phpでは$dbFormData = (!empty($m_id)) ? getMemo($u_id, $m_id) : '';と定義。
-  global $dbFormData;
-
-// ユーザーデータが有る場合
-if(!empty($dbFormData)){
-  // フォームのエラーが有る場合
-  if(!empty($err_msg[$str])){
-    // POSTにデータが有る場合
-   if(isset($method[$str])){
-      return sanitize($method[$str]);
-     // POSTにない場合
-   }else{
-      return sanitize($dbFormData[$str]);
-   }
-
-   // POSTにデータが有り、DBの情報と違う場合
-  }else{
-    if(isset($method[$str]) && $method[$str] !== $dbFormData[$str]){
-      return sanitize($method[$str]);
-    }else{
-      // POSTにデータがなく、DBの情報と同じ場合（そもそも変更していない場合）
-      return sanitize($dbFormData[$str]);
+function getFormData($str, $flg = false)
+{
+    if ($flg) {
+        $method = $_GET;
+    } else {
+        $method = $_POST;
     }
-  }
-  // ユーザーデータがない場合
-}else{
-  if(isset($method[$str])){
-    return sanitize($method[$str]);
-  }
- }
+
+    // myProfで$dbFormData = getUser($_SESSION['user_id']);と変数定義してある。myMemo.phpでは$dbFormData = (!empty($m_id)) ? getMemo($u_id, $m_id) : '';と定義。
+    global $dbFormData;
+
+    // ユーザーデータが有る場合
+    if (!empty($dbFormData)) {
+        // フォームのエラーが有る場合
+        if (!empty($err_msg[$str])) {
+            // POSTにデータが有る場合
+            if (isset($method[$str])) {
+                return sanitize($method[$str]);
+            // POSTにない場合
+            } else {
+                return sanitize($dbFormData[$str]);
+            }
+
+            // POSTにデータが有り、DBの情報と違う場合
+        } else {
+            if (isset($method[$str]) && $method[$str] !== $dbFormData[$str]) {
+                return sanitize($method[$str]);
+            } else {
+                // POSTにデータがなく、DBの情報と同じ場合（そもそも変更していない場合）
+                return sanitize($dbFormData[$str]);
+            }
+        }
+        // ユーザーデータがない場合
+    } else {
+        if (isset($method[$str])) {
+            return sanitize($method[$str]);
+        }
+    }
 }
 
 
@@ -416,12 +436,13 @@ function uploadImg($file, $key)
     }
 }
 
-function UploadImgOri($file, $key){
-  debug('画像アップロード処理開始');
-  debug('FILE情報：'.print_r($file, true));
-  if($_FILES['file']){
-    move_uploaded_file(['tmp_name'],$key);
-  }
+function UploadImgOri($file, $key)
+{
+    debug('画像アップロード処理開始');
+    debug('FILE情報：'.print_r($file, true));
+    if ($_FILES['file']) {
+        move_uploaded_file(['tmp_name'], $key);
+    }
 }
 
 
@@ -433,52 +454,55 @@ function UploadImgOri($file, $key){
 // タイトル：$title = パスワード変更通知｜memopa
 // 本文：$contents = <<<EOT　以下　EOT;
 // 相手：$username = dbFormData['username']
-function sendEmail($to, $title, $contents, $username){
-  mb_language("Japanese");
-  mb_internal_encoding("UTF-8");
+function sendEmail($to, $title, $contents, $username)
+{
+    mb_language("Japanese");
+    mb_internal_encoding("UTF-8");
 
-  if(!empty($to) && !empty($title) && !empty($contents)){
-    // メールを送信する
-    $result = mb_send_mail($to, $title, $contents, $username);
-    if ($result) {
-        debug('メールの送信が完了しました。');
-    }else{
-        debug('メールの送信に失敗しました。');
+    if (!empty($to) && !empty($title) && !empty($contents)) {
+        // メールを送信する
+        $result = mb_send_mail($to, $title, $contents, $username);
+        if ($result) {
+            debug('メールの送信が完了しました。');
+        } else {
+            debug('メールの送信に失敗しました。');
+        }
     }
-  }
 }
 
 //==============================
 // メモ
 //==============================
 // ユーザーID,メモIDを基にメモの全情報を取得する関数
-function getMemo($u_id, $m_id){
-  debug('メモ情報を取得します');
-  debug('ユーザーID：'.print_r($u_id, true));
-  debug('メモID：'.print_r($m_id, true));
-  // 例外処理
-  try{
-    $dbh = dbConnect();
-    // SQL文作成
-    $sql = 'SELECT * FROM memo WHERE user_id = :u_id AND id = :m_id AND delete_flg = 0';
-    $data = array(':u_id' => $u_id, ':m_id' => $m_id);
-    // クエリ実行
-    $stmt = queryPost($dbh, $sql, $data);
+function getMemo($u_id, $m_id)
+{
+    debug('メモ情報を取得します');
+    debug('ユーザーID：'.print_r($u_id, true));
+    debug('メモID：'.print_r($m_id, true));
+    // 例外処理
+    try {
+        $dbh = dbConnect();
+        // SQL文作成
+        $sql = 'SELECT * FROM memo WHERE user_id = :u_id AND id = :m_id AND delete_flg = 0';
+        $data = array(':u_id' => $u_id, ':m_id' => $m_id);
+        // クエリ実行
+        $stmt = queryPost($dbh, $sql, $data);
 
-    if($stmt){
-      $result = $stmt->fetch(PDO::FETCH_ASSOC);
-      return $result;
-      debug('$stmt->fetch(PDO::FETCH_ASSOC)の中身：'.print_r($result, true));
-    }else{
-      return false;
+        if ($stmt) {
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            return $result;
+            debug('$stmt->fetch(PDO::FETCH_ASSOC)の中身：'.print_r($result, true));
+        } else {
+            return false;
+        }
+    } catch (Exception $e) {
+        err_log('エラー発生：'.$e->getMessage());
     }
-  }catch(Exception $e){
-    err_log('エラー発生：'.$e->getMessage());
-  }
 }
 
 // ユーザーIDを足がかりにメモのリストを取得する
-function getMemoCategory($u_id){
+function getMemoCategory($u_id)
+{
     try {
         // DB接続
         $dbh = dbConnect();
@@ -488,12 +512,12 @@ function getMemoCategory($u_id){
         // クエリ実行
         $stmt = queryPost($dbh, $sql, $data);
         if ($stmt) {
-          // クエリ結果の全データを取得（これを書かないと連想配列の形で返ってこない）
-             $result = $stmt->fetchAll();
-             return $result;
-         } else {
-             return false;
-         }
+            // クエリ結果の全データを取得（これを書かないと連想配列の形で返ってこない）
+            $result = $stmt->fetchAll();
+            return $result;
+        } else {
+            return false;
+        }
     } catch (Exception $e) {
         err_log("エラー発生：".$e->getMessage());
     }
@@ -524,27 +548,30 @@ function getCategory()
 
 
 //メモデータを取得する
-function getMemoList($category){
-  debug('メモデータを取得します');
-  // 例外処理
-  try{
-  $dbh = dbConnect();
-  // 件数用のSQL文作成
-  $sql = 'SELECT id FROM memo';
-  if(!empty($category)) $sql .= 'WHERE category_id = '.$category;
-  $data = array();    //$dataは初期化
-  // クエリ実行
-  $stmt = queryPost($dbh, $sql, $data);
-  if($stmt){
-    $result['data'] = $stmt->fetchAll();
-    return $result['data'];
-  }else{
-    return false;
-    debug('getMemoList関数でのメモ情報取得失敗');
-  }
-  }catch(Exception $e){
-    error_log('エラー発生：'.$e->getMessage());
-  }
+function getMemoList($category)
+{
+    debug('メモデータを取得します');
+    // 例外処理
+    try {
+        $dbh = dbConnect();
+        // 件数用のSQL文作成
+        $sql = 'SELECT id FROM memo';
+        if (!empty($category)) {
+            $sql .= 'WHERE category_id = '.$category;
+        }
+        $data = array();    //$dataは初期化
+        // クエリ実行
+        $stmt = queryPost($dbh, $sql, $data);
+        if ($stmt) {
+            $result['data'] = $stmt->fetchAll();
+            return $result['data'];
+        } else {
+            return false;
+            debug('getMemoList関数でのメモ情報取得失敗');
+        }
+    } catch (Exception $e) {
+        error_log('エラー発生：'.$e->getMessage());
+    }
 }
 
 
@@ -561,7 +588,7 @@ function getMemoData($u_id)
         // SQL文作成
         // $sql = 'SELECT * FROM memo AS m WHERE m.user_id = :id AND m.category_id = :category_id AND m.delete_flg = 0';
         // 古いものが上に来るように
-         $sql = 'SELECT * FROM memo AS m WHERE m.user_id = :id AND m.delete_flg = 0 ORDER BY update_date DESC';
+        $sql = 'SELECT * FROM memo AS m WHERE m.user_id = :id AND m.delete_flg = 0 ORDER BY update_date DESC';
 
         $data = array(':id' => $u_id);
         // クエリ実行
@@ -590,8 +617,9 @@ function getMemoData($u_id)
 }
 
 // 自分のメモデータを取得する
-function getMyMemo($category_id, $u_id){
-  debug('自分のメモを取得します。');
+function getMyMemo($category_id, $u_id)
+{
+    debug('自分のメモを取得します。');
     //例外処理
     try {
         // DBへ接続
@@ -600,8 +628,8 @@ function getMyMemo($category_id, $u_id){
         // まず、メモレコード取得
         // SQL文作成
         // 古いものが上に来るように
-         $sql = 'SELECT * FROM memo AS m WHERE m.user_id = :id AND m.category_id = :category_id AND m.delete_flg = 0 ORDER BY update_date DESC';
-         $data = array(':id' => $u_id, ':category_id' => $category_id);
+        $sql = 'SELECT * FROM memo AS m WHERE m.user_id = :id AND m.category_id = :category_id AND m.delete_flg = 0 ORDER BY update_date DESC';
+        $data = array(':id' => $u_id, ':category_id' => $category_id);
         // クエリ実行
         $stmt = queryPost($dbh, $sql, $data);
         $rst = $stmt->fetchAll();
@@ -660,67 +688,40 @@ function getMyMemo($category_id, $u_id){
 // その他
 //==============================
 // サニタイズ
-function sanitize($str){
-  return htmlspecialchars($str, ENT_QUOTES);
+function sanitize($str)
+{
+    return htmlspecialchars($str, ENT_QUOTES);
 }
 
 // jsで表示させるやつ
-function getSessionFlash($key){
-  if(!empty($_SESSION[$key])){
-    debug('$_SESSION[$key]の中身：'.print_r($_SESSION[$key], true));
-    $data = $_SESSION[$key];
-    $_SESSION[$key] = '';
-    return $data;
-  }
+function getSessionFlash($key)
+{
+    if (!empty($_SESSION[$key])) {
+        debug('$_SESSION[$key]の中身：'.print_r($_SESSION[$key], true));
+        $data = $_SESSION[$key];
+        $_SESSION[$key] = '';
+        return $data;
+    }
 }
 
 
 // 認証キー作成
-function makeRandKey(){
-static $charas = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-$length = 8;
-$str = '';
-for($i = 0; $i < $length; ++$i){
-  $str .= $charas[mt_rand(0,61)]; //「.=」はどんどんつなげていく
- }
-return $str;
+function makeRandKey()
+{
+    static $charas = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $length = 8;
+    $str = '';
+    for ($i = 0; $i < $length; ++$i) {
+        $str .= $charas[mt_rand(0, 61)]; //「.=」はどんどんつなげていく
+    }
+    return $str;
 }
 
 // エラーメッセージ呼び出し関数
-function getErr_msg($key){
-  global $err_msg;
-  if(!empty($err_msg[$key])){
-    return $err_msg[$key];
-  }
-}
-
-
-// メモコンテンツの暗号化
-    function encContents($m_contents)
-    {
-        $enc_key  = "1234567890abcdefghijklmnopqrstuvwxyz";
-        $method = 'aes-256-ecb';
-        
-        // 暗号化
-        $enc_m_contents = openssl_encrypt($m_contents, $method, $enc_key);
-        // 暗号化済みデータを返す
-        return $enc_m_contents;
-        debug("$enc_m_contentsの中身：".print_r($enc_m_contents, true));
+function getErr_msg($key)
+{
+    global $err_msg;
+    if (!empty($err_msg[$key])) {
+        return $err_msg[$key];
     }
-
-
-// メモコンテンツの復号化
- function decContents($enc_m_contents)
- {
-     $enc_key = "1234567890abcdefghijklmnopqrstuvwxyz";
-     $method = 'aes-256-ecb';
-      
-     // 復号化
-     $dec_m_contents = openssl_decrypt($enc_m_contents, $method, $enc_key);
-
-     // 復号化済みデータを返す
-     return $dec_m_contents;
-     debug('$dec_m_contentsの中身：'.print_r($dec_m_contents, true));
- }
-
-?>
+}

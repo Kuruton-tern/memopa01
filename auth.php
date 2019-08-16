@@ -21,7 +21,7 @@ if (!empty($_SESSION['login_date'])) {
         // セッションを壊す(ログアウトする)
         session_destroy();
         // トップページヘ遷移させる
-        header("Location:top.php");
+        header("Location:index.php");
 
     //ログインしたときの時間＋有効期限が現在時刻時刻をオーバーしていない場合
     debug('セッションの有効期限が期限以内です');

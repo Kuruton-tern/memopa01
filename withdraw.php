@@ -36,7 +36,7 @@ if(!empty($_POST)){
       // 本当に消せたか確認
       debug('$_SESSIONの確認：'.print_r($_SESSION, true));
       // トップページへ遷移
-      header('Location:top.php');
+      header('Location:index.php');
     }else{
       debug('クエリ失敗しました');
       $err_msg = MSG07;

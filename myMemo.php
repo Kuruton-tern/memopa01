@@ -12,7 +12,7 @@ debugLogStart();
 require('auth.php');
 
 if (empty($_SESSION['login_date'])) {
-    header('Location:top.php');
+    header('Location:index.php');
     debug('SESSIONがなかったためトップ画面に遷移します');
 }
 
@@ -33,7 +33,7 @@ $categories = getCategory();
 // DBからユーザーIDが当てはまるmemoテーブルの中身を取得
 $memos = getMemoData($u_id);
 // debug('$categoriesの中身：'.print_r($categories, true));
-// debug('$memosの中身：'.print_r($memos, true));
+ debug('$memosの中身：'.print_r($memos, true));
 $display_memos = array();
 
 // カテゴリーを全件回す
@@ -47,9 +47,10 @@ foreach ($categories as $category) {
 // メモを全件回す
 foreach($memos as $memo){
   // メモのカテゴリーIDをキーに、連想配列へ格納する
+  debug('$memosの$memoの中身：'.print_r($memo, true));
   $display_memos[$memo['category_id']]['memo'][] = $memo;
   $display_memos_memo = $display_memos[$memo['category_id']]['memo'];
-  // debug('$display_memos_memoの中身：'.print_r($display_memos_memo, true));
+  debug('$display_memos_memoの中身：'.print_r($display_memos_memo, true));
 }
 
 // debug('display_memosの中身：'.print_r($display_memos, true));
@@ -164,7 +165,7 @@ debug('サクセスメッセージを出しました');
         // if (!empty($display_memo['memo'])) {
             $memos_by_category = $display_memo['memo'];
         //  }
-        // debug('$memos_by_categoryの中身：'.print_r($memos_by_category, true));
+        debug('$memos_by_categoryの中身：'.print_r($memos_by_category, true));
         
         ?>
    
@@ -187,12 +188,18 @@ debug('サクセスメッセージを出しました');
       </div>
           
           <?php
-          foreach ($memos_by_category as $memo_by_category) {
+          foreach ((array)$memos_by_category as $memo_by_category) {
               ?>
       <!-- メモの内容（タイトル部分） それの繰り返し -->
       <div class="memo-panel">
         <div class="list-memo-title">
-          <?php echo($memo_by_category['name']); ?>
+          <?php
+          if (!empty($memos_by_category)) {
+              echo sanitize(($memo_by_category['name']));
+          }else{
+            echo '';
+          }
+          ?>
         </div>
       <!-- GETパラメータを取れるように各メモのIDを呼び出す。 -->
        <form method ="post" action="" onSubmit="">
@@ -203,9 +210,8 @@ debug('サクセスメッセージを出しました');
           </div>
        </form>
         <!-- メモ日付 -->
-        <p style="font-size:1px;">
-          <?php echo($memo_by_category['update_date']); ?>
-          <?php debug('update_dateの中身：'.print_r($memo_by_category['update_date'],true)); ?>
+        <p style="font-size:0.8em;">
+          <?php echo sanitize($memo_by_category['update_date']); ?>
         </p>
       </div>
     <?php

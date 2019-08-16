@@ -7,15 +7,19 @@
   debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
   debugLogStart();
 
+
+  // $info = dns_get_record('memopa.site', DNS_A);
+  // echo $info;
+  // debug('memopa.siteのDSN情報：'.print_r($info, true));
 ?>
 
 
 <?php
 $siteTitle = 'memopaトップ';
- require("head.php");
+require("head.php");
 
 ?>
-  
+
   <body class="page-logout page-1colum">
   
     <!-- ヘッダー  -->
@@ -47,49 +51,49 @@ require('header.php');
           </div>
           <!-- メモの内容（タイトル部分） それの繰り返し -->
           <div class="memo-panel">
-            html作成（メモタイトル）
+             memopaをご覧いただき、ありがとうございます。
             <div class="memo-panel-icon">
               <i class="fas fa-bars"></i>
             </div>
           </div>
           <div class="memo-panel">
-            html作成（メモタイトル）
+            このmemopaがアウトプットとして初めて作ったものになります。
             <div class="memo-panel-icon">
               <i class="fas fa-bars"></i>
             </div>
           </div>
           <div class="memo-panel">
-            testtesttestestestsetssetset作成（メモタイトル）aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+           自分で投稿したメモのタイトルが、カテゴリごとに並んだとき、ガッツポーズをしました。
             <div class="memo-panel-icon">
               <i class="fas fa-bars"></i>
             </div>
           </div>
           <div class="memo-panel">
-            メモタイトル
+          苦しい気持ちが９割、楽しい気持ちが１割でしたがこの１割のために続けられました。
             <div class="memo-panel-icon">
               <i class="fas fa-bars"></i>
             </div>
           </div>
           <div class="memo-panel">
-            php
+            自分一人では諦めていたかも知れません。
             <div class="memo-panel-icon">
               <i class="fas fa-bars"></i>
             </div>
           </div>
           <div class="memo-panel">
-            html作成（メモタイトル）
+            教えてくださる方、励ましてくださる方のおかげで苦しい！わかんない！という状況を乗り越えられました。
             <div class="memo-panel-icon">
               <i class="fas fa-bars"></i>
             </div>
           </div>
           <div class="memo-panel">
-            html作成（メモタイトル）
+           本当にありがとうございます。
             <div class="memo-panel-icon">
               <i class="fas fa-bars"></i>
             </div>
           </div>
           <div class="memo-panel">
-            html作成（メモタイトル）
+           自分への助言：確認を怠るな！！
             <div class="memo-panel-icon">
               <i class="fas fa-bars"></i>
             </div>
