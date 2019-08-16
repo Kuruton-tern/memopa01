@@ -11,6 +11,17 @@ debugLogStart();
 // ログイン認証
 require('auth.php');
 
+
+              foreach ((array)$dbFormData as $key => $val) {
+                  if ($c_id == $val['id']) {
+                      echo $val['name'];
+                      debug('idの中身：'.print_r($val['id'], true));
+                      debug('nameの中身：'.print_r($val['name'], true));
+                  }
+              }
+
+
+
 //==============================
 //画面処理
 //==============================
@@ -166,12 +177,17 @@ require('header.php');
         
             <label class="memo-title">リスト名
             <input type="text" name="category" value="<?php
-              foreach ($dbFormData as $key => $val) {
-                  if ($c_id == $val['id']) {
-                      echo $val['name'];
-                      debug('');
+              foreach ((array)$dbFormData as $key => $val) {
+                  if (!empty($dbFormData)) {
+                      if ($c_id == $val['id']) {
+                          echo $val['name'];
+                          debug('idの中身：'.print_r($val['id'], true));
+                          debug('nameの中身：'.print_r($val['name'], true));
+                      }
+                  }else{
+                    echo '';
                   }
-                }
+              }
               ?>">
             
           </label>

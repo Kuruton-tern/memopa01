@@ -2,30 +2,6 @@
 // 共通変数・関数ファイルを読み込み
 require('function.php');
 
-// メモコンテンツの暗号化
-    function encContents($m_contents){
-        $enc_key  = "1234567890abcdefghijklmnopqrstuvwxyz";
-        $method = 'aes-256-ecb';
-        
-        // 暗号化
-        $enc_m_contents = openssl_encrypt($m_contents, $method, $enc_key);
-        // 暗号化済みデータを返す
-        return $enc_m_contents;
-        debug("$enc_m_contentsの中身：".print_r($enc_m_contents, true));
-    }
-
-    function decContents($enc_m_contents){
-      $enc_key = "1234567890abcdefghijklmnopqrstuvwxyz";
-      $method = 'aes-256-ecb';
-      
-      // 復号化
-      $dec_m_contents = openssl_decrypt($enc_m_contents, $method, $enc_key);
-
-      // 復号化済みデータを返す
-      return $dec_m_contents;
-      debug('$dec_m_contentsの中身：'.print_r($dec_m_contents, true));
-    }
-
 
 debug('                  ');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
@@ -68,10 +44,10 @@ debug('$_GETの中身：'.print_r($_GET, true));
 // パラメータ改ざんチェック
 //==============================
 //GETパラメータはあるが、改ざんされている（URLをいじくった）場合、正しいメモデータが取れないのでマイプロフへ遷移させる
-// if(!empty($m_id) && empty($dbFormData)){
-//   debug('GETパラメータの商品IDは違います。マイプロフへ遷移します');
-//   header("Location:")
-// }
+if(!empty($m_id) && empty($dbFormData)){
+   debug('GETパラメータの$m_idは違います。マイメモに移動します');
+   header("Location:myMemo.php");
+ }
 
 // POST送信時処理
 //==============================
@@ -317,7 +293,7 @@ require('header.php');
           debug('$formData_contentsの中身：'.print_r($formData_contents, true));
           ?>
           <!-- メモの復号化を行う -->
-          <textarea name="contents" id="memo-area" cols="30" rows="10"><?php if(!empty($formData_contents)) echo decContents($formData_contents); ?></textarea>
+          <textarea name="contents" id="memo-area" cols="30" rows="10"><?php if(!empty($formData_contents)) echo sanitize(decContents($formData_contents)); ?></textarea>
 
           <div class="area-msg">
               <?php echo getErr_msg('contents'); ?>
