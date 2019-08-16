@@ -15,5 +15,5 @@ session_destroy();
 debug('セッションIDを削除しました');
 
 // トップ画面に遷移させる
-header("Location:top.php");
+header("Location:index.php");
 ?>

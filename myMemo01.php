@@ -14,7 +14,7 @@ debugLogStart();
 require('auth.php');
 
 if (empty($_SESSION['login_date'])) {
-    header('Location:top.php');
+    header('Location:index.php');
     debug('SESSIONがなかったためトップ画面に遷移します');
 }
 

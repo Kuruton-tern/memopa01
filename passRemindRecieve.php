@@ -89,7 +89,7 @@ if (!empty($_POST)) {
 下記のURLより新パスワードを使いログインください。
 
 
-パスワード再発行認証キー入力ページ：http://localhost:8888/memopa/login.php
+パスワード再発行認証キー入力ページ：http://memopa.site/login.php
 新パスワード：{$pass_rand}
 
 ※ログイン後、パスワードの変更をよろしくお願い致します。
@@ -97,8 +97,7 @@ if (!empty($_POST)) {
 
 ///////////////////////////////////////
 memopa
-URL:  http://memopa.com
-Email: kuruton@gmail.com
+URL:  http://memopa.site
 ///////////////////////////////////////
 EOT;
 
