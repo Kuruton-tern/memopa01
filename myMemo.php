@@ -45,12 +45,11 @@ foreach ($categories as $category) {
 }
 
 // メモを全件回す
-foreach($memos as $memo){
-  // メモのカテゴリーIDをキーに、連想配列へ格納する
-  debug('$memosの$memoの中身：'.print_r($memo, true));
-  $display_memos[$memo['category_id']]['memo'][] = $memo;
-  $display_memos_memo = $display_memos[$memo['category_id']]['memo'];
-  debug('$display_memos_memoの中身：'.print_r($display_memos_memo, true));
+foreach ($memos as $memo) {
+    // メモのカテゴリーIDをキーに、連想配列へ格納する
+    $display_memos[$memo['category_id']]['memo'][] = $memo;
+    $display_memos_memo = $display_memos[$memo['category_id']]['memo'];
+    debug('$display_memos_memoの中身：'.print_r($display_memos_memo, true));
 }
 
 // debug('display_memosの中身：'.print_r($display_memos, true));
@@ -156,18 +155,16 @@ debug('サクセスメッセージを出しました');
    <?php
     //  画面描画用の連想配列でループを回す
     foreach ($display_memos as $category_id => $display_memo) {
-      // debug('$display_memoの中身：'.print_r($display_memo, true));
+        debug('$display_memoの中身：'.print_r($display_memo, true));
         
-      // 現在のカテゴリ情報とメモリストを取得する
+        // 現在のカテゴリ情報とメモリストを取得する
         $category = $display_memo['category'];
       
         // もし$display_memo['memo']があれば$memo_by_categoryに格納する（下のif文を入れると未メモ有カテゴリに最新メモが入ってしまう）
         // if (!empty($display_memo['memo'])) {
-            $memos_by_category = $display_memo['memo'];
+        $memos_by_category = $display_memo['memo'];
         //  }
-        debug('$memos_by_categoryの中身：'.print_r($memos_by_category, true));
-        
-        ?>
+        // debug('$memos_by_categoryの中身：'.print_r($memos_by_category, true)); ?>
    
 
   <!-- メモの大枠 -->
@@ -179,6 +176,10 @@ debug('サクセスメッセージを出しました');
       <div class="list-header">
         <!-- カテゴリ名を出力（PHP） -->
         <h2 class="list-title"><?php echo sanitize($category['name']); ?></h2>
+        <p>
+          <?php
+          // echo sanitize($msg['msg']),0,40);
+           ?></p>
          <form method ="post" action="" onSubmit="return check()">
         <div class="list-header-icon">
           <button type="submit" class="btn-dele" name="c_id" value="<?php echo sanitize($category['id']); ?>"><i class="fas fa-trash-alt"></i></button>
@@ -195,11 +196,10 @@ debug('サクセスメッセージを出しました');
         <div class="list-memo-title">
           <?php
           if (!empty($memos_by_category)) {
-              echo sanitize(($memo_by_category['name']));
-          }else{
-            echo '';
-          }
-          ?>
+              echo($memo_by_category['name']);
+          } else {
+              echo '';
+          } ?>
         </div>
       <!-- GETパラメータを取れるように各メモのIDを呼び出す。 -->
        <form method ="post" action="" onSubmit="">
@@ -211,12 +211,12 @@ debug('サクセスメッセージを出しました');
        </form>
         <!-- メモ日付 -->
         <p style="font-size:0.8em;">
-          <?php echo sanitize($memo_by_category['update_date']); ?>
+          <?php echo($memo_by_category['update_date']); ?>
+          <?php debug('update_dateの中身：'.print_r($memo_by_category['update_date'], true)); ?>
         </p>
       </div>
     <?php
-       }
-    ?>
+          } ?>
 
       <div class="memo-add">
         <span><a href="memoDetail.php?c_id=<?php echo sanitize($category['id']); ?>"><i class="fas fa-pen-square"></i>さらにメモを追加する</a></span>
@@ -225,7 +225,7 @@ debug('サクセスメッセージを出しました');
     
    </section>
   <?php
-  }
+    }
  ?>
 
   </div>
