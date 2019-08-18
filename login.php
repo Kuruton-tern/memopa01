@@ -16,11 +16,12 @@ require('auth.php');
 //==============================
 //post送信の有無
 if (!empty($_POST)) {
-  debug('POST送信があります');
+    debug('POST送信があります');
 
-  // 変数にユーザー情報を代入
-  $email = $_POST['email'];
-  $pass = $_POST['pass'];
+    // 変数にユーザー情報を代入
+    $email = $_POST['email'];
+    $pass = $_POST['pass'];
+    $pass_save = $_POST['pass_save'];
   
     // emailの形式チェック
     validEmail($email, 'email');
@@ -40,56 +41,56 @@ if (!empty($_POST)) {
 
     // ここまでエラーメッセージがなければ、DBのpassと入力したpassを照合
     if (empty($err_msg)) {
-      debug('バリデーションチェックOK');
+        debug('バリデーションチェックOK');
 
-      try{
-        // DBへ接続
-        $dbh = dbConnect();
-        // SQL文作成
-        // 入力したemailをもとにpassとidを取ってくる。
-        $sql = 'SELECT password, id FROM user WHERE email = :email AND delete_flg = 0';
-        $data = array(':email' => $email);
-        // クエリ実行
-        $stmt = queryPost($dbh, $sql, $data);
-        // 実行結果を取ってくる。
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
-        debug('SQL実行結果の中身'.print_r($result,true));
-        debug('入力されたpass:'.print_r($pass, true));
+        try {
+            // DBへ接続
+            $dbh = dbConnect();
+            // SQL文作成
+            // 入力したemailをもとにpassとidを取ってくる。
+            $sql = 'SELECT password, id FROM user WHERE email = :email AND delete_flg = 0';
+            $data = array(':email' => $email);
+            // クエリ実行
+            $stmt = queryPost($dbh, $sql, $data);
+            // 実行結果を取ってくる。
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            debug('SQL実行結果の中身'.print_r($result, true));
+            debug('入力されたpass:'.print_r($pass, true));
 
-        // 実行結果のうち、passwordの配列の方だけ使用するのでarray_shiftで最初の配列を取得。
-        if(!empty($result) && password_verify($pass, array_shift($result))){
-        debug('パスワードがマッチしました。');
+            // 実行結果のうち、passwordの配列の方だけ使用するのでarray_shiftで最初の配列を取得。
+            if (!empty($result) && password_verify($pass, array_shift($result))) {
+                debug('パスワードがマッチしました。');
         
-        // ユーザーIDを格納
-        $_SESSION['user_id'] = $result['id'];
+                // ユーザーIDを格納
+                $_SESSION['user_id'] = $result['id'];
 
-        // 最終ログイン日時を現在日時に
-        $_SESSION['login_date'] = time();
-        // ログイン有効期限を変数を作り、設定（60秒*60分）
-        $session_limit = 60*60;
+                // 最終ログイン日時を現在日時に
+                $_SESSION['login_date'] = time();
+                // ログイン有効期限を変数を作り、設定（60秒*60分）
+                $session_limit = 60*60;
 
-        // ログイン保持にチェックがある場合
-        if(!empty('pass_save')){
-          debug('ログイン保持にチェックがあります');
-          // ログイン有効期限を30日にする
-          $_SESSION['login_limit'] = $session_limit*24*30;
-          debug('ログイン有限期限：'.print_r($_SESSION['login_limit'], true));
-        }else{
-          debug('ログイン保持にチェックがありません');
-          // ログイン有限期限を1時間にする
-          $_SESSION['login_limit'] = $session_limit;
-          debug('ログイン有限期限：'.print_r($_SESSION['login_limit'], true));
+                // ログイン保持にチェックがある場合
+                if (!empty($pass_save)) {
+                    debug('ログイン保持にチェックがあります');
+                    // ログイン有効期限を30日にする
+                    $_SESSION['login_limit'] = $session_limit*24*30;
+                    debug('ログイン有限期限：'.print_r($_SESSION['login_limit'], true));
+                } else {
+                    debug('ログイン保持にチェックがありません');
+                    // ログイン有限期限を1時間にする
+                    $_SESSION['login_limit'] = $session_limit;
+                    debug('ログイン有限期限：'.print_r($_SESSION['login_limit'], true));
+                }
+
+                header('location:myMemo.php');
+            } else {
+                debug('パスワードアンマッチです');
+                $err_msg['common'] = MSG09;
+            }
+        } catch (Exception $e) {
+            error_log("エラー発生：". $e->getMessage());
+            $err_msg['common'] = MSG07;
         }
-
-        header('location:myMemo.php');
-        }else{
-          debug('パスワードアンマッチです');
-          $err_msg['common'] = MSG09;
-        }
-      }catch(Exception $e){
-        error_log("エラー発生：". $e->getMessage());
-        $err_msg['common'] = MSG07;
-      }
     }
 }
 debug('画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
@@ -104,7 +105,7 @@ $siteTitle = 'ログイン画面';
 <body class="page-logined page-1colum">
 
 <!-- ヘッダー  -->
-<?php 
+<?php
 require('header.php');
 ?>
 
@@ -120,21 +121,31 @@ require('header.php');
 
           <div class="area-msg">
            <?php
-             if (!empty($err_msg['common'])) echo $err_msg['common'];
+             if (!empty($err_msg['common'])) {
+                 echo $err_msg['common'];
+             }
             ?>
            </div>
           <!-- メールアドレス -->
           
-            <label class="<?php if(!empty($err_msg['email'])) echo 'err';?>">メールアドレス
-            <input type="text" name="email" placeholder="emailの形式で入力してください" value="<?php if(!empty($_POST['email'])) echo $_POST['email']; ?>">
+            <label class="<?php if (!empty($err_msg['email'])) {
+                echo 'err';
+            }?>">メールアドレス
+            <input type="text" name="email" placeholder="emailの形式で入力してください" value="<?php if (!empty($_POST['email'])) {
+                echo $_POST['email'];
+            } ?>">
             </label>
             <div class="area-msg">
               <?php echo getErr_msg('email'); ?>
             </div>
         
           <!-- パスワード -->
-            <label class="<?php if(!empty($err_msg['pass'])) echo 'err';?>">パスワード
-            <input type="password" name="pass" placeholder="６文字以上で入力してください。" value="<?php if(!empty($_POST['pass'])) echo $_POST['pass']; ?>">
+            <label class="<?php if (!empty($err_msg['pass'])) {
+                echo 'err';
+            }?>">パスワード
+            <input type="password" name="pass" placeholder="６文字以上で入力してください。" value="<?php if (!empty($_POST['pass'])) {
+                echo $_POST['pass'];
+            } ?>">
             </label>
             <div class="area-msg">
               <?php echo getErr_msg('pass'); ?>

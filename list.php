@@ -51,28 +51,28 @@ debug('$edit_flgの中身：'.print_r($edit_flg, true));
 // POST送信時処理チェック
 //==============================
 // POST送信のチェック
-if(!empty($_POST)){
-  debug('POST送信があります');
-  debug('POST内容情報：'.print_r($_POST, true));
+if (!empty($_POST)) {
+    debug('POST送信があります');
+    debug('POST内容情報：'.print_r($_POST, true));
 
-  // 変数に入力情報を代入
-  $category = $_POST['category'];
+    // 変数に入力情報を代入
+    $category = $_POST['category'];
 
-  // 新規登録だったら（カテゴリーデータがなければ）
-  if (empty($dbFormData)) {
-      // 未入力チェック
-      validRequired($category, 'category');
-  }else{
-    // 更新であれば以下の処理から
-      if (empty($err_msg)) {
-          debug('未入力チェックOK');
-          // 最大文字数チェック
-          validLenMax($category, 'category');
-          // リスト名重複チェック
-          validListDup($category);
-          debug('最大文字数、リスト重複チェック完了');
-      }
-  }
+    // 新規登録だったら（カテゴリーデータがなければ）
+    if (empty($dbFormData)) {
+        // 未入力チェック
+        validRequired($category, 'category');
+    } else {
+        // 更新であれば以下の処理から
+        if (empty($err_msg)) {
+            debug('未入力チェックOK');
+            // 最大文字数チェック
+            validLenMax($category, 'category');
+            // リスト名重複チェック
+            validListDup($category);
+            debug('最大文字数、リスト重複チェック完了');
+        }
+    }
     if (empty($err_msg)) {
         debug('バリデーションチェックOK');
         // 例外処理
@@ -83,7 +83,7 @@ if(!empty($_POST)){
             // SQL文作成
             // カテゴリー編集なら
             if ($edit_flg) {
-              debug('カテゴリー編集なのでDBアップデートです。');
+                debug('カテゴリー編集なのでDBアップデートです。');
                 $sql = 'UPDATE category SET name = :name, update_date = :update_date WHERE user_id = :u_id AND id = :c_id';
                 $data = array(':name' => $category, ':update_date' => date('Y-m-d H:i:s'), ':u_id' => $_SESSION['user_id'], ':c_id' => $c_id);
                 // クエリ実行
@@ -97,10 +97,10 @@ if(!empty($_POST)){
                     $_SESSION['msg_success'] = SUC06;
                     header("Location:myMemo.php");
                 }
-            }else{
-              // カテゴリー新規作成なら
-              debug('カテゴリー新規作成なのでDB登録です。');
-              $sql = 'INSERT INTO category (name, user_id, create_date) VALUE(:name, :u_id, :create_date)';
+            } else {
+                // カテゴリー新規作成なら
+                debug('カテゴリー新規作成なのでDB登録です。');
+                $sql = 'INSERT INTO category (name, user_id, create_date) VALUE(:name, :u_id, :create_date)';
                 $data = array(':name' => $category, ':u_id' => $_SESSION['user_id'], ':create_date' => date('Y-m-d H:i:s'));
                 // クエリ実行
                 debug('SQLの中身：'.print_r($sql, true));
@@ -117,9 +117,9 @@ if(!empty($_POST)){
         } catch (Exception $e) {
             error_log("エラー発生：".$e-getMessage());
             $err_msg['common'] = MSG07;
-      }
+        }
     }
-  }
+}
 
 debug('画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
 
@@ -156,7 +156,7 @@ $siteTitle = 'リスト作成';
     </style>
 
   <!-- ヘッダー  -->
-<?php 
+<?php
 require('header.php');
 ?>
 
@@ -184,8 +184,8 @@ require('header.php');
                           debug('idの中身：'.print_r($val['id'], true));
                           debug('nameの中身：'.print_r($val['name'], true));
                       }
-                  }else{
-                    echo '';
+                  } else {
+                      echo '';
                   }
               }
               ?>">
@@ -199,6 +199,10 @@ require('header.php');
           <div class="btn-container">
             <input type="submit" class="open btn btn-mid btn-create" value="作成">
           </div>
+          <!-- 前のページに戻る -->
+       <label class="prev-a">
+            <a href="myMemo.php">&lt;&lt; myMemoページに戻る</a>
+          </label>
         </form>
       </div>
 
