@@ -23,7 +23,7 @@ require("head.php");
   <body class="page-logout page-1colum">
   
     <!-- ヘッダー  -->
-<?php 
+<?php
 require('header.php');
 ?>  
 
@@ -34,9 +34,15 @@ require('header.php');
       あなたの生活、ビジネス、恋愛の恩人になるかもしれない言葉をリストで保存。<br>
       todoリストとしても使えます。<br>
     </p>
+   <!-- ログイン・新規登録ボタン設置 -->
+   <div class="btn-container">
+           <a href="login.php"><button class="btn-entry btn-log">ログイン</button></a>
+           <a href="signup.php"><button class="btn-entry btn-signup">新規会員登録</button></a>
+   </div>
+
   </div>
 
-    <!-- メインコンテンツ -->
+     <!-- メインコンテンツ -->
     <div id="main" class="page-top">
       <!-- メモの大枠 -->
       <div class="list-wrap">
