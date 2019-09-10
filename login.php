@@ -131,7 +131,7 @@ require('header.php');
             <label class="<?php if (!empty($err_msg['email'])) {
                 echo 'err';
             }?>">メールアドレス
-            <input type="text" name="email" placeholder="emailの形式で入力してください" value="<?php if (!empty($_POST['email'])) {
+            <input type="text" name="email" placeholder="emailの形式で入力してください。" value="<?php if (!empty($_POST['email'])) {
                 echo $_POST['email'];
             } ?>">
             </label>

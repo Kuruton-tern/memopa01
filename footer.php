@@ -100,6 +100,18 @@ function check()
     }
 }
 
+// メモ単体を消すポップアップ
+function check02()
+{
+    if (window.confirm('メモを削除します。')) { // 確認ダイアログを表示
+
+        return true; // 「OK」時は送信を実行
+    } else { // 「キャンセル」時の処理
+
+        return false; // 送信を中止
+    }
+}
+
 </script>
 
 </body>

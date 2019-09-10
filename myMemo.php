@@ -38,7 +38,7 @@ $display_memos = array();
 
 // カテゴリーを全件回す
 foreach ($categories as $category) {
-    // メモのカテゴリーIDをキーに、連想配列へ格納する
+    // メモのカテゴリーIDをキーに、カテゴリの名前を連想配列へ格納する
     if ($category['user_id'] === $u_id) {
         $display_memos[$category['id']]['category'] = $category;
     }
@@ -46,7 +46,7 @@ foreach ($categories as $category) {
 
 // メモを全件回す
 foreach ($memos as $memo) {
-    // メモのカテゴリーIDをキーに、連想配列へ格納する
+    // メモのカテゴリーIDをキーに、メモの配列（複数のメモ情報）を連想配列へ格納する
     $display_memos[$memo['category_id']]['memo'][] = $memo;
     $display_memos_memo = $display_memos[$memo['category_id']]['memo'];
     debug('$display_memos_memoの中身：'.print_r($display_memos_memo, true));
@@ -185,14 +185,15 @@ debug('サクセスメッセージを出しました');
           <button type="submit" class="btn-dele" name="c_id" value="<?php echo sanitize($category['id']); ?>"><i class="fas fa-trash-alt"></i></button>
           <a href="list.php?c_id=<?php echo sanitize($category['id']); ?>"><i class="fas fa-edit"></i></a>
         </div>
-         </form>
       </div>
+    </form>
           
           <?php
           foreach ((array)$memos_by_category as $memo_by_category) {
               ?>
       <!-- メモの内容（タイトル部分） それの繰り返し -->
       <div class="memo-panel">
+        <a href="memoDetail.php?m_id=<?php echo sanitize($memo_by_category['id']); ?>">
         <div class="list-memo-title">
           <?php
           if (!empty($memos_by_category)) {
@@ -202,24 +203,28 @@ debug('サクセスメッセージを出しました');
           } ?>
         </div>
       <!-- GETパラメータを取れるように各メモのIDを呼び出す。 -->
-       <form method ="post" action="" onSubmit="">
-          <div class="memo-panel-icon">
-              <a href="memoDetail.php?m_id=<?php echo sanitize($memo_by_category['id']); ?>"><i class="fas fa-bars"></i></a>
-              <!-- ゴミ箱アイコン -->
-                <button type="submit" class="btn-dele" name="m_id" value="<?php echo sanitize($memo_by_category['id']); ?>"><i class="far fa-trash-alt"></i></button>
-          </div>
-       </form>
+      <div class="memo-panel-icon">
+        <i class="fas fa-pen-square"></i>
+      </a>
+        <form method ="post" action="" onSubmit="return check02()">
+          <!-- ゴミ箱アイコン -->
+          <button type="submit" class="btn-dele" name="m_id" onSubmit="return check02()" value="<?php echo sanitize($memo_by_category['id']); ?>"><i class="far fa-trash-alt"></i></button>
+        </div>
+         </form> 
+         <a href="memoDetail.php?m_id=<?php echo sanitize($memo_by_category['id']); ?>">
         <!-- メモ日付 -->
         <p style="font-size:0.8em;">
           <?php echo($memo_by_category['update_date']); ?>
           <?php debug('update_dateの中身：'.print_r($memo_by_category['update_date'], true)); ?>
         </p>
+        </a>
       </div>
+      
     <?php
           } ?>
 
       <div class="memo-add">
-        <span><a href="memoDetail.php?c_id=<?php echo sanitize($category['id']); ?>"><i class="fas fa-pen-square"></i>さらにメモを追加する</a></span>
+        <span><a href="memoDetail.php?c_id=<?php echo sanitize($category['id']); ?>"><i class="fas fa-plus-circle"></i></i>さらにメモを追加する</a></span>
       </div>
      </div>
     

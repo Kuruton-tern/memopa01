@@ -159,7 +159,7 @@ require('header.php');
           <label class="<?php if (!empty($err_msg['email'])) {
                 echo 'err';
             }?>">メールアドレス
-          <input type="text" name="email" value="<?php if (!empty($_POST['email'])) {
+          <input type="text" name="email" placeholder= "emailの形式で入力してください。" value="<?php if (!empty($_POST['email'])) {
                 echo $_POST['email'];
             } ?>">
           </label>
@@ -175,7 +175,7 @@ require('header.php');
           <label class="<?php if (!empty($err_msg['username'])) {
                 echo 'err';
             }?>">ユーザー名
-          <input type="text" name="username" placeholder="サイトで使う名前を日本語で入力してください" value="<?php if (!empty($_POST['username'])) {
+          <input type="text" name="username" placeholder="サイトで使う名前を入力してください。" value="<?php if (!empty($_POST['username'])) {
                 echo $_POST['username'];
             } ?>">
           </label>
@@ -208,7 +208,7 @@ require('header.php');
           <label class="<?php if (!empty($err_msg['pass_re'])) {
                 echo 'err';
             }?>">パスワード（再入力）
-          <input type="password" name="pass_re" placeholder="６文字以上で入力してください。" value="<?php if (!empty($_POST['pass_re'])) {
+          <input type="password" name="pass_re" placeholder="上記と同じパスワードを入力してください。" value="<?php if (!empty($_POST['pass_re'])) {
                 echo $_POST['pass_re'];
             } ?>">
           </label>

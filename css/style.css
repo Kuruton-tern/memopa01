@@ -244,14 +244,13 @@ ul li a:hover::after{
 .form-container h2.title{
   font-family: 'Montserrat', sans-serif;
   font-size: 35px;
-  margin: 30px 0px 50px 0px;
+  margin: 1em 0;
   display: inline-block;
   text-align: cente;
 }
 .form{
   position: relative;
   background:white;
-  padding-bottom: 20px;
 }
 /* エラーメッセージを表示させる部分 */
 .form .area-msg{
@@ -311,16 +310,15 @@ label.err input{
 input[type="text"], input[type="password"], textarea{
   display: block;
   margin: 0 auto;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  /* margin-top: 5px; */
+  /* margin-bottom: 15px; */
   box-sizing: border-box;
-  height: 60px;
   width: 80%;
-  font-size: 16px;
+  font-size: 0.9em;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   background: #EAEAE0;
-  padding: 0 15px;
+  padding: 20px 10px;
 }
 
 /* メモカテゴリーのセレクトボックス */
@@ -328,9 +326,14 @@ input[type="text"], input[type="password"], textarea{
 	overflow: hidden;
 	width: 80%;
 	margin: 2em auto;
-	text-align: center;
+  text-align: center;
+  position: relative;
+	background: #ffffff;
 }
 .select-wrap select {
+  padding: 0.4em;
+  color: #666666;
+  font-size: 1.2em;
 	width: 100%;
 	padding-right: 1em;
 	cursor: pointer;
@@ -346,11 +349,7 @@ input[type="text"], input[type="password"], textarea{
 .select-wrap select::-ms-expand {
     display: none;
 }
-.select-wrap {
-	position: relative;
-	/* border: 1px solid #bbbbbb; */
-	background: #ffffff;
-}
+
 .select-wrap::before {
 	position: absolute;
 	top: 0.8em;
@@ -363,11 +362,6 @@ input[type="text"], input[type="password"], textarea{
 	border-right: 6px solid transparent;
 	border-top: 6px solid #666666;
 	pointer-events: none;
-}
-.select-wrap select {
-	padding: 20px 40px 20px 10px;
-  color: #666666;
-  font-size: 14px;
 }
 
 /* チェックボックス */
@@ -523,7 +517,7 @@ button{
 ================================*/
 
 .form .btn{
-  margin: 45px 45px 0 0;
+  margin: 1em 2em;
 }
 
 /* ボタンアニメーション */
@@ -556,14 +550,10 @@ button{
 /* ==============================
 メモ作成・編集画面
 ================================*/
-.list-title{
-  padding-left: 7px;
-  font-size: 20px;
-  font-weight: bold;
-}
+
 .memo-title, .category_id{
   font-size: 22px;
-  margin: 20px 0;
+  margin: 0.3em 0;
 }
 .memo-contents{
   font-size: 22px;
@@ -595,7 +585,12 @@ button{
   margin-bottom: 50px;
   overflow: scroll;
 }
-
+.list-title{
+  padding-left: 7px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+}
 .list-panel{
   background: #dbdbdb;
   padding: 8px 15px 0px 15px;
@@ -628,6 +623,7 @@ button{
 .list-header-icon .fas{
   margin-left: 10px;
 }
+
 .memo-panel{
   font-size:100%;
   background: #f5f5f5;
@@ -639,6 +635,16 @@ button{
   position: relative;
   word-break: break-all;
 }
+
+.memo-panel a{
+  color: #444;
+}
+
+.memo-panel .fa-pen-square{
+  color: #32b67a;
+}
+
+
 .list-memo-title{
   font-weight: bold;
   font-size: 22px;
@@ -646,15 +652,17 @@ button{
 
 .fas, .far{
   cursor: pointer;
+  padding: 10px;
 }
-/* メモのリストパネルの中のアイコン。aタグが線が3つのアイコンの方 */
-.memo-panel-icon > a, .far{
-  display: inline-block;
-  padding: 10px 10px;
-}
+/* メモのリストパネルの中のアイコン */
+
 .memo-panel-icon{
   text-align-last: justify;
 }
+
+.memo-panel-icon > form{
+  display: inline-block;
+} 
 
 .list-panel .memo-add{
   position: sticky;

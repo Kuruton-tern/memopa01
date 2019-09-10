@@ -1,0 +1,663 @@
+[24-Aug-2019 01:41:12 Asia/Tokyo] PHP Warning:  session_save_path(): Cannot change save path when headers already sent in /Applications/MAMP/htdocs/memopa/function.php on line 27
+[24-Aug-2019 01:41:12 Asia/Tokyo] PHP Warning:  ini_set(): Headers already sent. You cannot change the session module's ini settings at this time in /Applications/MAMP/htdocs/memopa/function.php on line 30
+[24-Aug-2019 01:41:12 Asia/Tokyo] PHP Warning:  ini_set(): Headers already sent. You cannot change the session module's ini settings at this time in /Applications/MAMP/htdocs/memopa/function.php on line 33
+[24-Aug-2019 01:41:12 Asia/Tokyo] PHP Warning:  session_start(): Cannot start session when headers already sent in /Applications/MAMP/htdocs/memopa/function.php on line 35
+[24-Aug-2019 01:41:12 Asia/Tokyo] PHP Warning:  session_regenerate_id(): Cannot regenerate session id - session is not active in /Applications/MAMP/htdocs/memopa/function.php on line 37
+[24-Aug-2019 01:41:12 Asia/Tokyo] デバッグ：                  
+[24-Aug-2019 01:41:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[24-Aug-2019 01:41:12 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[24-Aug-2019 01:41:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[24-Aug-2019 01:41:12 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[24-Aug-2019 01:41:12 Asia/Tokyo] デバッグ：セッションID：
+[24-Aug-2019 01:41:12 Asia/Tokyo] PHP Notice:  Undefined variable: _SESSION in /Applications/MAMP/htdocs/memopa/function.php on line 46
+[24-Aug-2019 01:41:12 Asia/Tokyo] デバッグ：セッション変数の中身：
+[24-Aug-2019 01:41:12 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1566578472
+[24-Aug-2019 01:41:12 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：                  
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：セッションID：m4earq2s1svqi8smjd0c5oq8al
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 54
+    [login_date] => 1566262998
+    [login_limit] => 2592000
+    [msg_success] => 
+)
+
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1566578610
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1568854998
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：SESSIONがあるのでログイン画面に遷移します
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：                  
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：セッションID：jah9t1udnag8d6o743q0gne8bj
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 54
+    [login_date] => 1566262998
+    [login_limit] => 2592000
+    [msg_success] => 
+)
+
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1566578610
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1568854998
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：マイメモに遷移します
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：                  
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：「　マイメモ画面　」
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：セッションID：v52lfljk68cqtm1qagtveeftn3
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 54
+    [login_date] => 1566578610
+    [login_limit] => 2592000
+    [msg_success] => 
+)
+
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1566578610
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1569170610
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：クエリ成功。
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：自分のメモを取得します。
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：クエリ成功。
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：クエリ成功。
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：クエリ成功。
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：クエリ成功。
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：クエリ成功。
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：クエリ成功。
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：クエリ成功。
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：クエリ成功。
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：$memosの中身：Array
+(
+    [0] => Array
+        (
+            [id] => 106
+            [name] => 暗号化は？？
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 56
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 10:03:18
+            [update_date] => 2019-08-20 10:03:18
+        )
+
+    [1] => Array
+        (
+            [id] => 105
+            [name] => 暗号化されてる？
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 56
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 09:52:54
+            [update_date] => 2019-08-20 09:52:54
+        )
+
+    [2] => Array
+        (
+            [id] => 104
+            [name] => dgsdg
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 56
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 02:02:37
+            [update_date] => 2019-08-20 02:02:37
+        )
+
+    [3] => Array
+        (
+            [id] => 100
+            [name] => プログラミング
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 55
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 01:58:48
+            [update_date] => 2019-08-20 01:59:52
+        )
+
+    [4] => Array
+        (
+            [id] => 103
+            [name] => dfsgsgs
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 55
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 01:59:46
+            [update_date] => 2019-08-20 01:59:46
+        )
+
+    [5] => Array
+        (
+            [id] => 102
+            [name] => title1
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 53
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 01:59:36
+            [update_date] => 2019-08-20 01:59:36
+        )
+
+    [6] => Array
+        (
+            [id] => 101
+            [name] => Hello
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 54
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 01:59:18
+            [update_date] => 2019-08-20 01:59:18
+        )
+
+)
+
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：$display_memos_memoの中身：Array
+(
+    [0] => Array
+        (
+            [id] => 106
+            [name] => 暗号化は？？
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 56
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 10:03:18
+            [update_date] => 2019-08-20 10:03:18
+        )
+
+)
+
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：$display_memos_memoの中身：Array
+(
+    [0] => Array
+        (
+            [id] => 106
+            [name] => 暗号化は？？
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 56
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 10:03:18
+            [update_date] => 2019-08-20 10:03:18
+        )
+
+    [1] => Array
+        (
+            [id] => 105
+            [name] => 暗号化されてる？
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 56
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 09:52:54
+            [update_date] => 2019-08-20 09:52:54
+        )
+
+)
+
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：$display_memos_memoの中身：Array
+(
+    [0] => Array
+        (
+            [id] => 106
+            [name] => 暗号化は？？
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 56
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 10:03:18
+            [update_date] => 2019-08-20 10:03:18
+        )
+
+    [1] => Array
+        (
+            [id] => 105
+            [name] => 暗号化されてる？
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 56
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 09:52:54
+            [update_date] => 2019-08-20 09:52:54
+        )
+
+    [2] => Array
+        (
+            [id] => 104
+            [name] => dgsdg
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 56
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 02:02:37
+            [update_date] => 2019-08-20 02:02:37
+        )
+
+)
+
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：$display_memos_memoの中身：Array
+(
+    [0] => Array
+        (
+            [id] => 100
+            [name] => プログラミング
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 55
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 01:58:48
+            [update_date] => 2019-08-20 01:59:52
+        )
+
+)
+
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：$display_memos_memoの中身：Array
+(
+    [0] => Array
+        (
+            [id] => 100
+            [name] => プログラミング
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 55
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 01:58:48
+            [update_date] => 2019-08-20 01:59:52
+        )
+
+    [1] => Array
+        (
+            [id] => 103
+            [name] => dfsgsgs
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 55
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 01:59:46
+            [update_date] => 2019-08-20 01:59:46
+        )
+
+)
+
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：$display_memos_memoの中身：Array
+(
+    [0] => Array
+        (
+            [id] => 102
+            [name] => title1
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 53
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 01:59:36
+            [update_date] => 2019-08-20 01:59:36
+        )
+
+)
+
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：$display_memos_memoの中身：Array
+(
+    [0] => Array
+        (
+            [id] => 101
+            [name] => Hello
+            [contents] => Array
+                (
+                )
+
+            [category_id] => 54
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 01:59:18
+            [update_date] => 2019-08-20 01:59:18
+        )
+
+)
+
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：サクセスメッセージを出しました
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：$display_memoの中身：Array
+(
+    [category] => Array
+        (
+            [id] => 53
+            [name] => namae 
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 01:58:40
+            [update_date] => 2019-08-20 01:58:40
+        )
+
+    [memo] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 102
+                    [name] => title1
+                    [contents] => Array
+                        (
+                        )
+
+                    [category_id] => 53
+                    [user_id] => 54
+                    [delete_flg] => 0
+                    [create_date] => 2019-08-20 01:59:36
+                    [update_date] => 2019-08-20 01:59:36
+                )
+
+        )
+
+)
+
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：update_dateの中身：2019-08-20 01:59:36
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：$display_memoの中身：Array
+(
+    [category] => Array
+        (
+            [id] => 54
+            [name] => こんにちは
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 01:59:00
+            [update_date] => 2019-08-20 01:59:00
+        )
+
+    [memo] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 101
+                    [name] => Hello
+                    [contents] => Array
+                        (
+                        )
+
+                    [category_id] => 54
+                    [user_id] => 54
+                    [delete_flg] => 0
+                    [create_date] => 2019-08-20 01:59:18
+                    [update_date] => 2019-08-20 01:59:18
+                )
+
+        )
+
+)
+
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：update_dateの中身：2019-08-20 01:59:18
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：$display_memoの中身：Array
+(
+    [category] => Array
+        (
+            [id] => 55
+            [name] => sdfsg
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 01:59:41
+            [update_date] => 2019-08-20 01:59:41
+        )
+
+    [memo] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 100
+                    [name] => プログラミング
+                    [contents] => Array
+                        (
+                        )
+
+                    [category_id] => 55
+                    [user_id] => 54
+                    [delete_flg] => 0
+                    [create_date] => 2019-08-20 01:58:48
+                    [update_date] => 2019-08-20 01:59:52
+                )
+
+            [1] => Array
+                (
+                    [id] => 103
+                    [name] => dfsgsgs
+                    [contents] => Array
+                        (
+                        )
+
+                    [category_id] => 55
+                    [user_id] => 54
+                    [delete_flg] => 0
+                    [create_date] => 2019-08-20 01:59:46
+                    [update_date] => 2019-08-20 01:59:46
+                )
+
+        )
+
+)
+
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：update_dateの中身：2019-08-20 01:59:52
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：update_dateの中身：2019-08-20 01:59:46
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：$display_memoの中身：Array
+(
+    [category] => Array
+        (
+            [id] => 56
+            [name] => testtest22
+            [user_id] => 54
+            [delete_flg] => 0
+            [create_date] => 2019-08-20 02:02:32
+            [update_date] => 2019-08-20 02:02:32
+        )
+
+    [memo] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 106
+                    [name] => 暗号化は？？
+                    [contents] => Array
+                        (
+                        )
+
+                    [category_id] => 56
+                    [user_id] => 54
+                    [delete_flg] => 0
+                    [create_date] => 2019-08-20 10:03:18
+                    [update_date] => 2019-08-20 10:03:18
+                )
+
+            [1] => Array
+                (
+                    [id] => 105
+                    [name] => 暗号化されてる？
+                    [contents] => Array
+                        (
+                        )
+
+                    [category_id] => 56
+                    [user_id] => 54
+                    [delete_flg] => 0
+                    [create_date] => 2019-08-20 09:52:54
+                    [update_date] => 2019-08-20 09:52:54
+                )
+
+            [2] => Array
+                (
+                    [id] => 104
+                    [name] => dgsdg
+                    [contents] => Array
+                        (
+                        )
+
+                    [category_id] => 56
+                    [user_id] => 54
+                    [delete_flg] => 0
+                    [create_date] => 2019-08-20 02:02:37
+                    [update_date] => 2019-08-20 02:02:37
+                )
+
+        )
+
+)
+
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：update_dateの中身：2019-08-20 10:03:18
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：update_dateの中身：2019-08-20 09:52:54
+[24-Aug-2019 01:43:30 Asia/Tokyo] デバッグ：update_dateの中身：2019-08-20 02:02:37
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：                  
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：セッションID：qr67dlistsnbju3fepouq517l5
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 52
+    [login_date] => 1566620906
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1566697172
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1566624506
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：SESSIONがあるのでログイン画面に遷移します
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：                  
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：セッションID：he2jqkai7sp2ok1mc03gd33d38
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 52
+    [login_date] => 1566620906
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1566697172
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1566624506
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：セッションの有効期限がオーバーしてます
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：セッションの有効期限が期限以内です
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：                  
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：「　トップ画面　」
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：セッションID：ijn0gdi1jk2g6oe8e4ub2r3ig9
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[25-Aug-2019 10:39:32 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1566697172
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：                  
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：「　アカウント作成画面　」
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：セッションID：qaqhsmdrf42kk35f3cpod34id1
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 52
+    [login_date] => 1566753411
+    [login_limit] => 3600
+)
+
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1567183848
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1566757011
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：SESSIONがあるのでログイン画面に遷移します
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：                  
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：「　ログイン画面　」
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：セッションID：nnu2gls5g7tplsfcdpvts9b1v2
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 52
+    [login_date] => 1566753411
+    [login_limit] => 3600
+)
+
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1567183848
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1566757011
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：ログイン済ユーザーです
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：セッションの有効期限がオーバーしてます
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：セッションの有効期限が期限以内です
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：                  
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：「　トップ画面　」
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：セッションID：hdlc8hs1ee6n95dc0dmmri5mb9
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[31-Aug-2019 01:50:48 Asia/Tokyo] デバッグ：現在日時のタイムスタンプ：1567183848

@@ -161,10 +161,10 @@ debug('画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 ?>
 
-<!-- $edit_flgを使い、$dbFormDataがカラかどうかを見ている。falseなら新規作成、trueなら編集 -->
 <?php
+// $edit_flg = (empty($dbFormData)) ? false : true;
+// $edit_flgを使い、$dbFormDataがカラかどうかを見ている。falseなら新規作成、trueなら編集 
 // $dbFormDataが空でなければtrue(編集)を表示させる
-// $siteTitle = (!$edit_flg) ? 'メモ登録' : 'メモ編集';
  if (!$edit_flg) {
     $siteTitle  =  'メモ新規作成';
 } else {
@@ -179,7 +179,7 @@ debug('画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 <style>
     .form .btn {
       float: none;
-      margin: 30px 15px;
+      margin: 1em 2em;
     }
 
     .form {

@@ -1,4 +1,4 @@
-<?php 
+<?php
 // 共通変数・関数ファイルを読み込み
 require('function.php');
 
@@ -36,7 +36,7 @@ if(!empty($_POST)){
   // 未入力チェックでエラーなしの場合
   if(empty($err_msg)){
     debug('未入力チェックはOK');
-   
+
     // パスワードの形式チェック
     validPass($pass_old, 'pass_old');
     validPass($pass_new, 'pass_new');
@@ -56,7 +56,7 @@ if(!empty($_POST)){
         // 新しいパスと再入力パスが異なっていたらエラーメッセージを出す
         validMatch($pass_new, $pass_new_re, "pass_new_re");
           debug('新パスと再入力パスがマッチしていません。');
-        
+
 
   // ここまでエラーメッセージがなければ、以下の処理へ
   if(empty($err_msg)){
@@ -90,10 +90,10 @@ if(!empty($_POST)){
 
 パスワードが変更されました。
 
+
 ///////////////////////////////////////
 memopa
-URL:  http://memopa.com
-Email: kuruton@gmail.com
+URL:  http://memopa.site
 ///////////////////////////////////////
 EOT;
 
@@ -124,7 +124,7 @@ $siteTitle = 'パスワード変更画面';
 <body class="page-login page-1colum">
 
   <!-- ヘッダー  -->
-<?php 
+<?php
 require('header.php');
 ?>
 
@@ -138,17 +138,17 @@ require('header.php');
           <h2 class="title">パスワード変更</h2>
 
           <div class="area-msg">
-           <?php 
+           <?php
             if(!empty($err_msg['common'])) echo $err_msg['common'];
             ?>
           </div>
-          
+
           <!-- 旧パスワード -->
           <label class="">旧パスワード</label>
           <input type="password" name="pass_old">
 
           <div class="area-msg">
-           <?php 
+           <?php
             if(!empty($err_msg['pass_old'])) echo $err_msg['pass_old'];
             ?>
           </div>
@@ -158,7 +158,7 @@ require('header.php');
           <input type="password" name="pass_new">
 
           <div class="area-msg">
-           <?php 
+           <?php
             if(!empty($err_msg['pass_new'])) echo $err_msg['pass_new'];
             ?>
           </div>
@@ -168,7 +168,7 @@ require('header.php');
           <input type="password" name="pass_new_re">
 
           <div class="area-msg">
-           <?php 
+           <?php
             if(!empty($err_msg['pass_new_re'])) echo $err_msg['pass_new_re'];
             ?>
           </div>

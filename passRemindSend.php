@@ -116,7 +116,7 @@ EOT;
       }
     }
   }
-  
+
 debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
 
 
@@ -134,7 +134,7 @@ $siteTitle = 'パスワード再発行メール送信';
 <body class="page-login page-1colum">
 
   <!-- ヘッダー  -->
-<?php 
+<?php
 require('header.php');
 ?>
 
@@ -151,7 +151,7 @@ require('header.php');
             <div>
 
           <div class="area-msg">
-           <?php 
+           <?php
             if(!empty($err_msg['common'])) echo $err_msg['common'];
             ?>
           </div>
@@ -160,10 +160,10 @@ require('header.php');
           <label class="<?php if(!empty($err_msg['email'])) echo $err_msg['email'];?>">メールアドレス
           <input type="text" name="email" placeholder="emailの形式で入力してください">
           </label>
-          
-          
+
+
           <div class="area-msg">
-           <?php 
+           <?php
             if(!empty($err_msg['email'])) echo $err_msg['email'];
             ?>
           </div>
